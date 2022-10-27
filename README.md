@@ -1,21 +1,11 @@
 # ASTEROID
-AzureStartToolEnablingRapidOnboardingInsteadofDevastation
+**A**_zure_**S**_tart_**T**_ool_**E**_nabling_**R**_apid_**O**_nboarding_**I**_nsteadof_**D**_evastation_
+
+[![Build Status](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_apis/build/status/demirsenturk.Enterprise-Scale-Landing-Zone-Generator%20(6)?branchName=azure-pipelines)](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_build/latest?definitionId=7&branchName=azure-pipelines)
 
 [Asteroid GitHub Page](https://azure.github.io/Asteroid/)
 ## Accelerate clients' journey to the cloud!
 ![image](https://user-images.githubusercontent.com/33814219/198015061-e55f69c2-10aa-4321-ba9a-cec37fe8c2cc.png)
-
-# Project
-
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
 
 ## Contributing
 
