@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Asteroid/static/css/main.073c9b0a.css",
-    "main.js": "/Asteroid/static/js/main.484ca37f.js",
-    "static/js/787.2b5d27e4.chunk.js": "/Asteroid/static/js/787.2b5d27e4.chunk.js",
-    "static/media/rocket.svg": "/Asteroid/static/media/rocket.2697151ab6b1b6076e9dcb8bde34f27b.svg",
-    "index.html": "/Asteroid/index.html",
-    "main.073c9b0a.css.map": "/Asteroid/static/css/main.073c9b0a.css.map",
-    "main.484ca37f.js.map": "/Asteroid/static/js/main.484ca37f.js.map",
-    "787.2b5d27e4.chunk.js.map": "/Asteroid/static/js/787.2b5d27e4.chunk.js.map"
+    "main.css": "/Asteroid/react-gh/static/css/main.073c9b0a.css",
+    "main.js": "/Asteroid/react-gh/static/js/main.90531faa.js",
+    "static/js/787.2b5d27e4.chunk.js": "/Asteroid/react-gh/static/js/787.2b5d27e4.chunk.js",
+    "static/media/rocket.svg": "/Asteroid/react-gh/static/media/rocket.2697151ab6b1b6076e9dcb8bde34f27b.svg",
+    "index.html": "/Asteroid/react-gh/index.html",
+    "main.073c9b0a.css.map": "/Asteroid/react-gh/static/css/main.073c9b0a.css.map",
+    "main.90531faa.js.map": "/Asteroid/react-gh/static/js/main.90531faa.js.map",
+    "787.2b5d27e4.chunk.js.map": "/Asteroid/react-gh/static/js/787.2b5d27e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.484ca37f.js"
+    "static/js/main.90531faa.js"
   ]
 }
