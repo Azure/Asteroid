@@ -1,6 +1,7 @@
-# ASTEROID Project
+# ASTEROID
 AzureStartToolEnablingRapidOnboardingInsteadofDevastation
-## Accelerate clients journey to the cloud!
+## Accelerate clients' journey to the cloud!
+[Asteroid GitHub Page](https://azure.github.io/Asteroid/)
 
 ![image](https://user-images.githubusercontent.com/33814219/198015061-e55f69c2-10aa-4321-ba9a-cec37fe8c2cc.png)
 
