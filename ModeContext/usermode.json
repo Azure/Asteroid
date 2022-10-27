@@ -1,0 +1,77 @@
+{
+    "defaultOps": {
+        "title": "User Mode",
+        "description":"",
+        "icon": "Contact",
+        "sections": [
+            {
+                "key": "onPremisesConnectivity",
+                "sectionTitle": "Hybrid or Cloud-native?",
+                "cards": [
+                    {
+                        "key": "precloud",
+                        "title": "On-premises connectivity",
+                        "description": {
+                            "title": "Connection to on-premises Infrastructure needed",
+                            "bulets": [
+                                {
+                                    "description": "Cloud-native"
+                                },
+                                {
+                                    "description": "Azure Hybrid Cloud",
+                                    "linksrc": "https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/#overview"
+                                }
+                            ]
+                        },
+                        "icon": "WifiEthernet",
+                        "values": {
+                            "cluster": {
+                                "SystemPoolType": "none",
+                                "autoscale": false,
+                                "upgradeChannel": "none",
+                                "DefenderForContainers": false
+                            },
+                            "addons": {
+                                "add1": "none",
+                                "add2": "none",
+                                "add3": "none"
+                            }
+                        }
+                    },
+                    {
+                        "key": "cloudnative",
+                        "title": "Cloud-native",
+                        "description": {
+                            "title": "Start your journey completely on cloud",
+                            "bulets": [
+                                {
+                                    "description": "Cloud-native"
+                                },
+                                {
+                                    "description": "pay-as-you go"
+                                },
+                                {
+                                    "description": "Azure Cloud",
+                                    "linksrc": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/#public-cloud"
+                                }
+                            ]
+                        },
+                        "icon": "Cloud",
+                        "values": {
+                            "cluster": {
+                                "SystemPoolType": "CostOptimised",
+                                "autoscale": false,
+                                "upgradeChannel": "none"
+                            },
+                            "addons": {
+                                "registry": "none",
+                                "ingress": "contour",
+                                "monitor": "oss"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
