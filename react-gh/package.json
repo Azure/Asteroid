@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://azure.github.Asteroid",
+  "homepage": "https://azure.github.io/Asteroid",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
