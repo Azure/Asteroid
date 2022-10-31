@@ -1,7 +1,7 @@
 # ASTEROID
 **A**_zure_**S**_tart_**T**_ool_**E**_nabling_**R**_apid_**O**_nboarding_**I**_nsteadof_**D**_evastation_
 
-[![Build Status](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_apis/build/status/demirsenturk.Enterprise-Scale-Landing-Zone-Generator%20(6)?branchName=azure-pipelines)](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_build/latest?definitionId=7&branchName=azure-pipelines)
+[![Build Status](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_apis/build/status/Azure.Asteroid?branchName=main)](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_build/latest?definitionId=18&branchName=main)
 
 [Asteroid GitHub Page](https://azure.github.io/Asteroid/)
 ## Accelerate clients' journey to the cloud!
