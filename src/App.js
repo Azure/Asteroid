@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
       <img src={rocket} className="App-logo" alt="rocket" />
         <p>
-          This is an Azure Pipelines test run.
+          This is an Azure Pipelines test run!
         </p>
         <a
           className="App-link"
