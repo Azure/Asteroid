@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/Asteroid/static/css/main.073c9b0a.css",
-    "main.js": "/Asteroid/static/js/main.567efba1.js",
-    "static/js/787.2b5d27e4.chunk.js": "/Asteroid/static/js/787.2b5d27e4.chunk.js",
-    "static/media/rocket.svg": "/Asteroid/static/media/rocket.2697151ab6b1b6076e9dcb8bde34f27b.svg",
+    "main.css": "/Asteroid/static/css/main.abd64e84.css",
+    "main.js": "/Asteroid/static/js/main.4ae04424.js",
     "index.html": "/Asteroid/index.html",
-    "main.073c9b0a.css.map": "/Asteroid/static/css/main.073c9b0a.css.map",
-    "main.567efba1.js.map": "/Asteroid/static/js/main.567efba1.js.map",
-    "787.2b5d27e4.chunk.js.map": "/Asteroid/static/js/787.2b5d27e4.chunk.js.map"
+    "main.abd64e84.css.map": "/Asteroid/static/css/main.abd64e84.css.map",
+    "main.4ae04424.js.map": "/Asteroid/static/js/main.4ae04424.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.567efba1.js"
+    "static/css/main.abd64e84.css",
+    "static/js/main.4ae04424.js"
   ]
 }
