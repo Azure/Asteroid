@@ -17,9 +17,9 @@ import { Link } from "react-router-dom";
 // Local Imports
 import './App.css';
 import ReactDOM from 'react-dom';
-import business_building from './media/icons-business-building.png';
-import enterprise_building from './media/icons-enterprise64.png'
-import government_building from './media/icons-government60.png';
+import business_building from './media/smb.png';
+import enterprise_building from './media/enterprise.png'
+import government_building from './media/government.png';
 
 initializeIcons();
 
