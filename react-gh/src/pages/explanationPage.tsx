@@ -33,7 +33,7 @@ const Explanation = () => {
   const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight
 
   return (
-  <ThemeProvider theme={{ semanticColors, palette }}>
+  <ThemeProvider applyTo='body' theme={{ semanticColors, palette }}>
   <main id="main" className="wrapper">
   <TitleBar/>
   <Stack horizontalAlign="center" verticalAlign="center" verticalFill styles={stackStyles} tokens={stackTokens}>
@@ -186,8 +186,7 @@ function ExplanationArea() {
       padding: 20,
       overflow: 'auto',
       border: '1px solid #ccc',
-      borderRadius: 4,
-      backgroundColor: '#fff'
+      borderRadius: 4
     },
   });
 

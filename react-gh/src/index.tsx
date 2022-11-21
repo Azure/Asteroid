@@ -4,9 +4,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Local Imports
 import {App} from "./App";
-import Page1 from "./Page1";
-import ExplanationPage from "./explanationPage";
-import reportWebVitals from './reportWebVitals';
+import Page1 from "./pages/Page1";
+import ExplanationPage from "./pages/explanationPage";
 
 ReactDOM.render(
  <React.StrictMode>
