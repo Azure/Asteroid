@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Asteroid/static/css/main.abd64e84.css",
-    "main.js": "/Asteroid/static/js/main.08496619.js",
-    "static/media/government.svg": "/Asteroid/static/media/government.d8a3c2e14aa16039bc634946e06b6cde.svg",
-    "static/media/icons-hybrid-cloud.svg": "/Asteroid/static/media/icons-hybrid-cloud.f461dcff81aa1a9c043cdba476a0f315.svg",
-    "static/media/icons-cloud.svg": "/Asteroid/static/media/icons-cloud.bd8953d8a0c094d51882ca4ff30eb3b1.svg",
+    "main.js": "/Asteroid/static/js/main.22081da9.js",
+    "static/media/government.svg": "/Asteroid/static/media/government.b83ce5846303cc2ff0d93b9c6ddb3f66.svg",
+    "static/media/icons-hybrid-cloud.svg": "/Asteroid/static/media/icons-hybrid-cloud.393322c36d2c42863987f8a844179cd1.svg",
+    "static/media/icons-cloud.svg": "/Asteroid/static/media/icons-cloud.4ccfc199db3e32fb73a13496cc0eebd5.svg",
     "index.html": "/Asteroid/index.html",
     "main.abd64e84.css.map": "/Asteroid/static/css/main.abd64e84.css.map",
-    "main.08496619.js.map": "/Asteroid/static/js/main.08496619.js.map"
+    "main.22081da9.js.map": "/Asteroid/static/js/main.22081da9.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.08496619.js"
+    "static/js/main.22081da9.js"
   ]
 }
