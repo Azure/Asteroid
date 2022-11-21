@@ -3,6 +3,7 @@ import React from 'react';
 import { FontWeights, PrimaryButton, ProgressIndicator, Stack, Text, ThemeProvider, Toggle, IIconProps, IStackStyles, IStackTokens, ITextStyles, initializeIcons, getTheme } from '@fluentui/react';
 import { AzureThemeLight, AzureThemeDark } from '@fluentui/azure-themes';
 import { FontSizes } from '@fluentui/theme';
+import { Theme } from '@fluentui/react';
 import { mergeStyles, mergeStyleSets } from '@fluentui/merge-styles';
 import { Link as ReactLink } from '@fluentui/react';
 import { ImageFit } from '@fluentui/react/lib/Image';
@@ -20,7 +21,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import business_building from './media/smb.png';
 import enterprise_building from './media/enterprise.png'
-import government_building from './media/government.png';
+import government_building from './media/government.svg';
 import cloud_icon from './media/icons-cloud.svg';
 import hybrid_cloud_icon from './media/icons-hybrid-cloud.svg';
 
@@ -32,7 +33,8 @@ export const App: React.FunctionComponent = () => {
   const stackTokens: IStackTokens = { childrenGap: 40 };
   // Selects the theme dependent on the preferred color scheme of user: Light or Dark
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight
+  const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight;
+  const current_theme = dark ? AzureThemeDark : AzureThemeLight;
 
   return (
     <ThemeProvider applyTo='body' theme={{ semanticColors, palette }}>
@@ -52,7 +54,7 @@ export const App: React.FunctionComponent = () => {
             styles={cardStyles}
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Small Medium-Sized Business</Text></Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text styles={boldStyle}>Public Cloud</Text></Link>
             </div>
             <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={cloud_icon} />
             <DocumentCardDetails>
@@ -64,7 +66,7 @@ export const App: React.FunctionComponent = () => {
             onClickHref=""
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Enterprise</Text></Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text styles={boldStyle}>Hybrid Cloud</Text></Link>
             </div>
             <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={hybrid_cloud_icon} />
             <DocumentCardDetails>
@@ -76,7 +78,7 @@ export const App: React.FunctionComponent = () => {
             onClickHref=""
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Azure Government</Text></Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text styles={boldStyle}>Azure Government</Text></Link>
             </div>
             <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={government_building} />
             <DocumentCardDetails>
