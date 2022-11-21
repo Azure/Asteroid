@@ -1,7 +1,8 @@
 // React Imports
 import React from 'react';
-import { FontWeights, PrimaryButton, ProgressIndicator, Stack, Text, ThemeProvider, Toggle, IIconProps, IStackStyles, IStackTokens, ITextStyles, initializeIcons } from '@fluentui/react';
+import { FontWeights, PrimaryButton, ProgressIndicator, Stack, Text, ThemeProvider, Toggle, IIconProps, IStackStyles, IStackTokens, ITextStyles, initializeIcons, getTheme } from '@fluentui/react';
 import { AzureThemeLight, AzureThemeDark } from '@fluentui/azure-themes';
+import { FontSizes } from '@fluentui/theme';
 import { mergeStyles, mergeStyleSets } from '@fluentui/merge-styles';
 import { Link as ReactLink } from '@fluentui/react';
 import { ImageFit } from '@fluentui/react/lib/Image';
@@ -20,6 +21,8 @@ import ReactDOM from 'react-dom';
 import business_building from './media/icons-business-building.png';
 import enterprise_building from './media/icons-enterprise64.png'
 import government_building from './media/icons-government60.png';
+import cloud_icon from './media/icons-cloud.svg';
+import hybrid_cloud_icon from './media/icons-hybrid-cloud.svg';
 
 initializeIcons();
 
@@ -32,7 +35,7 @@ export const App: React.FunctionComponent = () => {
   const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight
 
   return (
-    <ThemeProvider theme={{ semanticColors, palette }}>
+    <ThemeProvider applyTo='body' theme={{ semanticColors, palette }}>
       <main id="main" className="wrapper">
       <TitleBar/>
       <Stack horizontalAlign="center" verticalAlign="center" verticalFill styles={stackStyles} tokens={stackTokens}>
@@ -44,13 +47,14 @@ export const App: React.FunctionComponent = () => {
           How would you decribe your organization?
         </Text>
         <div>
+          
           <DocumentCard
             styles={cardStyles}
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1">Small Medium-Sized Business</Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Small Medium-Sized Business</Text></Link>
             </div>
-            <DocumentCardImage height={150} imageFit={ImageFit.centerContain} imageSrc={business_building} />
+            <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={cloud_icon} />
             <DocumentCardDetails>
               <DocumentCardTitle title=" " shouldTruncate />
             </DocumentCardDetails>
@@ -60,9 +64,9 @@ export const App: React.FunctionComponent = () => {
             onClickHref=""
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1">Enterprise</Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Enterprise</Text></Link>
             </div>
-            <DocumentCardImage height={150} imageFit={ImageFit.centerContain} imageSrc={enterprise_building} />
+            <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={hybrid_cloud_icon} />
             <DocumentCardDetails>
               <DocumentCardTitle title=" " shouldTruncate />
             </DocumentCardDetails>
@@ -72,9 +76,9 @@ export const App: React.FunctionComponent = () => {
             onClickHref=""
           >
             <div>
-              <Link style={{textDecoration: 'none'}} to="./Page1">Azure Government</Link>
+              <Link style={{textDecoration: 'none'}} to="./Page1"><Text>Azure Government</Text></Link>
             </div>
-            <DocumentCardImage height={150} imageFit={ImageFit.centerContain} imageSrc={government_building} />
+            <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={government_building} />
             <DocumentCardDetails>
               <DocumentCardTitle title=" " shouldTruncate />
             </DocumentCardDetails>
@@ -126,8 +130,8 @@ function TitleBar() {
   return (
     <nav role="menubar">
       <div style={{ width: "100%" }}>
-        <div style={{ display: "inline-block", padding: "11px 12px 0px" }}>
-          <Text nowrap variant="xxLarge"><span style={{ "color": "blue", "marginLeft": "2px" }}>Asteroid</span> Tool</Text>
+        <div style={{ display: "inline-block", padding: "11px 12px 0px", fontSize: FontSizes.size28 }}>
+          Asteroid Tool
         </div>
         <ToggleButton/>
       </div>
