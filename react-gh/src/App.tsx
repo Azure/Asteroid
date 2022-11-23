@@ -3,7 +3,6 @@ import React from 'react';
 import { FontWeights, Stack, Text, ThemeProvider, IStackStyles, IStackTokens, ITextStyles, initializeIcons } from '@fluentui/react';
 import { AzureThemeLight, AzureThemeDark } from '@fluentui/azure-themes';
 import { Link as ReactLink } from '@fluentui/react';
-import { Link } from "react-router-dom";
 
 // Local Imports
 import './App.css';
@@ -35,9 +34,9 @@ export const App: React.FunctionComponent = () => {
             How would you decribe your organization?
           </Text>
           <div>
-            <Card linkTo="/./Page1" title="Public Cloud" imageSrc={cloud_icon} />
-            <Card linkTo="/./Page1" title="Hybrid Cloud" imageSrc={hybrid_cloud_icon} />
-            <Card linkTo="/./Page1" title="Azure Government" imageSrc={government_building} />
+            <Card linkTo="./Page1" title="Public Cloud" imageSrc={cloud_icon} />
+            <Card linkTo="./Page1" title="Hybrid Cloud" imageSrc={hybrid_cloud_icon} />
+            <Card linkTo="./Page1" title="Azure Government" imageSrc={government_building} />
           </div>
 
           <Stack horizontal tokens={stackTokens}>

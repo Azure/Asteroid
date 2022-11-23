@@ -1,6 +1,5 @@
 import { IIconProps, Panel, PanelType, PrimaryButton } from "@fluentui/react";
 import { useBoolean } from '@fluentui/react-hooks';
-import Explanation from "../../pages/explanationPage";
 
 //  Interface
 interface ExplenationInterface {
