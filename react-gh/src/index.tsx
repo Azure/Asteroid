@@ -4,16 +4,14 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Local Imports
 import { App } from "./App";
-import Page1 from "./pages/Page1";
-import ExplanationPage from "./pages/explanationPage";
+import Configuration from "./pages/ConfigurationPage";
 
 ReactDOM.render(
     <React.StrictMode>
         <HashRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/Page1" element={<Page1 />} />
-                <Route path="/explanationPage" element={<ExplanationPage />} />
+                <Route path="/Configuration" element={<Configuration />} />
             </Routes>
         </HashRouter>
     </React.StrictMode>,
