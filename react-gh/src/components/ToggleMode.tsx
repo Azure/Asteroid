@@ -12,7 +12,7 @@ export function ToggleButton() {
           defaultChecked={checked}
           onChange={alertClicked}
           onText="Expert Mode"
-          offText="User Mode"
+          offText="Basic Mode"
         />
       </div>
     );
