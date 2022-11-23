@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { DocumentCard, DocumentCardDetails, DocumentCardImage, DocumentCardTitle, IDocumentCardStyles, ImageFit } from '@fluentui/react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 //  Interface
 interface CardInterface {
@@ -16,18 +16,23 @@ const cardStyles: IDocumentCardStyles = {
 
 //  Component
 export const Card: FunctionComponent<CardInterface> = ({ linkTo, title, imageSrc }) => {
+
+    // handle click on card
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate(linkTo);
+    };
+
     return (
-        <Link to={linkTo}>
-            <DocumentCard
-                styles={cardStyles}
-            // onClickHref={linkTo}
-            >
-                <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={imageSrc} />
-                <DocumentCardDetails>
-                    <DocumentCardTitle title={title} shouldTruncate />
-                </DocumentCardDetails>
-            </DocumentCard>
-        </Link>
+        <DocumentCard
+            styles={cardStyles}
+            onClick={handleClick}
+        >
+            <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={imageSrc} />
+            <DocumentCardDetails>
+                <DocumentCardTitle title={title} shouldTruncate />
+            </DocumentCardDetails>
+        </DocumentCard>
 
 
     );
