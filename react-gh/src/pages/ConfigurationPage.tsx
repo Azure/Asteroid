@@ -126,7 +126,7 @@ const ConfigurationPage = () => {
                 </Stack>
               </Stack.Item>
             </Stack>
-            <Codebox code={deploycmd} language={"json"} showLineNumbers={true} startingLineNumber={1}/>
+            <Codebox code={deploycmd} language={"json"} showLineNumbers={true} startingLineNumber={1} dark={dark}/>
             <Separator styles={{ root: { marginTop: "30px !important" } }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <b style={{ marginRight: "10px" }}>
