@@ -5,32 +5,28 @@ import {
   Label,
   Pivot,
   PivotItem,
-  PrimaryButton,
   Separator,
   Stack,
   Text,
-  Toggle,
-  IIconProps,
   IDropdownOption,
   IDropdownStyles,
   ILabelStyles,
   IPivotItemProps,
   IStyleSet,
   ThemeProvider,
-  ITextStyles,
   IStackStyles,
-  FontWeights,
   IStackTokens,
 } from "@fluentui/react";
 import { Link as ReactLink } from "@fluentui/react";
 import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
-import { mergeStyles, mergeStyleSets } from "@fluentui/merge-styles";
 import { TitleBar } from "../components/TitleBar";
 import { Footer } from "../components/Footer";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import { ProgressBar } from "../components/ProgressBar";
+import { Codebox } from "../components/Codebox";
 
 const deploycmd =
+  `// test code comment\n` +
   `PlaceholderPlaceholderPlaceholder\n` +
   `PlaceholderPlaceholderPlaceholder\n` +
   `PlaceholderPlaceholderPlaceholder\n` +
@@ -45,7 +41,6 @@ const ConfigurationPage = () => {
   // Selects the theme dependent on the preferred color scheme of user: Light or Dark
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight;
-  const current_theme = dark ? AzureThemeDark : AzureThemeLight;
 
   return (
     <ThemeProvider applyTo="body" theme={{ semanticColors, palette }}>
@@ -95,7 +90,7 @@ const ConfigurationPage = () => {
             <Stack
               horizontal
               horizontalAlign="space-between"
-              styles={{ root: { width: "100%", marginTop: "10px" } }}
+              styles={{ root: { width: "100%", marginBottom: "20px" } }}
             >
               <Stack.Item>
                 <Label>
@@ -118,9 +113,8 @@ const ConfigurationPage = () => {
                   .
                 </Text>
               </Stack.Item>
-
               <Stack.Item align="end">
-                <Stack horizontal tokens={{ childrenGap: 5 }}>
+                <Stack>
                   <Dropdown
                     // errorMessage={getError(invalidArray, 'selectedTemplate')}
                     label="Template Version"
@@ -132,7 +126,7 @@ const ConfigurationPage = () => {
                 </Stack>
               </Stack.Item>
             </Stack>
-            {/* <CodeBlock  deploycmd={deploycmd} testId={'deploy-test-gh'} lang="bash" filename={undefined} error={undefined}/> */}
+            <Codebox code={deploycmd} language={"json"} showLineNumbers={true} startingLineNumber={1}/>
             <Separator styles={{ root: { marginTop: "30px !important" } }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <b style={{ marginRight: "10px" }}>
@@ -144,7 +138,6 @@ const ConfigurationPage = () => {
             </Separator>
           </PivotItem>
         </Pivot>
-
         <Separator />
         <Stack
           horizontalAlign="center"
@@ -176,9 +169,6 @@ const options: IDropdownOption[] = [
 ];
 
 // Styles & constants
-const boldStyle: Partial<ITextStyles> = {
-  root: { fontWeight: FontWeights.semibold },
-};
 const stackStyles: Partial<IStackStyles> = {
   root: {
     width: "1300px",
@@ -190,23 +180,3 @@ const stackStyles: Partial<IStackStyles> = {
 const labelStyles: Partial<IStyleSet<ILabelStyles>> = {
   root: { marginTop: 10 },
 };
-
-// // Code Block
-// function CodeBlock({ deploycmd, testId, lang, filename, error }: { deploycmd: string | undefined; testId: string; lang: string; filename?: string; error?: string; }) {
-//   const [code, setCode] = React.useState(deploycmd);
-//   const [language, setLanguage] = React.useState(lang);
-//   const [filename_, setFilename] = React.useState(filename);
-//   const [error_, setError] = React.useState(error);
-
-//   return (
-//     <div style={{ width: "100%", height: "100%" }}>
-//       <CodeSnippet
-//         testId={testId}
-//         code={code}
-//         language={language}
-//         filename={filename_}
-//         error={error_}
-//       />
-//     </div>
-//   );
-// }
