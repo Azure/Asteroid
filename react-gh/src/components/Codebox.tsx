@@ -17,7 +17,7 @@ export const Codebox: React.FunctionComponent<CodeboxInterface> = ({ code, langu
       language={language}
       showLineNumbers={showLineNumbers}
       startingLineNumber={startingLineNumber}
-      theme={dark ? atomOneLight : atomOneDark}
+      theme={dark ? atomOneDark : atomOneLight}
     />
   );
 }
