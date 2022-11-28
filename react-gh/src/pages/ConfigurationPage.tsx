@@ -16,22 +16,44 @@ import {
   ThemeProvider,
   IStackStyles,
   IStackTokens,
+  Link,
+  CommandBarButton,
 } from "@fluentui/react";
 import { Link as ReactLink } from "@fluentui/react";
 import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
+
+// Local Imports
 import { TitleBar } from "../components/TitleBar";
 import { Footer } from "../components/Footer";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import { ProgressBar } from "../components/ProgressBar";
 import { Codebox } from "../components/Codebox";
+import { QChoice } from "../components/q_checkbox";
+import { IQChoice } from "../components/QIcheckbox";
 
-const deploycmd =
+// Import: Parameters Metadata
+import data from "../utils/data.json";
+import { parse } from "node:path/win32";
+
+const deploycmd : string =
   `// test code comment\n` +
   `PlaceholderPlaceholderPlaceholder\n` +
-  `PlaceholderPlaceholderPlaceholder\n` +
-  `PlaceholderPlaceholderPlaceholder\n` +
-  `PlaceholderPlaceholderPlaceholder\n` +
-  "";
+  '{\n' +
+    '"$schema"' + ': ' + '"https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",\n' +
+    '  "contentVersion": "1.0.0.0",\n' +
+    '  "parameters": {\n' +
+    '    "enterpriseScaleCompanyPrefix": {\n' +
+    '      "value": null\n' +
+    '    },\n' +
+    '    "' + data[0].Childs[0].Parent.Parameter + '": {\n' +
+    '      "value": ' + data[0].Childs[0].Parent.Answers + '\n' +
+    '    },\n' +
+    '    },\n' +
+    '    "' + data[0].Childs[1].Parent.Parameter + '": {\n' +
+    '      "value": ' + data[0].Childs[1].Parent.Answers + '\n' +
+    '    },';
+
+export const adv_stackstyle = { root: { border: "1px solid", margin: "10px 0", padding: "15px" } }
 
 const ConfigurationPage = () => {
   const stackTokens: IStackTokens = { childrenGap: 40 };
@@ -42,27 +64,71 @@ const ConfigurationPage = () => {
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight;
 
+  const [ copied, setCopied ] = React.useState(false);
+  const filename = "deploy.json";
+  const error = false;
+
+  function copyIt() {
+      navigator.clipboard.writeText(deploycmd)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1000)
+  }
+  function downloadIt(){
+      function dataUrl(data: undefined) {return "data:x-application/text," + escape(deploycmd);}
+      // window.open(dataUrl());
+  }
+
   return (
     <ThemeProvider applyTo="body" theme={{ semanticColors, palette }}>
       <main id="main" className="wrapper">
         
         <TitleBar />
-        <Label>Design Area: {lastHeader?.props.headerText}</Label>
         <Pivot
           aria-label="OnChange Pivot Example"
           linkSize="large"
           linkFormat="tabs"
           onLinkClick={setLastHeader}
+          style={{ marginTop: "25px" }}
         >
           <PivotItem headerText="Networking">
-            <Label styles={labelStyles}>Pivot #1</Label>
+            <Stack tokens={{ childrenGap: 15 }} styles={adv_stackstyle}>
+              <Label style={{ marginBottom: "10px" }}>Platform management, security, and governance</Label>
+              <Stack tokens={{ childrenGap: 15 }} style={{ marginTop: 0, marginLeft: '50px' }} >
+                  <Stack horizontal tokens={{ childrenGap: 55 }}>
+                      <Stack.Item>
+                          <Label >Do you want to enable logging? <Link target='_' href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview'>docs</Link></Label>
+                          <QChoice text1="text1" text2="text2" />
+                      </Stack.Item>
+                  </Stack>
+
+                  <Stack horizontal tokens={{ childrenGap: 55 }}>
+                      <Stack.Item>
+                          <Label >Do you want to enable logging? <Link target='_' href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview'>docs</Link></Label>
+                          <QChoice text1="yes" text2="no" />
+                      </Stack.Item>
+                  </Stack>
+                  <Stack horizontal tokens={{ childrenGap: 55 }}>
+                    <Stack.Item>
+                        <Label >Virtual Machine Type</Label>
+                        <IQChoice text1="text1" text2="text2" text3="text3" />
+                    </Stack.Item>
+                  </Stack>
+                  <Stack.Item align="start">
+                    <Label required={true}>Log Support - Landing Zone with multiple availability zones configured across a cluster provide a higher level of availability to protect against a hardware failure or a planned maintenance event. See <Link target='_' href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview'>limits </Link> before selecting
+                    </Label>
+                    <Stack.Item>
+                          <QChoice text1="text1" text2="text2" />
+                      </Stack.Item>
+                  </Stack.Item>
+              </Stack>
             <Separator styles={{ root: { marginTop: "30px !important" } }}>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <b style={{ marginRight: "10px" }}>Deploy Cluster</b>
-                <Image src="./bicep.png" alt="Built with bicep" />{" "}
-                <p style={{ marginLeft: "10px" }}>powered by Bicep</p>
+                <b style={{ marginRight: "10px" }}>Deploy Landing Zone</b>
+                <Image src="./media/logo.svg" alt="Built with bicep" />{" "}
+                <p style={{ marginLeft: "10px" }}>powered by Asteroid</p>
               </div>
             </Separator>
+          </Stack>
           </PivotItem>
           <PivotItem headerText="Security">
             <Label styles={labelStyles}>Pivot #2</Label>
@@ -126,6 +192,20 @@ const ConfigurationPage = () => {
                 </Stack>
               </Stack.Item>
             </Stack>
+            <CommandBarButton
+              disabled={error}
+              className="action position-relative"
+              iconProps={{ iconName: copied? 'Completed' : 'Save'}}
+              text={!error ? "Save" : ""}
+              primaryActionButtonProps={{download: filename}}
+              onClick={downloadIt}/>
+            <CommandBarButton
+                    disabled={copied || error}
+                    className="action position-relative"
+                    iconProps={{ iconName: copied? 'Completed' : 'Copy'}}
+                    styles={{icon: {color: '#171717'}}}
+                    text={!error ? "Copy" : ""}
+                    onClick={copyIt}/>
             <Codebox code={deploycmd} language={"json"} showLineNumbers={true} startingLineNumber={1} dark={dark}/>
             <Separator styles={{ root: { marginTop: "30px !important" } }}>
               <div style={{ display: "flex", alignItems: "center" }}>
