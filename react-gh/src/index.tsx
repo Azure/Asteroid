@@ -1,21 +1,33 @@
+import { ThemeProvider } from "@fluentui/react";
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Footer } from "./components/Footer";
+import { TitleBar } from "./components/TitleBar";
 
 // Local Imports
-import { App } from "./App";
-import Configuration from "./pages/ConfigurationPage";
+import { App } from "./pages/App";
+import Configuration from "./pages/Configuration";
+import { Deployment } from "./pages/Deployment";
+import { currentTheme } from "./utils/styles/Theme";
+
+// Selects the theme dependent on the preferred color scheme of user: Light or Dark
 
 ReactDOM.render(
+  <ThemeProvider applyTo="body" theme={currentTheme}>
     <React.StrictMode>
-        <HashRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="/Configuration" element={<Configuration />} />
-            </Routes>
-        </HashRouter>
-    </React.StrictMode>,
-    document.getElementById("root")
+      <TitleBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/Configuration" element={<Configuration />} />
+          <Route path="/Deployment" element={<Deployment />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer /> 
+    </React.StrictMode>
+  </ThemeProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

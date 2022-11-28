@@ -1,6 +1,5 @@
 import { mergeStyleSets } from "@fluentui/merge-styles";
-import { FontSizes, Separator, Stack, Toggle, Link as ReactLink, Text, FontWeights, IStackStyles, IStackTokens, ITextStyles } from "@fluentui/react";
-import { ToggleButton } from "./ToggleMode";
+import { Separator, Stack, Link as ReactLink, Text, FontWeights, IStackStyles, IStackTokens, ITextStyles } from "@fluentui/react";
 
 // Footer
 export function Footer() {
