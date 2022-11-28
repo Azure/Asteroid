@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@fluentui/react";
 import React from "react";
 import ReactDOM from "react-dom";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { TitleBar } from "./components/TitleBar";
 
@@ -17,13 +17,13 @@ ReactDOM.render(
   <ThemeProvider applyTo="body" theme={currentTheme}>
     <React.StrictMode>
       <TitleBar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/Configuration" element={<Configuration />} />
           <Route path="/Deployment" element={<Deployment />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer /> 
     </React.StrictMode>
   </ThemeProvider>,
