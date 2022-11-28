@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { DocumentCard, DocumentCardDetails, DocumentCardImage, DocumentCardTitle, IDocumentCardStyles, ImageFit } from '@fluentui/react';
-import { Link, useNavigate } from "react-router-dom";
+import { HandleClickAsLink } from "../utils/helpers/handleClick";
 
 //  Interface
 interface CardInterface {
@@ -17,16 +17,10 @@ const cardStyles: IDocumentCardStyles = {
 //  Component
 export const Card: FunctionComponent<CardInterface> = ({ linkTo, title, imageSrc }) => {
 
-    // handle click on card
-    const navigate = useNavigate();
-    const handleClick = () => {
-        navigate(linkTo);
-    };
-
     return (
         <DocumentCard
             styles={cardStyles}
-            onClick={handleClick}
+            onClick={HandleClickAsLink(linkTo)}
         >
             <DocumentCardImage height={150} imageFit={ImageFit.contain} imageSrc={imageSrc} />
             <DocumentCardDetails>
