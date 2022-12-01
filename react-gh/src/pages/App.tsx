@@ -64,7 +64,7 @@ export const App: React.FunctionComponent = () => {
             imageSrc={government_building}
           />
         </div>
-        <ProgressBar />
+        {/* <ProgressBar /> */}
         <Separator />
         <ExplanationButton
           explanationText="Hi & welcome to Asteroid! Please watch the Video to get an understanding of the Asteroid Tool. Public cloud is a cloud computing model in which the cloud infrastructure is owned and operated by a third-party cloud service provider and made available to the general public over the Internet. Public cloud services are typically provided on a pay-as-you-go basis, and the cloud provider is responsible for maintaining the infrastructure, including hardware, software, networking, and data centers."
