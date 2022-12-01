@@ -17,6 +17,7 @@ import {
   IStackTokens,
   Link,
   CommandBarButton,
+  Breadcrumb,
 } from "@fluentui/react";
 import { Link as ReactLink } from "@fluentui/react";
 import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
@@ -30,6 +31,7 @@ import { IQChoice } from "../components/QIcheckbox";
 
 // Import: Parameters Metadata
 import data from "../utils/data.json";
+import { HandleClickAsLink } from "../utils/helpers/handleClick";
 
 const deploycmd: string =
   `// test code comment\n` +
@@ -90,6 +92,14 @@ const Configuration = () => {
 
   return (
     <main id="main" className="wrapper">
+      <Breadcrumb
+        items={[
+          { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
+          { text: "Configuration", key: "Configuration", isCurrentItem: true, as: "h4" },
+        ]}
+        ariaLabel="With last item rendered as heading"
+        overflowAriaLabel="More links"
+      />
       <Pivot
         aria-label="OnChange Pivot Example"
         linkSize="large"
@@ -160,13 +170,13 @@ const Configuration = () => {
                 </Stack.Item>
               </Stack.Item>
             </Stack>
-            <Separator styles={{ root: { marginTop: "30px !important" } }}>
+            {/* <Separator styles={{ root: { marginTop: "30px !important" } }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <b style={{ marginRight: "10px" }}>Deploy Landing Zone</b>
                 <Image src="./media/logo.svg" alt="Built with bicep" />{" "}
                 <p style={{ marginLeft: "10px" }}>powered by Asteroid</p>
               </div>
-            </Separator>
+            </Separator> */}
           </Stack>
         </PivotItem>
         <PivotItem headerText="Security">
@@ -252,7 +262,7 @@ const Configuration = () => {
             showLineNumbers={true}
             startingLineNumber={1}
           />
-          <Separator styles={{ root: { marginTop: "30px !important" } }}>
+          {/* <Separator styles={{ root: { marginTop: "30px !important" } }}>
             <div style={{ display: "flex", alignItems: "center" }}>
               <b style={{ marginRight: "10px" }}>
                 Get started with your journey to Cloud!
@@ -260,10 +270,10 @@ const Configuration = () => {
               <Image src="./Images\bicep.png" alt="Built with bicep" />{" "}
               <p style={{ marginLeft: "10px" }}>powered by Bicep</p>
             </div>
-          </Separator>
+          </Separator> */}
         </PivotItem>
       </Pivot>
-      <Separator />
+      {/* <Separator /> */}
       <Stack
         horizontalAlign="center"
         verticalAlign="center"
@@ -271,7 +281,7 @@ const Configuration = () => {
         styles={stackStyles}
         tokens={stackTokens}
       >
-        <ProgressBar />
+        {/* <ProgressBar /> */}
         <Separator />
         <ExplanationButton
           headerText={""}
