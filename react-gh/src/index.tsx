@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@fluentui/react";
 import React from "react";
 import ReactDOM from "react-dom";
-import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { TitleBar } from "./components/TitleBar";
 
