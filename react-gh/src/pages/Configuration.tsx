@@ -32,34 +32,11 @@ import { IQChoice } from "../components/QIcheckbox";
 // Import: Parameters Metadata
 import data from "../utils/data.json";
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
+import { formaterDonnees } from "../utils/helpers/jsonGenerator";
+import { stringify } from "querystring";
 
-const deploycmd: string =
-  `// test code comment\n` +
-  `PlaceholderPlaceholderPlaceholder\n` +
-  "{\n" +
-  '"$schema"' +
-  ": " +
-  '"https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",\n' +
-  '  "contentVersion": "1.0.0.0",\n' +
-  '  "parameters": {\n' +
-  '    "enterpriseScaleCompanyPrefix": {\n' +
-  '      "value": null\n' +
-  "    },\n" +
-  '    "' +
-  data[0].Childs[0].Parent.Parameter +
-  '": {\n' +
-  '      "value": ' +
-  data[0].Childs[0].Parent.Answers +
-  "\n" +
-  "    },\n" +
-  "    },\n" +
-  '    "' +
-  data[0].Childs[1].Parent.Parameter +
-  '": {\n' +
-  '      "value": ' +
-  data[0].Childs[1].Parent.Answers +
-  "\n" +
-  "    },";
+const deploystr = formaterDonnees("data_path");
+const deploycmd: string = JSON.stringify(deploystr, null, 2);
 
 export const adv_stackstyle = {
   root: { border: "1px solid", margin: "10px 0", padding: "15px" },
