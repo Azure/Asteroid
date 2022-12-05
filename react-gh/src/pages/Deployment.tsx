@@ -23,6 +23,7 @@ import { Link as ReactLink } from "@fluentui/react";
 import React from "react";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import { Codebox } from "../components/Codebox";
+import { DeploymentCommandBar } from "../components/DeploymentCommandBar";
 import { GroupedDeploymentList } from "../components/GroupedDeploymentList";
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { formaterDonnees } from "../utils/helpers/jsonGenerator";
@@ -69,6 +70,7 @@ export const Deployment = () => {
         overflowAriaLabel="More links"
       />
       <h1>Deployment Page</h1>
+      <DeploymentCommandBar />
       <Pivot
         aria-label="OnChange Pivot Example"
         linkSize="normal"
