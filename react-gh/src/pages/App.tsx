@@ -83,7 +83,7 @@ const boldStyle: Partial<ITextStyles> = {
 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
-    width: "1300px",
+    width: "auto",
     margin: "0 auto",
     textAlign: "center",
     color: "#605e5c",
