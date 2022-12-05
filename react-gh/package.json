@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fluentui/azure-themes": "^8.5.27",
+    "@fluentui/example-data": "^8.4.3",
     "@fluentui/merge-styles": "^8.5.4",
     "@fluentui/react": "^8.101.0",
     "@testing-library/jest-dom": "^5.16.5",

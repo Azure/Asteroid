@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Dropdown,
-  Image,
   Label,
   Pivot,
   PivotItem,
@@ -18,22 +17,20 @@ import {
   Link,
   CommandBarButton,
   Breadcrumb,
+  PrimaryButton,
 } from "@fluentui/react";
 import { Link as ReactLink } from "@fluentui/react";
 import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
 
 // Local Imports
-import { ExplanationButton } from "../components/buttons/ExplanationButton";
-import { ProgressBar } from "../components/ProgressBar";
 import { Codebox } from "../components/Codebox";
 import { QChoice } from "../components/q_checkbox";
 import { IQChoice } from "../components/QIcheckbox";
 
 // Import: Parameters Metadata
-import data from "../utils/data.json";
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { formaterDonnees } from "../utils/helpers/jsonGenerator";
-import { stringify } from "querystring";
+import { ExplanationButton } from "../components/buttons/ExplanationButton";
 
 const deploystr = formaterDonnees("data_path");
 const deploycmd: string = JSON.stringify(deploystr, null, 2);
@@ -69,17 +66,39 @@ const Configuration = () => {
 
   return (
     <main id="main" className="wrapper">
-      <Breadcrumb
-        items={[
-          { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
-          { text: "Configuration", key: "Configuration", isCurrentItem: true, as: "h4" },
-        ]}
-        ariaLabel="With last item rendered as heading"
-        overflowAriaLabel="More links"
-      />
+      <Stack
+        horizontal
+        horizontalAlign="space-between"
+        verticalAlign="center"
+        styles={{ root: { width: "100%", marginBottom: "20px" } }}
+      >
+        <Stack.Item align="center">
+          <Breadcrumb
+            items={[
+              { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
+              {
+                text: "Configuration",
+                key: "Configuration",
+                isCurrentItem: true,
+                as: "h4",
+              },
+            ]}
+            ariaLabel="With last item rendered as heading"
+            overflowAriaLabel="More links"
+          />
+        </Stack.Item>
+        <Stack.Item align="center">
+            <PrimaryButton
+              text="Deploy!"
+              onClick={HandleClickAsLink("../Deployment")}
+              allowDisabledFocus
+            />
+        </Stack.Item>
+      </Stack>
+
       <Pivot
         aria-label="OnChange Pivot Example"
-        linkSize="large"
+        linkSize="normal"
         linkFormat="tabs"
         onLinkClick={setLastHeader}
         style={{ marginTop: "25px" }}
@@ -173,81 +192,6 @@ const Configuration = () => {
         </PivotItem>
         <PivotItem headerText="Monitoring">
           <Label styles={labelStyles}>Pivot #7</Label>
-        </PivotItem>
-        <PivotItem
-          headerText="Command Line"
-          itemKey="deployArmCli"
-          itemIcon="PasteAsCode"
-        >
-          <Stack
-            horizontal
-            horizontalAlign="space-between"
-            styles={{ root: { width: "100%", marginBottom: "20px" } }}
-          >
-            <Stack.Item>
-              <Label>
-                Commands to deploy your fully operational environment
-              </Label>
-              <Text>
-                Requires{" "}
-                <ReactLink
-                  href="https://docs.microsoft.com/cli/azure/install-azure-cli"
-                  underline
-                >
-                  {" "}
-                  AZ CLI (2.37.0 or greater){" "}
-                </ReactLink>
-                , or execute in the{" "}
-                <ReactLink href="http://shell.azure.com/" underline>
-                  {" "}
-                  Azure Cloud Shell{" "}
-                </ReactLink>
-                .
-              </Text>
-            </Stack.Item>
-            <Stack.Item align="end">
-              <Stack>
-                <Dropdown
-                  // errorMessage={getError(invalidArray, 'selectedTemplate')}
-                  label="Template Version"
-                  selectedKey={"temp1"}
-                  // onChange={(ev, { key }) => updateFn('selectedTemplate', key)}
-                  options={options}
-                  styles={dropdownStyles}
-                />
-              </Stack>
-            </Stack.Item>
-          </Stack>
-          <CommandBarButton
-            disabled={error}
-            className="action position-relative"
-            iconProps={{ iconName: copied ? "Completed" : "Save" }}
-            text={!error ? "Save" : ""}
-            primaryActionButtonProps={{ download: filename }}
-            onClick={downloadIt}
-          />
-          <CommandBarButton
-            disabled={copied || error}
-            className="action position-relative"
-            iconProps={{ iconName: copied ? "Completed" : "Copy" }}
-            text={!error ? "Copy" : ""}
-            onClick={copyIt}
-          />
-          <Codebox
-            code={deploycmd}
-            language={"json"}
-            showLineNumbers={true}
-            startingLineNumber={1}
-          />
-          {/* <Separator styles={{ root: { marginTop: "30px !important" } }}>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <b style={{ marginRight: "10px" }}>
-                Get started with your journey to Cloud!
-              </b>
-              <Image src="./Images\bicep.png" alt="Built with bicep" />{" "}
-              <p style={{ marginLeft: "10px" }}>powered by Bicep</p>
-            </div>
-          </Separator> */}
         </PivotItem>
       </Pivot>
       {/* <Separator /> */}
