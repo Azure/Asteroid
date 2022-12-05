@@ -29,13 +29,18 @@ export const App: React.FunctionComponent = () => {
   return (
     <main id="main" className="wrapper">
       <Breadcrumb
-        items={[
-          { text: "Start", key: "Start", isCurrentItem: true, as: "h4" },
-        ]}
+        items={[{ text: "Start", key: "Start", isCurrentItem: true, as: "h1"}]}
+        
         ariaLabel="With last item rendered as heading"
         overflowAriaLabel="More links"
       />
-
+      <div
+        style={{
+          alignSelf: "center",
+          margin: "0 auto",
+          minHeight: "10vh",
+        }}
+      />
       <Stack
         horizontalAlign="center"
         verticalAlign="center"

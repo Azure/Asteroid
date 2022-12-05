@@ -14,21 +14,27 @@ import { currentTheme } from "./utils/styles/Theme";
 // Selects the theme dependent on the preferred color scheme of user: Light or Dark
 
 ReactDOM.render(
-  <ThemeProvider applyTo="body" theme={currentTheme}>
-    <React.StrictMode>
+  <ThemeProvider applyTo="body" theme={currentTheme} >
+    <React.StrictMode >
       <div
         className="flex-wrapper"
         style={{
           display: "flex",
           minHeight: "100vh",
           flexDirection: "column",
-          justifyContent: "space-between",
+          justifyContent: "flex-start",
         }}
       >
-        <div className="header">
+        <div className="header" style={{
+          width: "90%",
+          alignSelf: "center",
+        }}>
           <TitleBar />
         </div>
-        <div className="content">
+        <div className="content" style={{
+          width: "90%",
+          alignSelf: "center",
+        }}>
           <HashRouter>
             <Routes>
               <Route path="/" element={<App />} />
