@@ -16,15 +16,36 @@ import { currentTheme } from "./utils/styles/Theme";
 ReactDOM.render(
   <ThemeProvider applyTo="body" theme={currentTheme}>
     <React.StrictMode>
-      <TitleBar />
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/Configuration" element={<Configuration />} />
-          <Route path="/Deployment" element={<Deployment />} />
-        </Routes>
-      </HashRouter>
-      <Footer /> 
+      <div
+        className="flex-wrapper"
+        style={{
+          display: "flex",
+          minHeight: "100vh",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <div className="header">
+          <TitleBar />
+        </div>
+        <div className="content">
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/Configuration" element={<Configuration />} />
+              <Route path="/Deployment" element={<Deployment />} />
+            </Routes>
+          </HashRouter>
+        </div>
+        <div
+          className="footer"
+          style={{
+            marginTop: "auto",
+          }}
+        >
+          <Footer />
+        </div>
+      </div>
     </React.StrictMode>
   </ThemeProvider>,
   document.getElementById("root")
