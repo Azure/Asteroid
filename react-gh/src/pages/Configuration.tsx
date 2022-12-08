@@ -1,12 +1,9 @@
 import * as React from "react";
 import {
-  Dropdown,
-  Label,
   Pivot,
   PivotItem,
   Separator,
   Stack,
-  Text,
   IDropdownOption,
   IDropdownStyles,
   ILabelStyles,
@@ -14,24 +11,18 @@ import {
   IStyleSet,
   IStackStyles,
   IStackTokens,
-  Link,
-  CommandBarButton,
   Breadcrumb,
   PrimaryButton,
 } from "@fluentui/react";
-import { Link as ReactLink } from "@fluentui/react";
 import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
 
 // Local Imports
-import { Codebox } from "../components/Codebox";
-import { QChoice } from "../components/q_checkbox";
-import { IQChoice } from "../components/QIcheckbox";
-
-// Import: Parameters Metadata
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { formaterDonnees } from "../utils/helpers/jsonGenerator";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
+import { categoryQuestions } from "../utils/helpers/questionsBoard";
 
+// Import: Parameters Metadata
 const deploystr = formaterDonnees("data_path");
 const deploycmd: string = JSON.stringify(deploystr, null, 2);
 
@@ -103,95 +94,26 @@ const Configuration = () => {
         onLinkClick={setLastHeader}
         style={{ marginTop: "25px" }}
       >
-        <PivotItem headerText="Networking">
-          <Stack tokens={{ childrenGap: 15 }} styles={adv_stackstyle}>
-            <Label style={{ marginBottom: "10px" }}>
-              Platform management, security, and governance
-            </Label>
-            <Stack
-              tokens={{ childrenGap: 15 }}
-              style={{ marginTop: 0, marginLeft: "50px" }}
-            >
-              <Stack horizontal tokens={{ childrenGap: 55 }}>
-                <Stack.Item>
-                  <Label>
-                    Do you want to enable logging?{" "}
-                    <Link
-                      target="_"
-                      href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
-                    >
-                      docs
-                    </Link>
-                  </Label>
-                  <QChoice text1="text1" text2="text2" />
-                </Stack.Item>
-              </Stack>
-
-              <Stack horizontal tokens={{ childrenGap: 55 }}>
-                <Stack.Item>
-                  <Label>
-                    Do you want to enable logging?{" "}
-                    <Link
-                      target="_"
-                      href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
-                    >
-                      docs
-                    </Link>
-                  </Label>
-                  <QChoice text1="yes" text2="no" />
-                </Stack.Item>
-              </Stack>
-              <Stack horizontal tokens={{ childrenGap: 55 }}>
-                <Stack.Item>
-                  <Label>Virtual Machine Type</Label>
-                  <IQChoice text1="text1" text2="text2" text3="text3" />
-                </Stack.Item>
-              </Stack>
-              <Stack.Item align="start">
-                <Label required={true}>
-                  Log Support - Landing Zone with multiple availability zones
-                  configured across a cluster provide a higher level of
-                  availability to protect against a hardware failure or a
-                  planned maintenance event. See{" "}
-                  <Link
-                    target="_"
-                    href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
-                  >
-                    limits{" "}
-                  </Link>{" "}
-                  before selecting
-                </Label>
-                <Stack.Item>
-                  <QChoice text1="text1" text2="text2" />
-                </Stack.Item>
-              </Stack.Item>
-            </Stack>
-            {/* <Separator styles={{ root: { marginTop: "30px !important" } }}>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <b style={{ marginRight: "10px" }}>Deploy Landing Zone</b>
-                <Image src="./media/logo.svg" alt="Built with bicep" />{" "}
-                <p style={{ marginLeft: "10px" }}>powered by Asteroid</p>
-              </div>
-            </Separator> */}
-          </Stack>
+        <PivotItem headerText="Network Topology & Connectivity">
+          {categoryQuestions("Network topology and connectivity")}
         </PivotItem>
-        <PivotItem headerText="Security">
-          <Label styles={labelStyles}>Pivot #2</Label>
+        <PivotItem headerText="Landing Zone Configuration">
+        {categoryQuestions("Landing zones configuration")}
         </PivotItem>
-        <PivotItem headerText="Storage">
-          <Label styles={labelStyles}>Pivot #3</Label>
-        </PivotItem>
-        <PivotItem headerText="Compute">
-          <Label styles={labelStyles}>Pivot #4</Label>
-        </PivotItem>
+        {/* <PivotItem headerText="Compute">
+          <Label styles={labelStyles}>Compute Pivot #4</Label>
+        </PivotItem> */}
         <PivotItem headerText="Identity">
-          <Label styles={labelStyles}>Pivot #5</Label>
+          {categoryQuestions("Identity")}
         </PivotItem>
-        <PivotItem headerText="Databases">
-          <Label styles={labelStyles}>Pivot #6</Label>
+        <PivotItem headerText="Platform DevOps & Automation">
+        {categoryQuestions("Platform DevOps and automation")}
         </PivotItem>
-        <PivotItem headerText="Monitoring">
-          <Label styles={labelStyles}>Pivot #7</Label>
+        <PivotItem headerText="Platform Management, Security, and Governance">
+          {categoryQuestions("Platform management, security, and governance")}
+        </PivotItem>
+        <PivotItem headerText="No Hybrid Connectivity">
+          {categoryQuestions("No Hybrid Connectivity")}
         </PivotItem>
       </Pivot>
       {/* <Separator /> */}
