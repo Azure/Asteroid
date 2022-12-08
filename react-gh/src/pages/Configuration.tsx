@@ -83,6 +83,7 @@ const Configuration = () => {
               text="Deploy!"
               onClick={HandleClickAsLink("../Deployment")}
               allowDisabledFocus
+              style={{ marginTop: "20px" }}
             />
         </Stack.Item>
       </Stack>
