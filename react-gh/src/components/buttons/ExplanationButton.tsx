@@ -1,4 +1,4 @@
-import { IIconProps, Panel, PanelType, PrimaryButton } from "@fluentui/react";
+import { DefaultButton, IIconProps, Panel, PanelType, PrimaryButton } from "@fluentui/react";
 import { useBoolean } from '@fluentui/react-hooks';
 
 //  Interface
@@ -24,7 +24,7 @@ export const ExplanationButton: React.FunctionComponent<ExplenationInterface> = 
 
   return (
     <div>
-      <PrimaryButton
+      <DefaultButton
         iconProps={addFriendIcon}
         text='Explanation'
         onClick={openPanel}

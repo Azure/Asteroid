@@ -69,7 +69,6 @@ export const Deployment = () => {
         ariaLabel="With last item rendered as heading"
         overflowAriaLabel="More links"
       />
-      <h1>Deployment Page</h1>
       <DeploymentCommandBar />
       <Pivot
         aria-label="OnChange Pivot Example"
@@ -81,7 +80,6 @@ export const Deployment = () => {
         <PivotItem headerText="List View"
           itemKey="listView"
           itemIcon="BulletedList">
-          <Label styles={labelStyles}>Pivot #7</Label>
           <GroupedDeploymentList/>
         </PivotItem>
         <PivotItem
