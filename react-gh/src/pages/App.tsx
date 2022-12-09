@@ -14,23 +14,20 @@ import {
 
 // Local Imports
 import "./App.css";
-import government_building from "../media/government.svg";
-import cloud_icon from "../media/icons-cloud.svg";
-import hybrid_cloud_icon from "../media/icons-hybrid-cloud.svg";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
-import { ProgressBar } from "../components/ProgressBar";
-import { Card } from "../components/Card";
+import TemplateSelection from "../components/TemplateSelection";
 
 initializeIcons();
 
 // App
 export const App: React.FunctionComponent = () => {
   const stackTokens: IStackTokens = { childrenGap: 40 };
+  // setState({ isHubSpoke: false, isHybrid: false });
+
   return (
     <main id="main" className="wrapper">
       <Breadcrumb
-        items={[{ text: "Start", key: "Start", isCurrentItem: true, as: "h1"}]}
-        
+        items={[{ text: "Start", key: "Start", isCurrentItem: true, as: "h1" }]}
         ariaLabel="With last item rendered as heading"
         overflowAriaLabel="More links"
       />
@@ -52,23 +49,8 @@ export const App: React.FunctionComponent = () => {
         <Text variant="large" styles={boldStyle}>
           How would you decribe your organization?
         </Text>
-        <div>
-          <Card
-            linkTo="./Configuration"
-            title="Public Cloud"
-            imageSrc={cloud_icon}
-          />
-          <Card
-            linkTo="./Configuration"
-            title="Hybrid Cloud"
-            imageSrc={hybrid_cloud_icon}
-          />
-          <Card
-            linkTo="./Configuration"
-            title="Azure Government"
-            imageSrc={government_building}
-          />
-        </div>
+        <TemplateSelection/>
+        
         {/* <ProgressBar /> */}
         <Separator />
         <ExplanationButton
