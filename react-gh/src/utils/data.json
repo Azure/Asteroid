@@ -5,10 +5,10 @@
       "Parameter": "enableLogAnalytics",
       "CategoryID": "Platform management, security, and governance",
       "Question": "Do you want to enable logging?",
-      "AnswerTypeID": 0,
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=1",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -16,13 +16,28 @@
       {
         "Parent": {
           "ID": "010100",
+          "Parameter": "managementSubscriptionId",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Enter your management subscription ID.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "<placeholder>",
+          "Answers": [""],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010200",
           "Parameter": "retentionInDays",
           "CategoryID": "Platform management, security, and governance",
           "Question": "How long do you want to save your logs?",
-          "AnswerTypeID": 1,
+          "AnswerType": "integerInput",
           "AnswerChoice": 30,
-          "Answers": [0],
-          "Explanation": "Explanation Placeholder ID=2",
+          "Answers": [""],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp5"
         },
@@ -30,29 +45,29 @@
       },
       {
         "Parent": {
-          "ID": "010200",
+          "ID": "010300",
           "Parameter": "enableAgentHealth",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=3",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to keep track of the health of your monitoring agents?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=3",
-          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solution-agenthealth",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp6"
         },
         "Childs": []
       },
       {
         "Parent": {
-          "ID": "010300",
+          "ID": "010400",
           "Parameter": "enableChangeTracking",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=4",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable change tracking?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=4",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp7"
         },
@@ -60,14 +75,14 @@
       },
       {
         "Parent": {
-          "ID": "010400",
+          "ID": "010500",
           "Parameter": "enableUpdateMgmt",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=5",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable update management of the monitor agent?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=5",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp8"
         },
@@ -75,29 +90,29 @@
       },
       {
         "Parent": {
-          "ID": "010500",
+          "ID": "010600",
           "Parameter": "enableActivityLog",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=6",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable the activity log?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=6",
-          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-insights",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp9"
         },
         "Childs": []
       },
       {
         "Parent": {
-          "ID": "010600",
+          "ID": "010700",
           "Parameter": "enableVmInsights",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=7",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable VM insights?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=7",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp10"
         },
@@ -105,14 +120,14 @@
       },
       {
         "Parent": {
-          "ID": "010700",
+          "ID": "010800",
           "Parameter": "enableServiceMap",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=8",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable service map?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=8",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp11"
         },
@@ -120,14 +135,14 @@
       },
       {
         "Parent": {
-          "ID": "010800",
+          "ID": "010900",
           "Parameter": "enableSqlAssessment",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=9",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable SQL assessments for your databases?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=9",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp12"
         },
@@ -135,14 +150,14 @@
       },
       {
         "Parent": {
-          "ID": "010900",
+          "ID": "011000",
           "Parameter": "enableSqlAdvancedThreatProtection",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=10",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable SQL advanced threat protection?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=10",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp13"
         },
@@ -150,14 +165,14 @@
       },
       {
         "Parent": {
-          "ID": "011000",
+          "ID": "011100",
           "Parameter": "enableSqlVulnerabilityAssessment",
           "CategoryID": "Platform management, security, and governance",
-          "Question": " Placeholder Question ID=11",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable SQL vulnerability assessments?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=11",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp14"
         },
@@ -165,28 +180,28 @@
       },
       {
         "Parent": {
-          "ID": "011100",
+          "ID": "011200",
           "Parameter": "enableAsc",
           "CategoryID": "Platform management, security, and governance",
           "Question": "Do you want to protect your infrastructure with Microsoft Defender?",
-          "AnswerTypeID": 0,
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=12",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp15"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "011101",
+              "ID": "011201",
               "Parameter": "emailContactAsc",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=13",
-              "AnswerTypeID": 2,
+              "Question": "Name a mail contatct for Microsoft Defender",
+              "AnswerType": "stringInput",
               "AnswerChoice": "mailContact@outlook.de",
-              "Answers": [" true", ""],
-              "Explanation": "Explanation Placeholder ID=13",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp16"
             },
@@ -194,14 +209,14 @@
           },
           {
             "Parent": {
-              "ID": "011102",
+              "ID": "011202",
               "Parameter": "enableAscForServers",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=14",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect servers?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=14",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp17"
             },
@@ -209,14 +224,14 @@
           },
           {
             "Parent": {
-              "ID": "011103",
+              "ID": "011203",
               "Parameter": "enableAscForContainers",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=15",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect containers?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=15",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp18"
             },
@@ -224,14 +239,14 @@
           },
           {
             "Parent": {
-              "ID": "011104",
+              "ID": "011204",
               "Parameter": "enableAscForAppServices",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=16",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect app services?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=16",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp19"
             },
@@ -239,14 +254,14 @@
           },
           {
             "Parent": {
-              "ID": "011105",
+              "ID": "011205",
               "Parameter": "enableAscForOssDb",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=17",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect open-source relational databases?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=17",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp20"
             },
@@ -254,14 +269,14 @@
           },
           {
             "Parent": {
-              "ID": "011106",
+              "ID": "011206",
               "Parameter": "enableAscForStorage",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=18",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect storage solutions?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=18",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp21"
             },
@@ -269,14 +284,14 @@
           },
           {
             "Parent": {
-              "ID": "011107",
+              "ID": "011207",
               "Parameter": "enableAscForCosmosDbs",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=19",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect Cosmo DB appliances?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=19",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp22"
             },
@@ -284,14 +299,14 @@
           },
           {
             "Parent": {
-              "ID": "011108",
+              "ID": "011208",
               "Parameter": "enableAscForSql",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=20",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect SQL appliances?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=20",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp23"
             },
@@ -299,14 +314,14 @@
           },
           {
             "Parent": {
-              "ID": "011109",
+              "ID": "011209",
               "Parameter": "enableAscForSqlOnVm",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=21",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect SQL on VM appliances?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=21",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp24"
             },
@@ -314,14 +329,14 @@
           },
           {
             "Parent": {
-              "ID": "011110",
+              "ID": "011210",
               "Parameter": "enableAscForKeyVault",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=22",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect key vaults?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=22",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp25"
             },
@@ -329,14 +344,14 @@
           },
           {
             "Parent": {
-              "ID": "011111",
+              "ID": "011211",
               "Parameter": "enableAscForDns",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=23",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect DNS servers?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=23",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp26"
             },
@@ -344,14 +359,14 @@
           },
           {
             "Parent": {
-              "ID": "011112",
+              "ID": "011212",
               "Parameter": "enableAscForArm",
               "CategoryID": "Platform management, security, and governance",
-              "Question": " Placeholder Question ID=24",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to protect ARM?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=24",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp27"
             },
@@ -361,14 +376,14 @@
       },
       {
         "Parent": {
-          "ID": "011200",
+          "ID": "011300",
           "Parameter": "enableSecuritySolution",
           "CategoryID": "Platform management, security, and governance",
           "Question": "Do you want to centrally analyse, combine and correlate log events for a greater visibility with Microsoft Sentinel?",
-          "AnswerTypeID": 0,
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=25",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/sentinel/",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp28"
         },
@@ -381,11 +396,11 @@
       "ID": "020000",
       "Parameter": "denySubnetWithoutNsgForIdentity",
       "CategoryID": "Identity",
-      "Question": " Placeholder Question ID=26",
-      "AnswerTypeID": 0,
+      "Question": "Do you want to deny subnets without a network security group?",
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=26",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp29"
     },
@@ -396,11 +411,11 @@
       "ID": "030000",
       "Parameter": "denyRdpForIdentity",
       "CategoryID": "Identity",
-      "Question": " Placeholder Question ID=27",
-      "AnswerTypeID": 0,
+      "Question": "Do you want to deny Remote Desktop Protocol connectivity?",
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=27",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp30"
     },
@@ -411,11 +426,11 @@
       "ID": "040000",
       "Parameter": "denyPipForIdentity",
       "CategoryID": "Identity",
-      "Question": " Placeholder Question ID=28",
-      "AnswerTypeID": 0,
+      "Question": "Do you want to prevent the usage of public IP?",
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=28",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp31"
     },
@@ -426,11 +441,11 @@
       "ID": "050000",
       "Parameter": "enableVmBackupForIdentity",
       "CategoryID": "Identity",
-      "Question": " Placeholder Question ID=29",
-      "AnswerTypeID": 0,
+      "Question": "Do you want to enable backups for VMs?",
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=29",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp32"
     },
@@ -441,11 +456,11 @@
       "ID": "060000",
       "Parameter": "identitySubscriptionId",
       "CategoryID": "Identity",
-      "Question": " Placeholder Question ID=30",
-      "AnswerTypeID": 2,
+      "Question": "Paste in your Subscription ID used for Identity",
+      "AnswerType": "stringInput",
       "AnswerChoice": "<identitySubscriptionIDPlaceholder>",
       "Answers": [""],
-      "Explanation": "Explanation Placeholder ID=30",
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp33"
     },
@@ -454,13 +469,13 @@
   {
     "Parent": {
       "ID": "070000",
-      "Parameter": "onlineLzSubscriptionId",
-      "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=31",
-      "AnswerTypeID": 2,
-      "AnswerChoice": "<onlineSubscriptionIDPlaceholder>",
+      "Parameter": "identityAddressPrefix",
+      "CategoryID": "Identity",
+      "Question": "Pase in your identity address subnet.",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "<placeholder>",
       "Answers": [""],
-      "Explanation": "Explanation Placeholder ID=31",
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp34"
     },
@@ -469,13 +484,28 @@
   {
     "Parent": {
       "ID": "080000",
+      "Parameter": "onlineLzSubscriptionId",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Paste in your Subscription ID used for Online LZ",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "<onlineSubscriptionIDPlaceholder>",
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp34"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "090000",
       "Parameter": "corpConnectedLzSubscriptionId",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=32",
-      "AnswerTypeID": 2,
+      "Question": "Paste in your Subscription ID used for Corp Connected",
+      "AnswerType": "stringInput",
       "AnswerChoice": "<corpConnectedSubscriptionIDPlaceholder>",
       "Answers": [""],
-      "Explanation": "Explanation Placeholder ID=32",
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp35"
     },
@@ -483,14 +513,14 @@
   },
   {
     "Parent": {
-      "ID": "090000",
+      "ID": "100000",
       "Parameter": "corpLzSubscriptionId",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=33",
-      "AnswerTypeID": 2,
+      "Question": "Paste in your Subscription ID used for Corp Lz",
+      "AnswerType": "stringInput",
       "AnswerChoice": "<corpLzSubscriptionIDPlaceholder>",
       "Answers": [""],
-      "Explanation": "Explanation Placeholder ID=33",
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp36"
     },
@@ -498,14 +528,14 @@
   },
   {
     "Parent": {
-      "ID": "100000",
+      "ID": "110000",
       "Parameter": "denyIpForwarding",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=34",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=34",
+      "Question": "Do you want to deny IP forwarding?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp37"
     },
@@ -513,14 +543,14 @@
   },
   {
     "Parent": {
-      "ID": "110000",
+      "ID": "120000",
       "Parameter": "denyPublicEndpoints",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=35",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=35",
+      "Question": "Do you want to have deny public endpoints, exposed over a public IP?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp38"
     },
@@ -528,14 +558,14 @@
   },
   {
     "Parent": {
-      "ID": "120000",
+      "ID": "130000",
       "Parameter": "enableEncryptionInTransit",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=36",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=36",
+      "Question": "Do you want to enable encryption in transit?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp39"
     },
@@ -543,14 +573,14 @@
   },
   {
     "Parent": {
-      "ID": "130000",
+      "ID": "140000",
       "Parameter": "enableVmMonitoring",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=37",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=37",
+      "Question": "Do you want to enable monitoring of VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp40"
     },
@@ -558,14 +588,14 @@
   },
   {
     "Parent": {
-      "ID": "140000",
+      "ID": "150000",
       "Parameter": "enableVmssMonitoring",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=38",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=38",
+      "Question": "Do you want to enable monitoring of VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp41"
     },
@@ -573,14 +603,14 @@
   },
   {
     "Parent": {
-      "ID": "150000",
+      "ID": "160000",
       "Parameter": "enableAksPolicy",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=39",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=39",
+      "Question": "Do you want to have a policy over AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp42"
     },
@@ -588,14 +618,14 @@
   },
   {
     "Parent": {
-      "ID": "160000",
+      "ID": "170000",
       "Parameter": "denyAksPrivileged",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=40",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=40",
+      "Question": "Do you want to deny privileged AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp43"
     },
@@ -603,14 +633,14 @@
   },
   {
     "Parent": {
-      "ID": "170000",
+      "ID": "180000",
       "Parameter": "denyAksPrivilegedEscalation",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=41",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=41",
+      "Question": "Do you want to deny privileged escaltedAKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp44"
     },
@@ -618,14 +648,14 @@
   },
   {
     "Parent": {
-      "ID": "180000",
+      "ID": "190000",
       "Parameter": "denyDatabricksPip",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=42",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=42",
+      "Question": "Do you want to deny Databricks public Ips?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp45"
     },
@@ -633,14 +663,14 @@
   },
   {
     "Parent": {
-      "ID": "190000",
+      "ID": "200000",
       "Parameter": "denyDatabricksVnet",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=43",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=43",
+      "Question": "Do you want to deny Databricks Vnets?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp46"
     },
@@ -648,14 +678,14 @@
   },
   {
     "Parent": {
-      "ID": "200000",
+      "ID": "210000",
       "Parameter": "denyDatabricksSku",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=44",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=44",
+      "Question": "Do you want to deny Databricks SKU?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp47"
     },
@@ -663,14 +693,14 @@
   },
   {
     "Parent": {
-      "ID": "210000",
+      "ID": "220000",
       "Parameter": "denyHttpIngressForAks",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=45",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=45",
+      "Question": "Do you want to deny HTTP ingress for AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp48"
     },
@@ -678,14 +708,14 @@
   },
   {
     "Parent": {
-      "ID": "220000",
+      "ID": "230000",
       "Parameter": "enableVmBackup",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=46",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=46",
+      "Question": "Do you want to enable backups for VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp49"
     },
@@ -693,14 +723,14 @@
   },
   {
     "Parent": {
-      "ID": "230000",
+      "ID": "240000",
       "Parameter": "denyRdp",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=47",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=47",
+      "Question": "Do you want to deny access over Remote Desktop Protocol?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp50"
     },
@@ -708,14 +738,14 @@
   },
   {
     "Parent": {
-      "ID": "240000",
+      "ID": "250000",
       "Parameter": "denySubnetWithoutNsg",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=48",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=48",
+      "Question": "Do you want to deny subnets without a network security group?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp51"
     },
@@ -723,14 +753,14 @@
   },
   {
     "Parent": {
-      "ID": "250000",
+      "ID": "260000",
       "Parameter": "enableSqlAudit",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=49",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=49",
+      "Question": "Do you want to track database events and write them to an audit log?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp52"
     },
@@ -738,14 +768,14 @@
   },
   {
     "Parent": {
-      "ID": "260000",
+      "ID": "270000",
       "Parameter": "enableSqlEncryption",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=50",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=50",
+      "Question": "Do you want to protect against the threat of malicious offline activity by using transparent data encryption for your SQL Databases?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp53"
     },
@@ -753,14 +783,14 @@
   },
   {
     "Parent": {
-      "ID": "270000",
+      "ID": "280000",
       "Parameter": "enableStorageHttps",
       "CategoryID": "Landing zones configuration",
-      "Question": " Placeholder Question ID=51",
-      "AnswerTypeID": 0,
-      "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=51",
+      "Question": "Do you want to ensure secure connections (HTTPS) to storage accounts?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp54"
     },
@@ -768,28 +798,58 @@
   },
   {
     "Parent": {
-      "ID": "280000",
+      "ID": "290000",
+      "Parameter": "enableLzDdoS",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to protect your Landing Zone with DDoS Protection?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "300000",
+      "Parameter": "enablePrivateDnsZonesForLzs",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable private DNS zones for your Landing Zone?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "310000",
       "Parameter": "enableAzOps",
       "CategoryID": "Platform DevOps and automation",
-      "Question": " Placeholder Question ID=52",
-      "AnswerTypeID": 2,
-      "AnswerChoice": "<placeholder>",
-      "Answers": [""],
-      "Explanation": "Explanation Placeholder ID=52",
+      "Question": "Do you want to enable Azure DevOps?",
+      "AnswerType": "boolean",
+      "AnswerChoice": true,
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp55"
     },
     "Childs": [
       {
         "Parent": {
-          "ID": "280100",
+          "ID": "310100",
           "Parameter": "gitHubUserNameOrOrg",
           "CategoryID": "Platform DevOps and automation",
-          "Question": " Placeholder Question ID=53",
-          "AnswerTypeID": 2,
+          "Question": "What is your GitHub username or organization name?",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=53",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp56"
         },
@@ -797,14 +857,14 @@
       },
       {
         "Parent": {
-          "ID": "280200",
+          "ID": "310200",
           "Parameter": "paToken",
           "CategoryID": "Platform DevOps and automation",
-          "Question": " Placeholder Question ID=54",
-          "AnswerTypeID": 2,
+          "Question": "What is you GitHub personal access token? ",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=54",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp57"
         },
@@ -812,14 +872,14 @@
       },
       {
         "Parent": {
-          "ID": "280300",
+          "ID": "310300",
           "Parameter": "repositoryName",
           "CategoryID": "Platform DevOps and automation",
-          "Question": " Placeholder Question ID=55",
-          "AnswerTypeID": 2,
+          "Question": "What is your GitHub repository Name?",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=55",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp58"
         },
@@ -827,14 +887,14 @@
       },
       {
         "Parent": {
-          "ID": "280400",
+          "ID": "310400",
           "Parameter": "principalSecret",
           "CategoryID": "Platform DevOps and automation",
           "Question": " Placeholder Question ID=56",
-          "AnswerTypeID": 2,
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=56",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp59"
         },
@@ -842,14 +902,44 @@
       },
       {
         "Parent": {
-          "ID": "280500",
+          "ID": "310500",
           "Parameter": "principalId",
           "CategoryID": "Platform DevOps and automation",
           "Question": " Placeholder Question ID=57",
-          "AnswerTypeID": 2,
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310600",
+          "Parameter": "azOpsSubscriptionId",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "",
+          "AnswerType": "",
+          "AnswerChoice": "",
           "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=57",
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310700",
+          "Parameter": "appID",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "",
+          "AnswerType": "",
+          "AnswerChoice": "",
+          "Answers": [""],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
         },
@@ -859,28 +949,28 @@
   },
   {
     "Parent": {
-      "ID": "290000",
+      "ID": "320000",
       "Parameter": "enableHub",
-      "CategoryID": "Network topology and connectivity",
-      "Question": " Placeholder Question ID=58",
-      "AnswerTypeID": 0,
+      "CategoryID": "Hub and Spoke",
+      "Question": "Do you want to have a Hub and Spoke architecture?",
+      "AnswerType": "boolean",
       "AnswerChoice": true,
-      "Answers": [true, false],
-      "Explanation": "Explanation Placeholder ID=58",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp61"
     },
     "Childs": [
       {
         "Parent": {
-          "ID": "290100",
+          "ID": "320100",
           "Parameter": "connectivityLocation",
           "CategoryID": "Hub and Spoke",
-          "Question": " Placeholder Question ID=59",
-          "AnswerTypeID": 2,
+          "Question": "What is your connectivity location?",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=59",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp62"
         },
@@ -888,14 +978,14 @@
       },
       {
         "Parent": {
-          "ID": "290200",
+          "ID": "320200",
           "Parameter": "connectivitySubscriptionId",
           "CategoryID": "Hub and Spoke",
-          "Question": " Placeholder Question ID=60",
-          "AnswerTypeID": 2,
+          "Question": "Insert your connectivity subscription ID?",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=60",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp63"
         },
@@ -903,14 +993,29 @@
       },
       {
         "Parent": {
-          "ID": "290300",
+          "ID": "320300",
+          "Parameter": "addressPrefix",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Insert the address prefix for your hub and spoke architecture.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "<placeholder>",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320400",
           "Parameter": "enablePrivateDnsZones",
           "CategoryID": "Hub and Spoke",
-          "Question": " Placeholder Question ID=61",
-          "AnswerTypeID": 0,
+          "Question": "Do you want ot enable private DNS zones?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=61",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp64"
         },
@@ -918,14 +1023,14 @@
       },
       {
         "Parent": {
-          "ID": "290400",
+          "ID": "320500",
           "Parameter": "enableDdoS",
           "CategoryID": "Hub and Spoke",
           "Question": "Do you want to protect your network against mailcious high volume attacks?",
-          "AnswerTypeID": 0,
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=62",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp65"
         },
@@ -933,28 +1038,28 @@
       },
       {
         "Parent": {
-          "ID": "290500",
+          "ID": "320600",
           "Parameter": "enableVpnGw",
           "CategoryID": "Hub and Spoke",
-          "Question": " Placeholder Question ID=63",
-          "AnswerTypeID": "",
+          "Question": "Do you want to enable VPN Gateway?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": " true,",
-          "Explanation": "Explanation Placeholder ID=63",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp66"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "290501",
+              "ID": "320601",
               "Parameter": "subnetMaskForGw",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=64",
-              "AnswerTypeID": 2,
+              "Question": "Please define your Subnet Mask for VPN Gateway.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
               "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=64",
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp67"
             },
@@ -962,14 +1067,14 @@
           },
           {
             "Parent": {
-              "ID": "290502",
+              "ID": "320602",
               "Parameter": "gwAzSku",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=65",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for zone redundant VPN Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
               "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=65",
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp68"
             },
@@ -977,14 +1082,14 @@
           },
           {
             "Parent": {
-              "ID": "290503",
+              "ID": "320603",
               "Parameter": "gwRegionalOrAz",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=66",
-              "AnswerTypeID": 0,
+              "Question": "Do you want zone redundant or regional VPN Gateway?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=66",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp69"
             },
@@ -992,14 +1097,29 @@
           },
           {
             "Parent": {
-              "ID": "290504",
+              "ID": "320604",
               "Parameter": "gwRegionalSku",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=67",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for regional VPN Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=67",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp70"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320605",
+              "Parameter": "vpnGateWayScaleUnit",
+              "CategoryID": "Hub and Spoke",
+              "Question": "",
+              "AnswerType": "integerInput",
+              "AnswerChoice": 1,
+              "Answers": ["1"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp70"
             },
@@ -1009,28 +1129,28 @@
       },
       {
         "Parent": {
-          "ID": "290600",
+          "ID": "320700",
           "Parameter": "enableErGw",
           "CategoryID": "Hub and Spoke",
-          "Question": " Placeholder Question ID=68",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to leverage of Express Route Gateway?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=68",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp71"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "290601",
+              "ID": "320701",
               "Parameter": "erAzSku",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=69",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for zone redundant ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=69",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp72"
             },
@@ -1038,14 +1158,14 @@
           },
           {
             "Parent": {
-              "ID": "290602",
+              "ID": "320702",
               "Parameter": "erRegionalOrAz",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=70",
-              "AnswerTypeID": 0,
+              "Question": "Do you want zone redundant or regional ExpressRoute Gateway?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=70",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp73"
             },
@@ -1053,14 +1173,29 @@
           },
           {
             "Parent": {
-              "ID": "290603",
+              "ID": "320703",
               "Parameter": "erRegionalSku",
               "CategoryID": "Hub and Spoke",
-              "Question": " Placeholder Question ID=71",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for regional ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=71",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp74"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320704 ",
+              "Parameter": "expressRouteScaleUnit",
+              "CategoryID": "Hub and Spoke",
+              "Question": "",
+              "AnswerType": "integerInput",
+              "AnswerChoice": 1,
+              "Answers": ["1"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp74"
             },
@@ -1070,28 +1205,28 @@
       },
       {
         "Parent": {
-          "ID": "290700",
+          "ID": "320800",
           "Parameter": "enableAzFw",
           "CategoryID": "Hub and Spoke with Azure Firewall",
-          "Question": " Placeholder Question ID=72",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to enable Azure Firewall?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=72",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp75"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "290701",
+              "ID": "320801",
               "Parameter": "firewallSku",
               "CategoryID": "Hub and Spoke with Azure Firewall",
-              "Question": " Placeholder Question ID=73",
-              "AnswerTypeID": 2,
+              "Question": "Please define your Azure Firewall Tier.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=73",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp76"
             },
@@ -1099,14 +1234,14 @@
           },
           {
             "Parent": {
-              "ID": "290702",
+              "ID": "320802",
               "Parameter": "subnetMaskForAzFw",
               "CategoryID": "Hub and Spoke with Azure Firewall",
-              "Question": " Placeholder Question ID=74",
-              "AnswerTypeID": 2,
+              "Question": "Please define your subnet mask for Azure Firewall.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=74",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp77"
             },
@@ -1114,14 +1249,14 @@
           },
           {
             "Parent": {
-              "ID": "290703",
+              "ID": "320803",
               "Parameter": "firewallZones",
               "CategoryID": "Hub and Spoke with Azure Firewall",
-              "Question": " Placeholder Question ID=75",
-              "AnswerTypeID": 2,
+              "Question": "In which Availability Zones would you like to deploy your Azure Firewall?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=75",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp78"
             },
@@ -1129,14 +1264,14 @@
           },
           {
             "Parent": {
-              "ID": "290704",
+              "ID": "320804",
               "Parameter": "enableAzFwDnsProxy",
               "CategoryID": "Hub and Spoke with Azure Firewall",
-              "Question": " Placeholder Question ID=76",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to Enable Azure Firewall as a DNS Proxy?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=76",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp79"
             },
@@ -1146,14 +1281,14 @@
       },
       {
         "Parent": {
-          "ID": "290800",
+          "ID": "320900",
           "Parameter": "connectivityLocation",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=77",
-          "AnswerTypeID": 2,
+          "Question": "Please define the location address for Connectivity (required for vWAN Hub).",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=77",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp80"
         },
@@ -1161,14 +1296,14 @@
       },
       {
         "Parent": {
-          "ID": "290900",
+          "ID": "321000",
           "Parameter": "connectivitySubscriptionId",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=78",
-          "AnswerTypeID": 2,
+          "Question": "Please define your selected Subscription for Connectivity.",
+          "AnswerType": "stringInput",
           "AnswerChoice": "<placeholder>",
-          "Answers": [""],
-          "Explanation": "Explanation Placeholder ID=78",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp81"
         },
@@ -1176,14 +1311,29 @@
       },
       {
         "Parent": {
-          "ID": "291000",
+          "ID": "321100",
+          "Parameter": "addressPrefix",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "What is your address prefix for Virtual WAN",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "<placeholder>",
+          "Answers": ["<placeholder>"],
+          "Explanation": "Explanation Placeholder",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp81"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321200",
           "Parameter": "enablePrivateDnsZones",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=79",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to deploy private DNS Zones?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=79",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp82"
         },
@@ -1191,14 +1341,14 @@
       },
       {
         "Parent": {
-          "ID": "291100",
+          "ID": "321300",
           "Parameter": "enableDdoS",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": "Do you want to protect your network against mailcious high volume attacks?",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to protect your network against mailcious high volume attacks using DDoS Network Protection?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=80",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp83"
         },
@@ -1206,28 +1356,28 @@
       },
       {
         "Parent": {
-          "ID": "291200",
+          "ID": "321400",
           "Parameter": "enableVpnGw",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=81",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to Deploy a VPN Gateway?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=81",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp84"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "291201",
+              "ID": "321401",
               "Parameter": "subnetMaskForGw",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=82",
-              "AnswerTypeID": 2,
+              "Question": "Please define your subnet mask for VPN Gateway.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=82",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp85"
             },
@@ -1235,14 +1385,14 @@
           },
           {
             "Parent": {
-              "ID": "291202",
+              "ID": "321402",
               "Parameter": "gwAzSku",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=83",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for zone redundant VPN Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=83",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp86"
             },
@@ -1250,14 +1400,14 @@
           },
           {
             "Parent": {
-              "ID": "291203",
+              "ID": "321403",
               "Parameter": "gwRegionalOrAz",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=84",
-              "AnswerTypeID": 0,
+              "Question": "Do you want zone redundant or regional VPN Gateway?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=84",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp87"
             },
@@ -1265,16 +1415,31 @@
           },
           {
             "Parent": {
-              "ID": "291204",
+              "ID": "321404",
               "Parameter": "gwRegionalSku",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=85",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for regional VPN Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=85",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp88"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321405",
+              "Parameter": "vpnGateWayScaleUnit",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Placeholder Question",
+              "AnswerType": "",
+              "AnswerChoice": 1,
+              "Answers": ["1"],
+              "Explanation": "Explanation Placeholder",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp89"
             },
             "Childs": []
           }
@@ -1282,28 +1447,28 @@
       },
       {
         "Parent": {
-          "ID": "291300",
+          "ID": "321500",
           "Parameter": "enableErGw",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=86",
-          "AnswerTypeID": 0,
+          "Question": "Do you want an Express Route Gateway?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=86",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp89"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "291301",
+              "ID": "321501",
               "Parameter": "erAzSku",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=87",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for zone redundant ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=87",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp90"
             },
@@ -1311,14 +1476,14 @@
           },
           {
             "Parent": {
-              "ID": "291302",
+              "ID": "321502",
               "Parameter": "erRegionalOrAz",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=88",
-              "AnswerTypeID": 0,
+              "Question": "Do you want zone redundant or regional ExpressRoute Gateway?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=88",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp91"
             },
@@ -1326,16 +1491,31 @@
           },
           {
             "Parent": {
-              "ID": "291303",
+              "ID": "321503",
               "Parameter": "erRegionalSku",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=89",
-              "AnswerTypeID": 2,
+              "Question": "What is your SKU for regional ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=89",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp92"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321504",
+              "Parameter": "expressRouteScaleUnit",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Placeholder Question",
+              "AnswerType": "integerInput",
+              "AnswerChoice": 1,
+              "Answers": ["1"],
+              "Explanation": "Explanation Placeholder",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp93"
             },
             "Childs": []
           }
@@ -1343,28 +1523,28 @@
       },
       {
         "Parent": {
-          "ID": "291400",
+          "ID": "321600",
           "Parameter": "enableAzFw",
           "CategoryID": "Virtual WAN (Microsoft managed)",
-          "Question": " Placeholder Question ID=90",
-          "AnswerTypeID": 0,
+          "Question": "Do you want to deploy Azure Firewall?",
+          "AnswerType": "boolean",
           "AnswerChoice": true,
-          "Answers": [true, false],
-          "Explanation": "Explanation Placeholder ID=90",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp93"
         },
         "Childs": [
           {
             "Parent": {
-              "ID": "291401",
+              "ID": "321601",
               "Parameter": "firewallSku",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=91",
-              "AnswerTypeID": 2,
+              "Question": "Please select your Azure Firewall Tier.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=91",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp94"
             },
@@ -1372,14 +1552,14 @@
           },
           {
             "Parent": {
-              "ID": "291402",
+              "ID": "321602",
               "Parameter": "subnetMaskForAzFw",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=92",
-              "AnswerTypeID": 2,
+              "Question": "Please define your Subnet Mask for Azure Firewall.",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=92",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp95"
             },
@@ -1387,14 +1567,14 @@
           },
           {
             "Parent": {
-              "ID": "291403",
+              "ID": "321603",
               "Parameter": "firewallZones",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=93",
-              "AnswerTypeID": 2,
+              "Question": "In which Availability Zones would you like to deploy your Azure Firewall?",
+              "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
-              "Answers": [""],
-              "Explanation": "Explanation Placeholder ID=93",
+              "Answers": ["<placeholder>"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp96"
             },
@@ -1402,14 +1582,14 @@
           },
           {
             "Parent": {
-              "ID": "291404",
+              "ID": "321604",
               "Parameter": "enableAzFwDnsProxy",
               "CategoryID": "Virtual WAN (Microsoft managed)",
-              "Question": " Placeholder Question ID=94",
-              "AnswerTypeID": 0,
+              "Question": "Do you want to Enable Azure Firewall as a DNS Proxy?",
+              "AnswerType": "boolean",
               "AnswerChoice": true,
-              "Answers": [true, false],
-              "Explanation": "Explanation Placeholder ID=94",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp97"
             },
@@ -1421,16 +1601,91 @@
   },
   {
     "Parent": {
-      "ID": "300000",
-      "Parameter": "",
+      "ID": "330000",
+      "Parameter": " ",
       "CategoryID": "No Hybrid Connectivity",
-      "Question": " Placeholder Question ID=95",
-      "AnswerTypeID": "",
+      "Question": "Placeholder Question ID=95",
+      "AnswerType": "",
       "AnswerChoice": "",
-      "Answers": "",
-      "Explanation": "Explanation Placeholder ID=95",
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp98"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "340000",
+      "Parameter": "enterpriseScaleCompanyPrefix",
+      "CategoryID": "Azure Core Setup",
+      "Question": "What is the naming convention prefix for your resources?",
+      "AnswerType": "",
+      "AnswerChoice": "<placeholder>",
+      "Answers": ["<placeholder>"],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp99"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "350000",
+      "Parameter": "singlePlatformSubscriptionId",
+      "CategoryID": "Azure Core Setup",
+      "Question": "Insert your single subscription ID",
+      "AnswerType": "",
+      "AnswerChoice": "<placeholder>",
+      "Answers": ["<placeholder>"],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp100"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "360000",
+      "Parameter": "telemetryOptOut",
+      "CategoryID": "Azure Core Setup",
+      "Question": "Do you want to send diagnostic data to Microsoft to enhance our services?",
+      "AnswerType": "",
+      "AnswerChoice": true,
+      "Answers": [" Yes", "No"],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp101"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "370000",
+      "Parameter": "currentDateTimeUtcNow",
+      "CategoryID": "Metadata",
+      "Question": " ",
+      "AnswerType": " ",
+      "AnswerChoice": "",
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp102"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "380000",
+      "Parameter": "delayCount",
+      "CategoryID": "Metadata",
+      "Question": " ",
+      "AnswerType": " ",
+      "AnswerChoice": "",
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp103"
     },
     "Childs": []
   }

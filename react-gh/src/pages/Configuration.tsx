@@ -79,12 +79,12 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-            <PrimaryButton
-              text="Deploy!"
-              onClick={HandleClickAsLink("../Deployment")}
-              allowDisabledFocus
-              style={{ marginTop: "20px" }}
-            />
+          <PrimaryButton
+            text="Deploy!"
+            onClick={HandleClickAsLink("../Deployment")}
+            allowDisabledFocus
+            style={{ marginTop: "20px" }}
+          />
         </Stack.Item>
       </Stack>
 
@@ -95,26 +95,23 @@ const Configuration = () => {
         onLinkClick={setLastHeader}
         style={{ marginTop: "25px" }}
       >
-        <PivotItem headerText="Network Topology & Connectivity">
-          {categoryQuestions("Network topology and connectivity")}
-        </PivotItem>
-        <PivotItem headerText="Landing Zone Configuration">
-        {categoryQuestions("Landing zones configuration")}
-        </PivotItem>
-        {/* <PivotItem headerText="Compute">
-          <Label styles={labelStyles}>Compute Pivot #4</Label>
-        </PivotItem> */}
-        <PivotItem headerText="Identity">
-          {categoryQuestions("Identity")}
-        </PivotItem>
-        <PivotItem headerText="Platform DevOps & Automation">
-        {categoryQuestions("Platform DevOps and automation")}
+        <PivotItem headerText="Azure Core Setup">
+          {categoryQuestions("Azure Core setup")}
         </PivotItem>
         <PivotItem headerText="Platform Management, Security, and Governance">
           {categoryQuestions("Platform management, security, and governance")}
         </PivotItem>
-        <PivotItem headerText="No Hybrid Connectivity">
-          {categoryQuestions("No Hybrid Connectivity")}
+        <PivotItem headerText="Platform DevOps & Automation">
+          {categoryQuestions("Platform DevOps and automation")}
+        </PivotItem>
+        <PivotItem headerText="Identity">
+          {categoryQuestions("Identity")}
+        </PivotItem>
+        <PivotItem headerText="Network Topology & Connectivity">
+          {categoryQuestions("Network topology and connectivity")}
+        </PivotItem>
+        <PivotItem headerText="Landing Zone Configuration">
+          {categoryQuestions("Landing zones configuration")}
         </PivotItem>
       </Pivot>
       {/* <Separator /> */}
