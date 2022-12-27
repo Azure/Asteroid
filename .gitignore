@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules/
 /.pnp
 .pnp.js
 
@@ -9,6 +8,8 @@ node_modules/
 /coverage
 
 # production
+react-gh/build/**
+react-gh/package-lock.json
 react-gh/build/**
 react-gh/package-lock.json
 
@@ -25,3 +26,4 @@ yarn-error.log*
 
 react-gh/package-lock.json
 node_modules/.package-lock.json
+
