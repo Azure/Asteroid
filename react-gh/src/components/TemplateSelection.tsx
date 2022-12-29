@@ -12,6 +12,8 @@ import { ReusableCard, ReusableEndCard } from "../components/Card";
 import { ArrowUndoRegular } from "@fluentui/react-icons";
 import { Button } from "@fluentui/react-components";
 
+import { flatMapSelecter, setJsonData } from "../utils/helpers/jsonHelper";
+
 export var state = {
   endPublic: false,
   stepHybrid: false,
@@ -33,6 +35,18 @@ class TemplateSelection extends Component {
     endGov: false,
   };
 
+  dataUpdater = () => {
+    state = this.state;
+    const newData = flatMapSelecter(
+      state.endPublic,
+      state.endHubAndSpokeWithFirewall,
+      state.endHubAndSpokeWithoutFirewall,
+      state.endVWAN
+    );
+
+    setJsonData(newData);
+  };
+
   handlePublic = () => {
     this.setState(
       {
@@ -44,7 +58,7 @@ class TemplateSelection extends Component {
         endVWAN: false,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
 
@@ -59,7 +73,7 @@ class TemplateSelection extends Component {
         endVWAN: false,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
 
@@ -74,7 +88,7 @@ class TemplateSelection extends Component {
         endVWAN: false,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
 
@@ -89,7 +103,7 @@ class TemplateSelection extends Component {
         endVWAN: false,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
   handleHubAndSpokeWithoutFirewall = () => {
@@ -103,7 +117,7 @@ class TemplateSelection extends Component {
         endVWAN: false,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
 
@@ -118,34 +132,38 @@ class TemplateSelection extends Component {
         endVWAN: true,
         endGov: false,
       },
-      () => (state = this.state)
+      () => this.dataUpdater
     );
   };
 
   handleGov = () => {
-    this.setState({
-      endPublic: false,
-      stepHybrid: false,
-      stepHubAndSpoke: false,
-      endHubAndSpokeWithFirewall: false,
-      endHubAndSpokeWithoutFirewall: false,
-      endVWAN: false,
-      endGov: true,
-    });
-    state = this.state;
+    this.setState(
+      {
+        endPublic: false,
+        stepHybrid: false,
+        stepHubAndSpoke: false,
+        endHubAndSpokeWithFirewall: false,
+        endHubAndSpokeWithoutFirewall: false,
+        endVWAN: false,
+        endGov: true,
+      },
+      () => this.dataUpdater
+    );
   };
 
   handleUndo = () => {
-    this.setState({
-      endPublic: false,
-      stepHybrid: false,
-      stepHubAndSpoke: false,
-      endHubAndSpokeWithFirewall: false,
-      endHubAndSpokeWithoutFirewall: false,
-      endVWAN: false,
-      endGov: false,
-    });
-    state = this.state;
+    this.setState(
+      {
+        endPublic: false,
+        stepHybrid: false,
+        stepHubAndSpoke: false,
+        endHubAndSpokeWithFirewall: false,
+        endHubAndSpokeWithoutFirewall: false,
+        endVWAN: false,
+        endGov: false,
+      },
+      () => this.dataUpdater
+    );
   };
 
   render() {

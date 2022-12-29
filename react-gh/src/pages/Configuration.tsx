@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Stack, IStackTokens, Breadcrumb } from "@fluentui/react";
+import { Stack, Breadcrumb } from "@fluentui/react";
 import {
   Button,
   TabList,
@@ -11,18 +11,15 @@ import {
   webLightTheme,
   FluentProvider,
   Divider,
+  tokens,
 } from "@fluentui/react-components";
 
 // Local Imports
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
-import { formaterDonnees } from "../utils/helpers/jsonGenerator";
-import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
 
 // Import: Parameters Metadata
-const deploystr = formaterDonnees("data_path");
-const deploycmd: string = JSON.stringify(deploystr, null, 2);
 
 const Configuration = () => {
   // Selects the theme dependent on the preferred color scheme of user: Light or Dark
@@ -112,6 +109,7 @@ const Configuration = () => {
                 key: "Configuration",
                 isCurrentItem: true,
                 as: "h4",
+                style: { color: tokens.colorNeutralForeground2BrandHover },
               },
             ]}
             ariaLabel="With last item rendered as heading"
@@ -197,7 +195,6 @@ function templateSelecter(
   HubAndSpokeWithoutFirewall: boolean,
   VWAN: boolean
 ) {
-  console.log(state);
   if (state.endPublic === true) {
     return CategoryQuestions(
       "No Hybrid Connectivity",
