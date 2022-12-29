@@ -8,9 +8,13 @@ import { TitleBar } from "./components/TitleBar";
 import { App } from "./pages/App";
 import Configuration from "./pages/Configuration";
 import { Deployment } from "./pages/Deployment";
-import { currentTheme } from "./utils/styles/theme";
 
 import { FluentProvider } from "@fluentui/react-components";
+
+import { webLightTheme, webDarkTheme } from "@fluentui/react-components";
+
+export const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+export const currentTheme = dark ? webDarkTheme : webLightTheme;
 
 // Selects the theme dependent on the preferred color scheme of user: Light or Dark
 
