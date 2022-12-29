@@ -5,5 +5,3 @@ react-gh/build/**
 react-gh/package-lock.json
 node_modules/package-lock.json
 react-gh/node_modules/.cache/
-
-
