@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@fluentui/react";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Routes, Route, HashRouter } from "react-router-dom";
@@ -9,32 +8,45 @@ import { TitleBar } from "./components/TitleBar";
 import { App } from "./pages/App";
 import Configuration from "./pages/Configuration";
 import { Deployment } from "./pages/Deployment";
-import { currentTheme } from "./utils/styles/Theme";
+import { currentTheme } from "./utils/styles/theme";
+
+import { FluentProvider } from "@fluentui/react-components";
 
 // Selects the theme dependent on the preferred color scheme of user: Light or Dark
 
+document.body.style.margin = "0";
+
 ReactDOM.render(
-  <ThemeProvider applyTo="body" theme={currentTheme} >
-    <React.StrictMode >
+  <FluentProvider theme={currentTheme}>
+    <React.StrictMode>
       <div
         className="flex-wrapper"
         style={{
           display: "flex",
+          padding: "10px",
           minHeight: "100vh",
           flexDirection: "column",
           justifyContent: "flex-start",
         }}
       >
-        <div className="header" style={{
-          width: "90%",
-          alignSelf: "center",
-        }}>
+        <div
+          className="header"
+          style={{
+            width: "90%",
+            alignSelf: "center",
+          }}
+        >
           <TitleBar />
         </div>
-        <div className="content" style={{
-          width: "90%",
-          alignSelf: "center",
-        }}>
+        <div
+          className="content"
+          style={{
+            width: "90%",
+            alignSelf: "center",
+            margin: "0",
+            padding: "10px",
+          }}
+        >
           <HashRouter>
             <Routes>
               <Route path="/" element={<App />} />
@@ -53,11 +65,6 @@ ReactDOM.render(
         </div>
       </div>
     </React.StrictMode>
-  </ThemeProvider>,
+  </FluentProvider>,
   document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();

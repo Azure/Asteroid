@@ -1,8 +1,4 @@
-import { AzureThemeDark, AzureThemeLight } from "@fluentui/azure-themes";
+import { webLightTheme, webDarkTheme } from "@fluentui/react-components";
 
 export const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight;
-
-export const currentTheme = { semanticColors, palette };
-export const currentSemanticColors = semanticColors;
-export const currentPalette = palette;
+export const currentTheme = dark ? webDarkTheme : webLightTheme;

@@ -1,62 +1,102 @@
 import * as React from "react";
+import { Stack, IStackTokens, Breadcrumb } from "@fluentui/react";
 import {
-  Pivot,
-  PivotItem,
-  Separator,
-  Stack,
-  IDropdownOption,
-  IDropdownStyles,
-  ILabelStyles,
-  IPivotItemProps,
-  IStyleSet,
-  IStackStyles,
-  IStackTokens,
-  Breadcrumb,
-  PrimaryButton,
-} from "@fluentui/react";
-import { AzureThemeLight, AzureThemeDark } from "@fluentui/azure-themes";
+  Button,
+  TabList,
+  Tab,
+  TabValue,
+  SelectTabData,
+  SelectTabEvent,
+  webDarkTheme,
+  webLightTheme,
+  FluentProvider,
+  Divider,
+} from "@fluentui/react-components";
 
 // Local Imports
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { formaterDonnees } from "../utils/helpers/jsonGenerator";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
-import { categoryQuestions } from "../utils/helpers/questionsBoard";
+import { CategoryQuestions } from "../utils/helpers/questionsBoard";
+import { state } from "../components/TemplateSelection";
 
 // Import: Parameters Metadata
 const deploystr = formaterDonnees("data_path");
 const deploycmd: string = JSON.stringify(deploystr, null, 2);
 
-export const adv_stackstyle = {
-  root: { border: "1px solid", margin: "10px 0", padding: "15px" },
-};
-
 const Configuration = () => {
-  const stackTokens: IStackTokens = { childrenGap: 40 };
-  const [lastHeader, setLastHeader] = React.useState<
-    { props: IPivotItemProps } | undefined
-  >(undefined);
   // Selects the theme dependent on the preferred color scheme of user: Light or Dark
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const { semanticColors, palette } = dark ? AzureThemeDark : AzureThemeLight;
+  const currentTheme = dark ? webDarkTheme : webLightTheme;
 
-  const [copied, setCopied] = React.useState(false);
-  const filename = "deploy.json";
-  const error = false;
+  const [selectedValue, setSelectedValue] =
+    React.useState<TabValue>("conditions");
 
-  function copyIt() {
-    navigator.clipboard.writeText(deploycmd);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
-  }
-  function downloadIt() {
-    function dataUrl(data: undefined) {
-      return "data:x-application/text," + escape(deploycmd);
-    }
-    // window.open(dataUrl());
-  }
+  const onTabSelect = (event: SelectTabEvent, data: SelectTabData) => {
+    setSelectedValue(data.value);
+  };
+
+  const AzureCoreSetup = React.memo(() => (
+    <div role="tabpanel" aria-labelledby="Azure Core Setup">
+      {CategoryQuestions(
+        "Azure Core Setup",
+        "Azure Core Setup",
+        "Azure Core Setup"
+      )}
+    </div>
+  ));
+
+  const PlatformManagementSecurityandGovernance = React.memo(() => (
+    <div
+      role="tabpanel"
+      aria-labelledby="Platform Management Security and Governance"
+    >
+      {CategoryQuestions(
+        "Platform management, security, and governance",
+        "Platform management, security, and governance",
+        "Platform management, security, and governance"
+      )}
+    </div>
+  ));
+
+  const PlatformDevOpsAutomation = React.memo(() => (
+    <div role="tabpanel" aria-labelledby="Platform Devops and Automation">
+      {CategoryQuestions(
+        "Platform DevOps and automation",
+        "Platform DevOps and automation",
+        "Platform DevOps and automation"
+      )}
+    </div>
+  ));
+
+  const Identity = React.memo(() => (
+    <div role="tabpanel" aria-labelledby="Identity">
+      {CategoryQuestions("Identity", "Identity", "Identity")}
+    </div>
+  ));
+
+  const NetworkTopologyConnectivity = React.memo(() => (
+    <div role="tabpanel" aria-labelledby="Network Topology and Connectivity">
+      {templateSelecter(
+        state.endHubAndSpokeWithFirewall,
+        state.endHubAndSpokeWithoutFirewall,
+        state.endVWAN
+      )}
+    </div>
+  ));
+
+  const LandingZoneConfiguration = React.memo(() => (
+    <div role="tabpanel" aria-labelledby="Landing Zone Configuration">
+      {CategoryQuestions(
+        "Landing zones configuration",
+        "Landing zones configuration",
+        "Landing zones configuration"
+      )}
+    </div>
+  ));
 
   return (
-    <main id="main" className="wrapper">
+    <FluentProvider theme={currentTheme}>
       <Stack
         horizontal
         horizontalAlign="space-between"
@@ -79,83 +119,110 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <PrimaryButton
-            text="Deploy!"
+          <Button
             onClick={HandleClickAsLink("../Deployment")}
-            allowDisabledFocus
             style={{ marginTop: "20px" }}
-          />
+          >
+            Deploy!
+          </Button>
         </Stack.Item>
       </Stack>
+      <div>
+        <TabList
+          selectedValue={selectedValue}
+          onTabSelect={onTabSelect}
+          defaultSelectedValue="AzureCoreSetup"
+        >
+          <Tab id="AzureCoreSetup" value="AzureCoreSetup">
+            {" "}
+            Azure Core Setup{" "}
+          </Tab>
+          <Tab
+            id="PlatformManagementSecurityandGovernance"
+            value="PlatformManagementSecurityandGovernance"
+          >
+            {" "}
+            Platform Management, Security, and Governance{" "}
+          </Tab>
+          <Tab id="PlatformDevOpsAutomation" value="PlatformDevOpsAutomation">
+            {" "}
+            Platform DevOps & Automation{" "}
+          </Tab>
+          <Tab id="Identity" value="Identity">
+            {" "}
+            Identity{" "}
+          </Tab>
+          {state.stepHybrid === true && (
+            <Tab
+              id="NetworkTopologyConnectivity"
+              value="NetworkTopologyConnectivity"
+            >
+              Network Topology & Connectivity
+            </Tab>
+          )}
 
-      <Pivot
-        aria-label="OnChange Pivot Example"
-        linkSize="normal"
-        linkFormat="tabs"
-        onLinkClick={setLastHeader}
-        style={{ marginTop: "25px" }}
-      >
-        <PivotItem headerText="Azure Core Setup">
-          {categoryQuestions("Azure Core setup")}
-        </PivotItem>
-        <PivotItem headerText="Platform Management, Security, and Governance">
-          {categoryQuestions("Platform management, security, and governance")}
-        </PivotItem>
-        <PivotItem headerText="Platform DevOps & Automation">
-          {categoryQuestions("Platform DevOps and automation")}
-        </PivotItem>
-        <PivotItem headerText="Identity">
-          {categoryQuestions("Identity")}
-        </PivotItem>
-        <PivotItem headerText="Network Topology & Connectivity">
-          {categoryQuestions("Network topology and connectivity")}
-        </PivotItem>
-        <PivotItem headerText="Landing Zone Configuration">
-          {categoryQuestions("Landing zones configuration")}
-        </PivotItem>
-      </Pivot>
-      {/* <Separator /> */}
-      <Stack
-        horizontalAlign="center"
-        verticalAlign="center"
-        verticalFill
-        styles={stackStyles}
-        tokens={stackTokens}
-      >
-        {/* <ProgressBar /> */}
-        <Separator />
-        <ExplanationButton
-          headerText={""}
-          explanationText={""}
-          videoTitle={""}
-          explanationVideo={""}
-        />
-      </Stack>
-    </main>
+          <Tab id="LandingZoneConfiguration" value="LandingZoneConfiguration">
+            {" "}
+            Landing Zone Configuration{" "}
+          </Tab>
+        </TabList>
+        <div>
+          {selectedValue === "AzureCoreSetup" && <AzureCoreSetup />}
+          {selectedValue === "PlatformManagementSecurityandGovernance" && (
+            <PlatformManagementSecurityandGovernance />
+          )}
+          {selectedValue === "PlatformDevOpsAutomation" && (
+            <PlatformDevOpsAutomation />
+          )}
+          {selectedValue === "Identity" && <Identity />}
+          {selectedValue === "NetworkTopologyConnectivity" && (
+            <NetworkTopologyConnectivity />
+          )}
+          {selectedValue === "LandingZoneConfiguration" && (
+            <LandingZoneConfiguration />
+          )}
+        </div>
+      </div>
+
+      <div>
+        <Divider appearance="strong"></Divider>
+      </div>
+    </FluentProvider>
   );
 };
 export default Configuration;
 
-// Components
-const dropdownStyles: Partial<IDropdownStyles> = {
-  dropdown: { width: 200 },
-};
-
-const options: IDropdownOption[] = [
-  { key: "temp1", text: "1.0" },
-  { key: "temp2", text: "1.1" },
-  { key: "temp3", text: "1.2" },
-];
-
-// Styles & constants
-const stackStyles: Partial<IStackStyles> = {
-  root: {
-    width: "auto",
-    margin: "0 auto",
-    textAlign: "center",
-    color: "#605e5c",
-  },
-};
-const labelStyles: Partial<IStyleSet<ILabelStyles>> = {
-  root: { marginTop: 10 },
-};
+function templateSelecter(
+  HubAndSpokeWithFirewall: boolean,
+  HubAndSpokeWithoutFirewall: boolean,
+  VWAN: boolean
+) {
+  console.log(state);
+  if (state.endPublic === true) {
+    return CategoryQuestions(
+      "No Hybrid Connectivity",
+      "No Hybrid Connectivity",
+      "No Hybrid Connectivity"
+    );
+  } else if (HubAndSpokeWithFirewall || HubAndSpokeWithoutFirewall) {
+    if (HubAndSpokeWithFirewall === true) {
+      return CategoryQuestions(
+        "Hub and Spoke",
+        "Hub and Spoke",
+        "Hub and Spoke with Azure Firewall"
+      );
+    } else {
+      return CategoryQuestions(
+        "Hub and Spoke",
+        "Hub and Spoke",
+        "Hub and Spoke"
+      );
+    }
+  } else if (VWAN) {
+    return CategoryQuestions(
+      "Hub and Spoke",
+      "Virtual WAN (Microsoft managed)",
+      "Virtual WAN (Microsoft managed)"
+    );
+  }
+}

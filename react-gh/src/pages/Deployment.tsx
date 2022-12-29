@@ -53,11 +53,11 @@ export const Deployment = () => {
     <div>
       <Breadcrumb
         items={[
-          { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
+          // { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
           {
             text: "Configuration",
             key: "Configuration",
-            onClick: HandleClickAsLink("/Configuration"),
+            //onClick: HandleClickAsLink("/Configuration"),
           },
           {
             text: "Deployment",
@@ -77,10 +77,12 @@ export const Deployment = () => {
         onLinkClick={setLastHeader}
         style={{ marginTop: "25px" }}
       >
-        <PivotItem headerText="List View"
+        <PivotItem
+          headerText="List View"
           itemKey="listView"
-          itemIcon="BulletedList">
-          <GroupedDeploymentList/>
+          itemIcon="BulletedList"
+        >
+          <GroupedDeploymentList />
         </PivotItem>
         <PivotItem
           headerText="Code View"
