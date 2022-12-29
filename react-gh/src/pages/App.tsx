@@ -6,7 +6,7 @@ import {
   initializeIcons,
   Breadcrumb,
 } from "@fluentui/react";
-import { Divider, Text } from "@fluentui/react-components";
+import { Divider, Text, tokens } from "@fluentui/react-components";
 
 // Local Imports
 import "./App.css";
@@ -22,7 +22,15 @@ export const App: React.FunctionComponent = () => {
   return (
     <main id="main" className="wrapper">
       <Breadcrumb
-        items={[{ text: "Start", key: "Start", isCurrentItem: true, as: "h1" }]}
+        items={[
+          {
+            text: "Start",
+            key: "Start",
+            isCurrentItem: true,
+            as: "h1",
+            style: { color: tokens.colorNeutralForeground2BrandHover },
+          },
+        ]}
         ariaLabel="With last item rendered as heading"
         overflowAriaLabel="More links"
       />

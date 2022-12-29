@@ -55,42 +55,37 @@ export function CategoryQuestions(
           {renderAnswers(parent.Parent.AnswerType, parent.Parent.Answers)}
           {parent.Childs.map((child) => {
             if (child.Parent.CategoryID.startsWith(childCategory))
-              if (parent.Parent.AnswerChoice === true)
-                return (
-                  <div className="Child Question" style={questionStyle}>
-                    <Label id="QuestionTitle">{child.Parent.Question}</Label>
-                    {renderInfoButton(
-                      child.Parent.ExplanationLearnLink,
-                      child.Parent.Explanation
-                    )}
-                    {renderAnswers(
-                      child.Parent.AnswerType,
-                      child.Parent.Answers
-                    )}
-                    {child.Childs.map((grandchild) => {
-                      if (grandchild.Parent.CategoryID === grandChildCategory)
-                        if (child.Parent.AnswerChoice === true)
-                          return (
-                            <div
-                              className="GrandChild Question"
-                              style={questionStyle}
-                            >
-                              <Label id="QuestionTitle">
-                                {grandchild.Parent.Question}
-                              </Label>
-                              {renderInfoButton(
-                                grandchild.Parent.ExplanationLearnLink,
-                                grandchild.Parent.Explanation
-                              )}
-                              {renderAnswers(
-                                grandchild.Parent.AnswerType,
-                                grandchild.Parent.Answers
-                              )}
-                            </div>
-                          );
-                    })}
-                  </div>
-                );
+              return (
+                <div className="Child Question" style={questionStyle}>
+                  <Label id="QuestionTitle">{child.Parent.Question}</Label>
+                  {renderInfoButton(
+                    child.Parent.ExplanationLearnLink,
+                    child.Parent.Explanation
+                  )}
+                  {renderAnswers(child.Parent.AnswerType, child.Parent.Answers)}
+                  {child.Childs.map((grandchild) => {
+                    if (grandchild.Parent.CategoryID === grandChildCategory)
+                      return (
+                        <div
+                          className="GrandChild Question"
+                          style={questionStyle}
+                        >
+                          <Label id="QuestionTitle">
+                            {grandchild.Parent.Question}
+                          </Label>
+                          {renderInfoButton(
+                            grandchild.Parent.ExplanationLearnLink,
+                            grandchild.Parent.Explanation
+                          )}
+                          {renderAnswers(
+                            grandchild.Parent.AnswerType,
+                            grandchild.Parent.Answers
+                          )}
+                        </div>
+                      );
+                  })}
+                </div>
+              );
           })}
         </div>
       );

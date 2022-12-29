@@ -1,5 +1,5 @@
 import { CodeBlock, atomOneDark, atomOneLight } from "react-code-blocks";
-import { currentTheme } from "../index";
+import { dark } from "../index";
 
 //  Interface
 interface CodeboxInterface {
@@ -21,7 +21,7 @@ export const Codebox: React.FunctionComponent<CodeboxInterface> = ({
       language={language}
       showLineNumbers={showLineNumbers}
       startingLineNumber={startingLineNumber}
-      theme={currentTheme}
+      theme={dark ? atomOneDark : atomOneLight}
     />
   );
 };

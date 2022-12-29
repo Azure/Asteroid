@@ -1,68 +1,101 @@
-import * as React from 'react';
-import { GroupedList, IGroup } from '@fluentui/react/lib/GroupedList';
-import { IColumn, DetailsRow } from '@fluentui/react/lib/DetailsList';
-import { Selection, SelectionMode, SelectionZone } from '@fluentui/react/lib/Selection';
-import { IToggleStyles } from '@fluentui/react/lib/Toggle';
-import { useConst } from '@fluentui/react-hooks';
-import { createListItems, createGroups, IExampleItem } from '@fluentui/example-data';
-
-const toggleStyles: Partial<IToggleStyles> = { root: { marginBottom: '20px' } };
-const groupCount = 3;
-const groupDepth = 3;
-const items = createListItems(Math.pow(groupCount, groupDepth + 1));
-const columns = Object.keys(items[0])
-  .slice(0, 3)
-  .map(
-    (key: string): IColumn => ({
-      key: key,
-      name: key,
-      fieldName: key,
-      minWidth: 300,
-    }),
-  );
-
-const groups = createGroups(groupCount, groupDepth, 0, groupCount);
+import { FluentProvider } from "@fluentui/react-components";
+import * as React from "react";
+import { currentTheme } from "../index";
+import {
+  ColumnDefinition,
+  TableCellLayout,
+  createColumn,
+  DataGrid,
+  DataGridBody,
+  DataGridRow,
+  DataGridHeader,
+  DataGridCell,
+  DataGridHeaderCell,
+  RowState,
+} from "@fluentui/react-components/unstable";
+import { DataItem, flatFilteredData } from "../utils/helpers/jsonHelper";
 
 export const GroupedDeploymentList: React.FunctionComponent = () => {
-  const selection = useConst(() => {
-    const s = new Selection();
-    s.setItems(items, true);
-    return s;
-  });
+  return (
+    <FluentProvider theme={currentTheme}>
+      <br />
+      <br />
+      {Sort()}
+    </FluentProvider>
+  );
+};
 
-  const onRenderCell = (
-    nestingDepth?: number,
-    item?: IExampleItem,
-    itemIndex?: number,
-    group?: IGroup,
-  ): React.ReactNode => {
-    return item && typeof itemIndex === 'number' && itemIndex > -1 ? (
-      <DetailsRow
-        columns={columns}
-        groupNestingDepth={nestingDepth}
-        item={item}
-        itemIndex={itemIndex}
-        selection={selection}
-        selectionMode={SelectionMode.none}
-        compact={false}
-        group={group}
-      />
-    ) : null;
-  };
+export const Sort = () => {
+  const columns: ColumnDefinition<DataItem>[] = React.useMemo(
+    () => [
+      createColumn<DataItem>({
+        columnId: "category",
+        compare: (a, b) => {
+          return a.CategoryID.localeCompare(b.CategoryID);
+        },
+        renderHeaderCell: () => {
+          return "Category";
+        },
+        renderCell: (item) => {
+          return item.CategoryID;
+        },
+      }),
+      createColumn<DataItem>({
+        columnId: "parameter",
+        compare: (a, b) => {
+          return a.Parameter.localeCompare(b.Parameter);
+        },
+        renderHeaderCell: () => {
+          return "Parameter";
+        },
+        renderCell: (item) => {
+          return <TableCellLayout>{item.Parameter}</TableCellLayout>;
+        },
+      }),
+      createColumn<DataItem>({
+        columnId: "value",
+        compare: (a, b) => {
+          return String(a.AnswerChoice).localeCompare(String(b.AnswerChoice));
+        },
+        renderHeaderCell: () => {
+          return "Value";
+        },
+        renderCell: (item) => {
+          return <TableCellLayout>{item.AnswerChoice}</TableCellLayout>;
+        },
+      }),
+    ],
+    []
+  );
 
   return (
-    <div>
-      <SelectionZone selection={selection} selectionMode={SelectionMode.none}>
-        <GroupedList
-          items={items}
-          // eslint-disable-next-line react/jsx-no-bind
-          onRenderCell={onRenderCell}
-          selection={selection}
-          selectionMode={SelectionMode.none}
-          groups={groups}
-          compact={false}
-        />
-      </SelectionZone>
-    </div>
+    <DataGrid items={flatFilteredData} columns={columns} sortable>
+      <DataGridHeader>
+        <DataGridRow>
+          {({ renderHeaderCell }: ColumnDefinition<DataItem>) => (
+            <DataGridHeaderCell>{renderHeaderCell()}</DataGridHeaderCell>
+          )}
+        </DataGridRow>
+      </DataGridHeader>
+      <DataGridBody>
+        {({ item, rowId }: RowState<DataItem>) => (
+          <DataGridRow key={rowId}>
+            {({ renderCell }: ColumnDefinition<DataItem>) => (
+              <DataGridCell>{renderCell(item)}</DataGridCell>
+            )}
+          </DataGridRow>
+        )}
+      </DataGridBody>
+    </DataGrid>
   );
+};
+Sort.parameters = {
+  docs: {
+    description: {
+      story: [
+        "To enable sorting, the `sortable` prop needs to be set. The API surface is directly",
+        "equivalent to the usage of `useTableFeatures`.",
+      ].join("\n"),
+    },
+  },
 };
