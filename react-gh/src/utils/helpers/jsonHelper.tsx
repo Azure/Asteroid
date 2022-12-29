@@ -21,12 +21,7 @@ export type DataStructure = {
   Childs: DataStructure[];
 };
 
-export var flatFilteredData = flatMapSelecter(
-  state.endPublic,
-  state.endHubAndSpokeWithFirewall,
-  state.endHubAndSpokeWithoutFirewall,
-  state.endVWAN
-);
+export var flatFilteredData: DataItem[] = [];
 
 export function setJsonData(newData: DataItem[]) {
   flatFilteredData = newData;
