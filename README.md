@@ -1,8 +1,8 @@
 # ASTEROID Project
-AzureStartToolEnablingRapidOnboardingInsteadofDevastation
+
 ## Accelerate clients journey to the cloud!
 
-![image](https://user-images.githubusercontent.com/33814219/198015061-e55f69c2-10aa-4321-ba9a-cec37fe8c2cc.png)
+AzureStartToolEnablingRapidOnboardingInsteadofDevastation
 
 # Project
 
@@ -18,7 +18,7 @@ As the maintainer of this project, please make a few updates:
 
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
@@ -32,8 +32,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
+trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
