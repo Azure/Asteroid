@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Asteroid/static/css/main.abd64e84.css",
-    "main.js": "/Asteroid/static/js/main.71675e63.js",
+    "main.css": "/Asteroid/static/css/main.9cb1c0ca.css",
+    "main.js": "/Asteroid/static/js/main.3a02e50f.js",
     "react-syntax-highlighter/refractor-core-import.js": "/Asteroid/static/js/react-syntax-highlighter/refractor-core-import.b35ec86f.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js",
@@ -154,12 +154,16 @@
     "react-syntax-highlighter_languages_refractor_xojo.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_xojo.d2d86286.chunk.js",
     "react-syntax-highlighter_languages_refractor_xquery.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_xquery.1b990588.chunk.js",
     "react-syntax-highlighter_languages_refractor_yaml.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_yaml.e41352d5.chunk.js",
-    "static/media/government.svg": "/Asteroid/static/media/government.b83ce5846303cc2ff0d93b9c6ddb3f66.svg",
-    "static/media/icons-hybrid-cloud.svg": "/Asteroid/static/media/icons-hybrid-cloud.393322c36d2c42863987f8a844179cd1.svg",
-    "static/media/icons-cloud.svg": "/Asteroid/static/media/icons-cloud.4ccfc199db3e32fb73a13496cc0eebd5.svg",
+    "static/media/government.svg": "/Asteroid/static/media/government.d8a3c2e14aa16039bc634946e06b6cde.svg",
+    "static/media/icon-virtual-wans.svg": "/Asteroid/static/media/icon-virtual-wans.d245fd14ac84db2c5a61463cb6946b3b.svg",
+    "static/media/icons-hybrid-cloud.svg": "/Asteroid/static/media/icons-hybrid-cloud.f461dcff81aa1a9c043cdba476a0f315.svg",
+    "static/media/icon-workflow.svg": "/Asteroid/static/media/icon-workflow.fc32b2d7fbf08b906a25e1bf0b507e5f.svg",
+    "static/media/icon-firewall.svg": "/Asteroid/static/media/icon-firewall.0eb7c233bcbc05ff4d01cac5620335e9.svg",
+    "static/media/icon-browser.svg": "/Asteroid/static/media/icon-browser.0b85aff5a0978abbd72508084eebbfa2.svg",
+    "static/media/icons-cloud.svg": "/Asteroid/static/media/icons-cloud.bd8953d8a0c094d51882ca4ff30eb3b1.svg",
     "index.html": "/Asteroid/index.html",
-    "main.abd64e84.css.map": "/Asteroid/static/css/main.abd64e84.css.map",
-    "main.71675e63.js.map": "/Asteroid/static/js/main.71675e63.js.map",
+    "main.9cb1c0ca.css.map": "/Asteroid/static/css/main.9cb1c0ca.css.map",
+    "main.3a02e50f.js.map": "/Asteroid/static/js/main.3a02e50f.js.map",
     "refractor-core-import.b35ec86f.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter/refractor-core-import.b35ec86f.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js.map",
@@ -314,7 +318,7 @@
     "react-syntax-highlighter_languages_refractor_yaml.e41352d5.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_yaml.e41352d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd64e84.css",
-    "static/js/main.71675e63.js"
+    "static/css/main.9cb1c0ca.css",
+    "static/js/main.3a02e50f.js"
   ]
 }
