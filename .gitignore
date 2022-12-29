@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 react-gh/package-lock.json
-node_modules/.package-lock.json
+node_modules/package-lock.json
 
 react-gh/node_modules/.cache/
