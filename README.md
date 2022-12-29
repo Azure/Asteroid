@@ -1,5 +1,7 @@
 # ASTEROID Project
 
+[![Build Status](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_apis/build/status/Azure.Asteroid?branchName=main)](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_build/latest?definitionId=18&branchName=main)
+
 ## Accelerate clients journey to the cloud!
 
 AzureStartToolEnablingRapidOnboardingInsteadofDevastation
