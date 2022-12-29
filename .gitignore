@@ -10,8 +10,6 @@
 # production
 react-gh/build/**
 react-gh/package-lock.json
-react-gh/build/**
-react-gh/package-lock.json
 
 # misc
 .DS_Store
