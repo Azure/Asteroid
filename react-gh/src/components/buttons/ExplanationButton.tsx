@@ -1,5 +1,13 @@
-import { DefaultButton, IIconProps, Panel, PanelType, PrimaryButton } from "@fluentui/react";
-import { useBoolean } from '@fluentui/react-hooks';
+import {
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogTrigger,
+  DialogSurface,
+  DialogBody,
+  DialogContent,
+} from "@fluentui/react-components";
+import { QuestionCircleRegular, Dismiss24Regular } from "@fluentui/react-icons";
 
 //  Interface
 interface ExplenationInterface {
@@ -9,37 +17,45 @@ interface ExplenationInterface {
   explanationVideo: string;
 }
 
-
 //  Component
-export const ExplanationButton: React.FunctionComponent<ExplenationInterface> = ({ headerText, explanationText, videoTitle, explanationVideo }) => {
-  const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
-
-  // Explenation Button with Icon
-  const addFriendIcon: IIconProps = {
-    iconName: 'Unknown',
-    styles: {
-      root: { color: 'white' }
-    }
-  };
-
+export const ExplanationButton: React.FunctionComponent<
+  ExplenationInterface
+> = ({ explanationText, videoTitle, explanationVideo }) => {
   return (
     <div>
-      <DefaultButton
-        iconProps={addFriendIcon}
-        text='Explanation'
-        onClick={openPanel}
-      />
-      <Panel
-        headerText={headerText}
-        isOpen={isOpen}
-        onDismiss={dismissPanel}
-        type={PanelType.medium}
-        // You MUST provide this prop! Otherwise screen readers will just say "button" with no label.
-        closeButtonAriaLabel="Close"
-      >
-        <iframe src={explanationVideo} title={videoTitle} width="560" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-        <p>{explanationText}</p>
-      </Panel>
+      <Dialog>
+        <DialogTrigger disableButtonEnhancement>
+          <Button>Get Explanation</Button>
+        </DialogTrigger>
+        <DialogSurface>
+          <DialogBody>
+            <DialogTitle
+              action={
+                <DialogTrigger action="close">
+                  <Button
+                    appearance="subtle"
+                    aria-label="close"
+                    icon={<Dismiss24Regular />}
+                  />
+                </DialogTrigger>
+              }
+            >
+              We are here to help you.
+            </DialogTitle>
+            <DialogContent>
+              <iframe
+                src={explanationVideo}
+                title={videoTitle}
+                width="545"
+                height="315"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <p>{explanationText}</p>
+            </DialogContent>
+          </DialogBody>
+        </DialogSurface>
+      </Dialog>
     </div>
   );
 };

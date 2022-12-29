@@ -1,16 +1,12 @@
 // React Imports
 import React from "react";
 import {
-  FontWeights,
   Stack,
-  Text,
-  IStackStyles,
   IStackTokens,
-  ITextStyles,
   initializeIcons,
-  Separator,
   Breadcrumb,
 } from "@fluentui/react";
+import { Divider, Text } from "@fluentui/react-components";
 
 // Local Imports
 import "./App.css";
@@ -22,7 +18,6 @@ initializeIcons();
 // App
 export const App: React.FunctionComponent = () => {
   const stackTokens: IStackTokens = { childrenGap: 40 };
-  // setState({ isHubSpoke: false, isHybrid: false });
 
   return (
     <main id="main" className="wrapper">
@@ -34,7 +29,7 @@ export const App: React.FunctionComponent = () => {
       <div
         style={{
           alignSelf: "center",
-          margin: "0 auto",
+          margin: "0",
           minHeight: "10vh",
         }}
       />
@@ -42,17 +37,14 @@ export const App: React.FunctionComponent = () => {
         horizontalAlign="center"
         verticalAlign="center"
         verticalFill
-        styles={stackStyles}
         tokens={stackTokens}
       >
-        <Text variant="large">Get started with your journey to cloud!</Text>
-        <Text variant="large" styles={boldStyle}>
+        <Text size={500}>Get started with your journey to cloud!</Text>
+        <Text size={500} weight="bold">
           How would you decribe your organization?
         </Text>
-        <TemplateSelection/>
-        
-        {/* <ProgressBar /> */}
-        <Separator />
+        <TemplateSelection />
+        <Divider appearance="strong"></Divider>
         <ExplanationButton
           explanationText="Hi & welcome to Asteroid! Please watch the Video to get an understanding of the Asteroid Tool. Public cloud is a cloud computing model in which the cloud infrastructure is owned and operated by a third-party cloud service provider and made available to the general public over the Internet. Public cloud services are typically provided on a pay-as-you-go basis, and the cloud provider is responsible for maintaining the infrastructure, including hardware, software, networking, and data centers."
           explanationVideo="https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/_layouts/15/embed.aspx?UniqueId=b6a73f04-8aa6-4745-ac5e-6693990d1b70&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
@@ -62,17 +54,4 @@ export const App: React.FunctionComponent = () => {
       </Stack>
     </main>
   );
-};
-
-// Styles & constants
-const boldStyle: Partial<ITextStyles> = {
-  root: { fontWeight: FontWeights.semibold },
-};
-const stackStyles: Partial<IStackStyles> = {
-  root: {
-    width: "auto",
-    margin: "0 auto",
-    textAlign: "center",
-    color: "#605e5c",
-  },
 };

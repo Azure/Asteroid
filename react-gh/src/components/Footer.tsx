@@ -1,5 +1,6 @@
 import { mergeStyleSets } from "@fluentui/merge-styles";
-import { Separator, Stack, Link as ReactLink, Text, FontWeights, IStackStyles, IStackTokens, ITextStyles } from "@fluentui/react";
+import { Stack, IStackTokens } from "@fluentui/react";
+import { Text, Link, Divider } from "@fluentui/react-components";
 
 // Footer
 export function Footer() {
@@ -13,23 +14,21 @@ export function Footer() {
     <footer>
       <br />
       <br />
-      <Separator />
-
+      <Divider appearance="strong"></Divider>
+      <br />
       <Stack horizontalAlign="center" verticalAlign="center" verticalFill>
-        <Text variant="large" styles={boldStyle}>
+        <Text size={300} weight="bold">
           Essential links
         </Text>
         <br />
         <Stack horizontal tokens={stackTokens} horizontalAlign="center">
-          <ReactLink href="https://github.com/Azure/Asteroid">
-            Project Github
-          </ReactLink>
-          <ReactLink href="https://github.com/Azure/Enterprise-Scale">
+          <Link href="https://github.com/Azure/Asteroid">Project Github</Link>
+          <Link href="https://github.com/Azure/Enterprise-Scale">
             Azure Enterpise-Scale Reference
-          </ReactLink>
-          <ReactLink href="https://developer.microsoft.com/en-us/fluentui#/controls/web">
+          </Link>
+          <Link href="https://developer.microsoft.com/en-us/fluentui#/controls/web">
             Fluent UI Components
-          </ReactLink>
+          </Link>
         </Stack>
       </Stack>
     </footer>
@@ -37,15 +36,3 @@ export function Footer() {
 }
 
 const stackTokens: IStackTokens = { childrenGap: 40 };
-
-const boldStyle: Partial<ITextStyles> = {
-    root: { fontWeight: FontWeights.semibold },
-  };
-  const stackStyles: Partial<IStackStyles> = {
-    root: {
-      width: "1300px",
-      margin: "0 auto",
-      textAlign: "center",
-      color: "#605e5c",
-    },
-  };
