@@ -37,14 +37,6 @@ class TemplateSelection extends Component {
 
   dataUpdater = () => {
     state = this.state;
-    const newData = flatMapSelecter(
-      state.endPublic,
-      state.endHubAndSpokeWithFirewall,
-      state.endHubAndSpokeWithoutFirewall,
-      state.endVWAN
-    );
-
-    setJsonData(newData);
   };
 
   handlePublic = () => {
@@ -167,6 +159,14 @@ class TemplateSelection extends Component {
   };
 
   render() {
+    setJsonData(
+      flatMapSelecter(
+        state.endPublic,
+        state.endHubAndSpokeWithFirewall,
+        state.endHubAndSpokeWithoutFirewall,
+        state.endVWAN
+      )
+    );
     return (
       <div>
         {!this.state.endPublic &&
