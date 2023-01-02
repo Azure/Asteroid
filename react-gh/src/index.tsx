@@ -5,9 +5,9 @@ import { Footer } from "./components/Footer";
 import { TitleBar } from "./components/TitleBar";
 
 // Local Imports
-import { App } from "./pages/App";
+import App from "./pages/App";
 import Configuration from "./pages/Configuration";
-import { Deployment } from "./pages/Deployment";
+import Deployment from "./pages/Deployment";
 
 import { FluentProvider } from "@fluentui/react-components";
 

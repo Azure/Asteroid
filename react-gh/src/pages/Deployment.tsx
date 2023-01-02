@@ -18,10 +18,7 @@ import {
   Button,
 } from "@fluentui/react-components";
 import { CheckmarkRegular, CopyRegular } from "@fluentui/react-icons";
-import {
-  flatFilteredData,
-  parameterFileGenerator,
-} from "../utils/helpers/jsonHelper";
+import { parameterFileGenerator } from "../utils/helpers/jsonHelper";
 
 var useStyles = makeStyles({
   breadcrumb: {
@@ -29,7 +26,7 @@ var useStyles = makeStyles({
   },
 });
 
-export const Deployment = () => {
+const Deployment = () => {
   const [buttonState, setButtonState] = React.useState(false);
 
   function copyIt() {
@@ -122,8 +119,6 @@ export const Deployment = () => {
   );
 };
 
-const deployCodeBoxContent = JSON.stringify(
-  parameterFileGenerator(flatFilteredData),
-  null,
-  2
-);
+const deployCodeBoxContent = JSON.stringify(parameterFileGenerator(), null, 2);
+
+export default Deployment;

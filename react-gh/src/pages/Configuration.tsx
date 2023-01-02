@@ -74,11 +74,7 @@ const Configuration = () => {
 
   const NetworkTopologyConnectivity = React.memo(() => (
     <div role="tabpanel" aria-labelledby="Network Topology and Connectivity">
-      {templateSelecter(
-        state.endHubAndSpokeWithFirewall,
-        state.endHubAndSpokeWithoutFirewall,
-        state.endVWAN
-      )}
+      {templateSelecter(state.endHubAndSpoke, state.endVWAN)}
     </div>
   ));
 
@@ -190,25 +186,9 @@ const Configuration = () => {
 };
 export default Configuration;
 
-function templateSelecter(
-  HubAndSpokeWithFirewall: boolean,
-  HubAndSpokeWithoutFirewall: boolean,
-  VWAN: boolean
-) {
-  if (state.endPublic === true) {
-    return CategoryQuestions(
-      "No Hybrid Connectivity",
-      "No Hybrid Connectivity",
-      "No Hybrid Connectivity"
-    );
-  } else if (HubAndSpokeWithFirewall || HubAndSpokeWithoutFirewall) {
-    if (HubAndSpokeWithFirewall === true) {
-      return CategoryQuestions(
-        "Hub and Spoke",
-        "Hub and Spoke",
-        "Hub and Spoke with Azure Firewall"
-      );
-    } else {
+function templateSelecter(HubAndSpoke: boolean, VWAN: boolean) {
+  if (HubAndSpoke) {
+    if (HubAndSpoke === true) {
       return CategoryQuestions(
         "Hub and Spoke",
         "Hub and Spoke",

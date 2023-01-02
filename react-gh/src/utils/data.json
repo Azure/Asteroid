@@ -39,7 +39,7 @@
           "Answers": [""],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp5"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -54,7 +54,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solution-agenthealth",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp6"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -69,7 +69,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp7"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -84,7 +84,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp8"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -99,7 +99,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-insights",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp9"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -114,7 +114,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp10"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -129,7 +129,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp11"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -144,7 +144,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp12"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -159,7 +159,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp13"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -174,7 +174,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp14"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -189,7 +189,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp15"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -203,7 +203,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp16"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -218,7 +218,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp17"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -233,7 +233,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp18"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -248,7 +248,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp19"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -263,7 +263,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp20"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -278,7 +278,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp21"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -293,7 +293,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp22"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -308,7 +308,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp23"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -323,7 +323,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp24"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -338,7 +338,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp25"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -353,7 +353,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp26"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -368,7 +368,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp27"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -385,7 +385,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/sentinel/",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp28"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       }
@@ -402,7 +402,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp29"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -417,7 +417,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp30"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -432,7 +432,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp31"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -447,7 +447,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp32"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -462,7 +462,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp33"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -477,7 +477,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp34"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -492,7 +492,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp34"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -507,7 +507,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp35"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -522,7 +522,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp36"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -537,7 +537,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp37"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -552,7 +552,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp38"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -567,7 +567,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp39"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -582,7 +582,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp40"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -597,7 +597,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp41"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -612,7 +612,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp42"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -627,7 +627,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp43"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -642,7 +642,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp44"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -657,7 +657,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp45"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -672,7 +672,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp46"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -687,7 +687,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp47"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -702,7 +702,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp48"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -717,7 +717,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp49"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -732,7 +732,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp50"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -747,7 +747,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp51"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -762,7 +762,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp52"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -777,7 +777,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp53"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -792,7 +792,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp54"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -807,7 +807,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -822,7 +822,7 @@
       "Answers": [" Yes", "Audit", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -837,7 +837,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp55"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": [
       {
@@ -851,7 +851,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp56"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -866,7 +866,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp57"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -881,7 +881,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp58"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -896,7 +896,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp59"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -911,7 +911,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -926,7 +926,7 @@
           "Answers": [""],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -941,7 +941,7 @@
           "Answers": [""],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       }
@@ -958,7 +958,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp61"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": [
       {
@@ -972,7 +972,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp62"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -987,7 +987,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp63"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1002,7 +1002,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp60"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1017,7 +1017,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp64"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1032,7 +1032,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp65"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1047,7 +1047,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp66"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -1061,7 +1061,7 @@
               "Answers": [""],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp67"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1076,7 +1076,7 @@
               "Answers": [""],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp68"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1091,7 +1091,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp69"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1106,7 +1106,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp70"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1121,7 +1121,7 @@
               "Answers": ["1"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp70"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1138,7 +1138,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp71"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -1152,7 +1152,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp72"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1167,7 +1167,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp73"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1182,7 +1182,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp74"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1197,7 +1197,7 @@
               "Answers": ["1"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp74"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1207,28 +1207,28 @@
         "Parent": {
           "ID": "320800",
           "Parameter": "enableAzFw",
-          "CategoryID": "Hub and Spoke with Azure Firewall",
+          "CategoryID": "Hub and Spoke",
           "Question": "Do you want to enable Azure Firewall?",
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp75"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
             "Parent": {
               "ID": "320801",
               "Parameter": "firewallSku",
-              "CategoryID": "Hub and Spoke with Azure Firewall",
+              "CategoryID": "Hub and Spoke",
               "Question": "Please define your Azure Firewall Tier.",
               "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp76"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1236,14 +1236,14 @@
             "Parent": {
               "ID": "320802",
               "Parameter": "subnetMaskForAzFw",
-              "CategoryID": "Hub and Spoke with Azure Firewall",
+              "CategoryID": "Hub and Spoke",
               "Question": "Please define your subnet mask for Azure Firewall.",
               "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp77"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1251,14 +1251,14 @@
             "Parent": {
               "ID": "320803",
               "Parameter": "firewallZones",
-              "CategoryID": "Hub and Spoke with Azure Firewall",
+              "CategoryID": "Hub and Spoke",
               "Question": "In which Availability Zones would you like to deploy your Azure Firewall?",
               "AnswerType": "stringInput",
               "AnswerChoice": "<placeholder>",
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp78"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1266,14 +1266,14 @@
             "Parent": {
               "ID": "320804",
               "Parameter": "enableAzFwDnsProxy",
-              "CategoryID": "Hub and Spoke with Azure Firewall",
+              "CategoryID": "Hub and Spoke",
               "Question": "Do you want to Enable Azure Firewall as a DNS Proxy?",
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp79"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1290,7 +1290,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp80"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1305,7 +1305,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp81"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1320,7 +1320,7 @@
           "Answers": ["<placeholder>"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp81"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1335,7 +1335,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp82"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1350,7 +1350,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp83"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": []
       },
@@ -1365,7 +1365,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp84"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -1379,7 +1379,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp85"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1394,7 +1394,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp86"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1409,7 +1409,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp87"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1424,7 +1424,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp88"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1439,7 +1439,7 @@
               "Answers": ["1"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp89"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1456,7 +1456,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp89"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -1470,7 +1470,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp90"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1485,7 +1485,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp91"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1500,7 +1500,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp92"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1515,7 +1515,7 @@
               "Answers": ["1"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp93"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1532,7 +1532,7 @@
           "Answers": [" Yes", "No"],
           "Explanation": "Explanation Placeholder",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp93"
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
         "Childs": [
           {
@@ -1546,7 +1546,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp94"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1561,7 +1561,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp95"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1576,7 +1576,7 @@
               "Answers": ["<placeholder>"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp96"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           },
@@ -1591,7 +1591,7 @@
               "Answers": [" Yes", "No"],
               "Explanation": "Explanation Placeholder",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp97"
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
             "Childs": []
           }
@@ -1610,7 +1610,7 @@
       "Answers": ["<placeholder>"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp99"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -1625,7 +1625,7 @@
       "Answers": ["<placeholder>"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp100"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -1640,7 +1640,7 @@
       "Answers": [" Yes", "No"],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp101"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -1655,7 +1655,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp102"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   },
@@ -1670,7 +1670,7 @@
       "Answers": [""],
       "Explanation": "Explanation Placeholder",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
-      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp103"
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
     "Childs": []
   }
