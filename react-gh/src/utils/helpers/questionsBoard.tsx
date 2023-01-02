@@ -6,10 +6,11 @@ import {
   RadioGroup,
   Radio,
   Link,
-  Divider,
+  RadioOnChangeData,
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
-
+import { updateKeyMap } from "./jsonHelper";
+import * as React from "react";
 // Local imports
 import data from "../data.json";
 
@@ -30,7 +31,6 @@ const styles = makeStyles({
 });
 
 // Styles
-
 const questionStyle = {
   paddingLeft: "100px",
   width: "400px",
@@ -52,7 +52,11 @@ export function CategoryQuestions(
             parent.Parent.ExplanationLearnLink,
             parent.Parent.Explanation
           )}
-          {renderAnswers(parent.Parent.AnswerType, parent.Parent.Answers)}
+          {RenderAnswers(
+            parent.Parent.Parameter,
+            parent.Parent.AnswerType,
+            parent.Parent.Answers
+          )}
           {parent.Childs.map((child) => {
             if (child.Parent.CategoryID.startsWith(childCategory))
               return (
@@ -62,7 +66,11 @@ export function CategoryQuestions(
                     child.Parent.ExplanationLearnLink,
                     child.Parent.Explanation
                   )}
-                  {renderAnswers(child.Parent.AnswerType, child.Parent.Answers)}
+                  {RenderAnswers(
+                    child.Parent.Parameter,
+                    child.Parent.AnswerType,
+                    child.Parent.Answers
+                  )}
                   {child.Childs.map((grandchild) => {
                     if (grandchild.Parent.CategoryID === grandChildCategory)
                       return (
@@ -77,7 +85,8 @@ export function CategoryQuestions(
                             grandchild.Parent.ExplanationLearnLink,
                             grandchild.Parent.Explanation
                           )}
-                          {renderAnswers(
+                          {RenderAnswers(
+                            grandchild.Parent.Parameter,
                             grandchild.Parent.AnswerType,
                             grandchild.Parent.Answers
                           )}
@@ -106,13 +115,34 @@ export function CategoryQuestions(
   );
 }
 
-function renderAnswers(answerType: string, answers: string[]) {
+function RenderAnswers(
+  parameter: string,
+  answerType: string,
+  answers: string[]
+) {
+  const [value, setValue] = React.useState("");
+
+  const HandleRadioChange = React.useCallback(
+    (
+      ev: React.FormEvent<HTMLElement | HTMLInputElement>,
+      newValue: RadioOnChangeData
+    ) => {
+      setValue(newValue.value);
+      updateKeyMap(parameter, newValue.value);
+    },
+    [parameter]
+  );
+
   switch (answerType) {
     case "boolean":
       return (
-        <RadioGroup aria-labelledby="label835">
-          <Radio label="Yes" value="true" />
-          <Radio label="No" value="false" />
+        <RadioGroup
+          aria-labelledby={parameter}
+          name={parameter}
+          onChange={HandleRadioChange}
+        >
+          <Radio name={parameter} label="Yes" value="Yes" />
+          <Radio name={parameter} label="No" value="No" />
         </RadioGroup>
       );
     case "stringInput":

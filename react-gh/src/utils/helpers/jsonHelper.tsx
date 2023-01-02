@@ -1,5 +1,4 @@
 import data from "../data.json";
-import { state } from "../../components/TemplateSelection";
 
 // Basic JSON ELement
 export type DataItem = {
@@ -21,61 +20,29 @@ export type DataStructure = {
   Childs: DataStructure[];
 };
 
-export var flatFilteredData: DataItem[] = [];
+export var FlatFilteredData: DataItem[] = [];
+var flatMap = flattenMap(data);
+export const RawData: DataStructure[] = data;
+export var KeyValueMap: any = keyValueGenerator();
 
 export function setJsonData(newData: DataItem[]) {
-  flatFilteredData = newData;
+  FlatFilteredData = newData;
 }
 
 // Output JSON parameters file
 // TODO: Parameter File Creation
 
-function jsonFlatMap(
-  data: DataStructure[],
-  parentCategory: string,
-  childCategory: string,
-  grandChildCategory: string
-) {
+function flattenMap(data: DataStructure[]) {
   var flatData = [];
 
   for (const parent of data) {
-    if (
-      parent.Parent.CategoryID === parentCategory ||
-      [
-        "Identity",
-        "Azure Core Setup",
-        "Platform management, security, and governance",
-        "Platform DevOps and automation",
-        "Landing zones configuration",
-      ].includes(parent.Parent.CategoryID)
-    )
-      flatData.push(parent.Parent);
+    flatData.push(parent.Parent);
 
     for (const child of parent.Childs) {
-      if (
-        child.Parent.CategoryID.startsWith(childCategory) ||
-        [
-          "Identity",
-          "Azure Core Setup",
-          "Platform management, security, and governance",
-          "Platform DevOps and automation",
-          "Landing zones configuration",
-        ].includes(child.Parent.CategoryID)
-      )
-        flatData.push(child.Parent);
+      flatData.push(child.Parent);
 
       for (const grandchild of child.Childs) {
-        if (
-          grandchild.Parent.CategoryID === grandChildCategory ||
-          [
-            "Identity",
-            "Azure Core Setup",
-            "Platform management, security, and governance",
-            "Platform DevOps and automation",
-            "Landing zones configuration",
-          ].includes(grandchild.Parent.CategoryID)
-        )
-          flatData.push(grandchild.Parent);
+        flatData.push(grandchild.Parent);
       }
     }
   }
@@ -85,59 +52,48 @@ function jsonFlatMap(
 
 export function flatMapSelecter(
   Public: boolean,
-  HubAndSpokeWithFirewall: boolean,
-  HubAndSpokeWithoutFirewall: boolean,
+  HubAndSpoke: boolean,
   VWAN: boolean
 ) {
-  if (Public === true) {
-    return jsonFlatMap(
-      data,
-      "No Hybrid Connectivity",
-      "No Hybrid Connectivity",
-      "No Hybrid Connectivity"
+  var flatMap = flattenMap(data);
+
+  if (Public) {
+    return flatMap.filter(
+      (item) =>
+        item.CategoryID !== "Hub and Spoke" &&
+        item.CategoryID !== "Virtual WAN (Microsoft managed)"
     );
-  } else if (HubAndSpokeWithFirewall || HubAndSpokeWithoutFirewall) {
-    if (HubAndSpokeWithFirewall === true) {
-      return jsonFlatMap(
-        data,
-        "Hub and Spoke",
-        "Hub and Spoke",
-        "Hub and Spoke with Azure Firewall"
-      );
-    } else {
-      return jsonFlatMap(
-        data,
-        "Hub and Spoke",
-        "Hub and Spoke",
-        "Hub and Spoke"
+  } else if (HubAndSpoke) {
+    if (HubAndSpoke === true) {
+      return flatMap.filter(
+        (item) => item.CategoryID !== "Virtual WAN (Microsoft managed)"
       );
     }
   } else if (VWAN) {
-    return jsonFlatMap(
-      data,
-      "Hub and Spoke",
-      "Virtual WAN (Microsoft managed)",
-      "Virtual WAN (Microsoft managed)"
-    );
+    return flatMap.filter((item) => item.CategoryID !== "Hub and Spoke");
   }
-  return jsonFlatMap(data, "", "", "");
+  return flatMap;
+}
+
+function keyValueGenerator() {
+  var keyValueMap: any = {};
+
+  for (var e in flatMap) {
+    let i = parseInt(e);
+
+    let parameterName = flatMap[i].Parameter;
+
+    keyValueMap[parameterName] = { value: flatMap[i].AnswerChoice };
+  }
+
+  return keyValueMap;
 }
 
 // Output JSON parameters file
-export function parameterFileGenerator(data: DataItem[]) {
+export function parameterFileGenerator() {
   const outputFile = [];
 
-  var parametersArray: any = {};
-
-  for (var e in data) {
-    let i = parseInt(e);
-
-    let parameterName = data[i].Parameter;
-
-    parametersArray[parameterName] = {
-      value: data[i].AnswerChoice,
-    };
-  }
+  var parametersArray: any = KeyValueMap;
 
   outputFile.push({
     $schema:
@@ -148,3 +104,7 @@ export function parameterFileGenerator(data: DataItem[]) {
 
   return outputFile[0];
 }
+
+export const updateKeyMap = (key: string, value: string) => {
+  KeyValueMap[key].value = value;
+};

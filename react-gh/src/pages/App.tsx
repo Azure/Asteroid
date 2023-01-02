@@ -16,7 +16,7 @@ import TemplateSelection from "../components/TemplateSelection";
 initializeIcons();
 
 // App
-export const App: React.FunctionComponent = () => {
+const App: React.FunctionComponent = () => {
   const stackTokens: IStackTokens = { childrenGap: 40 };
 
   return (
@@ -63,3 +63,5 @@ export const App: React.FunctionComponent = () => {
     </main>
   );
 };
+
+export default App;

@@ -13,7 +13,12 @@ import {
   DataGridHeaderCell,
   RowState,
 } from "@fluentui/react-components/unstable";
-import { DataItem, flatFilteredData } from "../utils/helpers/jsonHelper";
+import {
+  DataItem,
+  FlatFilteredData,
+  flatMapSelecter,
+} from "../utils/helpers/jsonHelper";
+import { state } from "../components/TemplateSelection";
 
 export const GroupedDeploymentList: React.FunctionComponent = () => {
   return (
@@ -67,9 +72,13 @@ export const Sort = () => {
     ],
     []
   );
-
+  var items = flatMapSelecter(
+    state.endPublic,
+    state.endHubAndSpoke,
+    state.endVWAN
+  );
   return (
-    <DataGrid items={flatFilteredData} columns={columns} sortable>
+    <DataGrid items={items} columns={columns} sortable>
       <DataGridHeader>
         <DataGridRow>
           {({ renderHeaderCell }: ColumnDefinition<DataItem>) => (

@@ -3,7 +3,6 @@ import { Component } from "react";
 import government_building from "../media/government.svg";
 import cloud_icon from "../media/icons-cloud.svg";
 import hybrid_cloud_icon from "../media/icons-hybrid-cloud.svg";
-import firewall_icon from "../media/icon-firewall.svg";
 import hub_and_spoke_icon from "../media/icon-workflow.svg";
 import vwan_icon from "../media/icon-virtual-wans.svg";
 import configuration_icon from "../media/icon-browser.svg";
@@ -12,14 +11,10 @@ import { ReusableCard, ReusableEndCard } from "../components/Card";
 import { ArrowUndoRegular } from "@fluentui/react-icons";
 import { Button } from "@fluentui/react-components";
 
-import { flatMapSelecter, setJsonData } from "../utils/helpers/jsonHelper";
-
 export var state = {
   endPublic: false,
   stepHybrid: false,
-  stepHubAndSpoke: false,
-  endHubAndSpokeWithFirewall: false,
-  endHubAndSpokeWithoutFirewall: false,
+  endHubAndSpoke: false,
   endVWAN: false,
   endGov: false,
 };
@@ -28,15 +23,9 @@ class TemplateSelection extends Component {
   state = {
     endPublic: false,
     stepHybrid: false,
-    stepHubAndSpoke: false,
-    endHubAndSpokeWithFirewall: false,
-    endHubAndSpokeWithoutFirewall: false,
+    endHubAndSpoke: false,
     endVWAN: false,
     endGov: false,
-  };
-
-  dataUpdater = () => {
-    state = this.state;
   };
 
   handlePublic = () => {
@@ -44,13 +33,11 @@ class TemplateSelection extends Component {
       {
         endPublic: true,
         stepHybrid: false,
-        stepHubAndSpoke: false,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: false,
         endVWAN: false,
         endGov: false,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
 
@@ -59,13 +46,11 @@ class TemplateSelection extends Component {
       {
         endPublic: false,
         stepHybrid: true,
-        stepHubAndSpoke: false,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: false,
         endVWAN: false,
         endGov: false,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
 
@@ -74,57 +59,23 @@ class TemplateSelection extends Component {
       {
         endPublic: false,
         stepHybrid: true,
-        stepHubAndSpoke: true,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: true,
         endVWAN: false,
         endGov: false,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
-
-  handleHubAndSpokeWithFirewall = () => {
-    this.setState(
-      {
-        endPublic: false,
-        stepHybrid: true,
-        stepHubAndSpoke: true,
-        endHubAndSpokeWithFirewall: true,
-        endHubAndSpokeWithoutFirewall: false,
-        endVWAN: false,
-        endGov: false,
-      },
-      () => this.dataUpdater
-    );
-  };
-  handleHubAndSpokeWithoutFirewall = () => {
-    this.setState(
-      {
-        endPublic: false,
-        stepHybrid: true,
-        stepHubAndSpoke: true,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: true,
-        endVWAN: false,
-        endGov: false,
-      },
-      () => this.dataUpdater
-    );
-  };
-
   handleVWAN = () => {
     this.setState(
       {
         endPublic: false,
         stepHybrid: true,
-        stepHubAndSpoke: false,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: false,
         endVWAN: true,
         endGov: false,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
 
@@ -133,13 +84,11 @@ class TemplateSelection extends Component {
       {
         endPublic: false,
         stepHybrid: false,
-        stepHubAndSpoke: false,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: false,
         endVWAN: false,
         endGov: true,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
 
@@ -148,32 +97,20 @@ class TemplateSelection extends Component {
       {
         endPublic: false,
         stepHybrid: false,
-        stepHubAndSpoke: false,
-        endHubAndSpokeWithFirewall: false,
-        endHubAndSpokeWithoutFirewall: false,
+        endHubAndSpoke: false,
         endVWAN: false,
         endGov: false,
       },
-      () => this.dataUpdater
+      () => (state = this.state)
     );
   };
 
   render() {
-    setJsonData(
-      flatMapSelecter(
-        state.endPublic,
-        state.endHubAndSpokeWithFirewall,
-        state.endHubAndSpokeWithoutFirewall,
-        state.endVWAN
-      )
-    );
     return (
       <div>
         {!this.state.endPublic &&
           !this.state.stepHybrid &&
-          !this.state.stepHubAndSpoke &&
-          !this.state.endHubAndSpokeWithFirewall &&
-          !this.state.endHubAndSpokeWithoutFirewall &&
+          !this.state.endHubAndSpoke &&
           !this.state.endVWAN &&
           !this.state.endGov && (
             <div>
@@ -196,9 +133,7 @@ class TemplateSelection extends Component {
           )}
         {!this.state.endPublic &&
           this.state.stepHybrid &&
-          !this.state.stepHubAndSpoke &&
-          !this.state.endHubAndSpokeWithFirewall &&
-          !this.state.endHubAndSpokeWithoutFirewall &&
+          !this.state.endHubAndSpoke &&
           !this.state.endVWAN &&
           !this.state.endGov && (
             <div>
@@ -217,32 +152,8 @@ class TemplateSelection extends Component {
               />
             </div>
           )}
-        {!this.state.endPublic &&
-          this.state.stepHybrid &&
-          this.state.stepHubAndSpoke &&
-          !this.state.endHubAndSpokeWithFirewall &&
-          !this.state.endHubAndSpokeWithoutFirewall &&
-          !this.state.endVWAN &&
-          !this.state.endGov && (
-            <div>
-              <br />
-              <br />
-
-              <ReusableCard
-                title="Azure Managed Firewall"
-                onClick={this.handleHubAndSpokeWithFirewall}
-                imageSrc={firewall_icon}
-              />
-              <ReusableCard
-                title="Own Firewall"
-                onClick={this.handleHubAndSpokeWithoutFirewall}
-                imageSrc={firewall_icon}
-              />
-            </div>
-          )}
         {(this.state.endPublic ||
-          this.state.endHubAndSpokeWithFirewall ||
-          this.state.endHubAndSpokeWithoutFirewall ||
+          this.state.endHubAndSpoke ||
           this.state.endVWAN ||
           this.state.endGov) && (
           <div>
