@@ -95,25 +95,23 @@ class TemplateSelection extends Component {
   handleUndo = () => {
     if (
       this.state.stepHybrid &&
-      !this.state.endHubAndSpoke &&
-      !this.state.endVWAN
+      (this.state.endHubAndSpoke || this.state.endVWAN)
     ) {
       this.setState(
         {
           endPublic: false,
-          stepHybrid: false,
+          stepHybrid: true,
           endHubAndSpoke: false,
           endVWAN: false,
           endGov: false,
         },
         () => (state = this.state)
       );
-      return;
-    } else if (this.state.endHubAndSpoke || this.state.endVWAN) {
+    } else {
       this.setState(
         {
           endPublic: false,
-          stepHybrid: true,
+          stepHybrid: false,
           endHubAndSpoke: false,
           endVWAN: false,
           endGov: false,
