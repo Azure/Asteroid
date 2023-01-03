@@ -20,17 +20,19 @@ export type DataStructure = {
   Childs: DataStructure[];
 };
 
-export var FlatFilteredData: DataItem[] = [];
 var flatMap = flattenMap(data);
-export const RawData: DataStructure[] = data;
-export var KeyValueMap: any = keyValueGenerator();
 
-export function setJsonData(newData: DataItem[]) {
-  FlatFilteredData = newData;
+export var KeyValueMap: any = getStorage();
+
+export function getStorage() {
+  if (localStorage.getItem("KeyValueMap") === null) {
+    localStorage.setItem("KeyValueMap", JSON.stringify(keyValueGenerator()));
+    return keyValueGenerator();
+  } else {
+    const storageObject = localStorage.getItem("KeyValueMap");
+    return JSON.parse(storageObject!);
+  }
 }
-
-// Output JSON parameters file
-// TODO: Parameter File Creation
 
 function flattenMap(data: DataStructure[]) {
   var flatData = [];
@@ -58,24 +60,37 @@ export function flatMapSelecter(
   var flatMap = flattenMap(data);
 
   if (Public) {
-    return flatMap.filter(
+    flatMap = flatMap.filter(
       (item) =>
         item.CategoryID !== "Hub and Spoke" &&
         item.CategoryID !== "Virtual WAN (Microsoft managed)"
     );
   } else if (HubAndSpoke) {
     if (HubAndSpoke === true) {
-      return flatMap.filter(
+      flatMap = flatMap.filter(
         (item) => item.CategoryID !== "Virtual WAN (Microsoft managed)"
       );
     }
   } else if (VWAN) {
-    return flatMap.filter((item) => item.CategoryID !== "Hub and Spoke");
+    flatMap = flatMap.filter((item) => item.CategoryID !== "Hub and Spoke");
   }
+  flatMap = flatMapDataUpdater(flatMap);
   return flatMap;
 }
 
-function keyValueGenerator() {
+function flatMapDataUpdater(flatMap: DataItem[]) {
+  KeyValueMap = getStorage();
+
+  for (var e of flatMap) {
+    let parameterName = e.Parameter;
+
+    e.AnswerChoice = KeyValueMap[parameterName].value;
+  }
+
+  return flatMap;
+}
+
+export function keyValueGenerator() {
   var keyValueMap: any = {};
 
   for (var e in flatMap) {
@@ -93,7 +108,7 @@ function keyValueGenerator() {
 export function parameterFileGenerator() {
   const outputFile = [];
 
-  var parametersArray: any = KeyValueMap;
+  var parametersArray: any = getStorage();
 
   outputFile.push({
     $schema:
@@ -105,6 +120,8 @@ export function parameterFileGenerator() {
   return outputFile[0];
 }
 
-export const updateKeyMap = (key: string, value: string) => {
+export const setStorage = (key: string, value: string) => {
+  KeyValueMap = getStorage();
   KeyValueMap[key].value = value;
+  localStorage.setItem("KeyValueMap", JSON.stringify(KeyValueMap));
 };

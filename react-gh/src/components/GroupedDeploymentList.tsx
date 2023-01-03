@@ -13,11 +13,7 @@ import {
   DataGridHeaderCell,
   RowState,
 } from "@fluentui/react-components/unstable";
-import {
-  DataItem,
-  FlatFilteredData,
-  flatMapSelecter,
-} from "../utils/helpers/jsonHelper";
+import { DataItem, flatMapSelecter } from "../utils/helpers/jsonHelper";
 import { state } from "../components/TemplateSelection";
 
 export const GroupedDeploymentList: React.FunctionComponent = () => {

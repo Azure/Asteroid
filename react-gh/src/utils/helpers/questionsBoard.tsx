@@ -7,9 +7,10 @@ import {
   Radio,
   Link,
   RadioOnChangeData,
+  InputOnChangeData,
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
-import { updateKeyMap } from "./jsonHelper";
+import { setStorage } from "./jsonHelper";
 import * as React from "react";
 // Local imports
 import data from "../data.json";
@@ -128,7 +129,18 @@ function RenderAnswers(
       newValue: RadioOnChangeData
     ) => {
       setValue(newValue.value);
-      updateKeyMap(parameter, newValue.value);
+      setStorage(parameter, newValue.value);
+    },
+    [parameter]
+  );
+
+  const HandleInputChange = React.useCallback(
+    (
+      ev: React.FormEvent<HTMLElement | HTMLInputElement>,
+      newValue: InputOnChangeData
+    ) => {
+      setValue(newValue.value);
+      setStorage(parameter, newValue.value);
     },
     [parameter]
   );
@@ -148,7 +160,11 @@ function RenderAnswers(
     case "stringInput":
       return (
         <div>
-          <Input id="Input0" placeholder={answers[0]} />
+          <Input
+            id="Input0"
+            placeholder={answers[0]}
+            onChange={HandleInputChange}
+          />
         </div>
       );
     case "stringSelection":
