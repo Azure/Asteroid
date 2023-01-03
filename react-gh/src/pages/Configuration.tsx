@@ -99,7 +99,11 @@ const Configuration = () => {
         <Stack.Item align="center">
           <Breadcrumb
             items={[
-              { text: "Start", key: "App", onClick: HandleClickAsLink("/") },
+              {
+                text: "Start",
+                key: "App",
+                onClick: HandleClickAsLink("/", false),
+              },
               {
                 text: "Configuration",
                 key: "Configuration",
@@ -114,7 +118,7 @@ const Configuration = () => {
         </Stack.Item>
         <Stack.Item align="center">
           <Button
-            onClick={HandleClickAsLink("../Deployment")}
+            onClick={HandleClickAsLink("../Deployment", false)}
             style={{ marginTop: "20px" }}
           >
             Deploy!

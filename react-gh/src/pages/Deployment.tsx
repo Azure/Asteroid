@@ -18,7 +18,10 @@ import {
   Button,
 } from "@fluentui/react-components";
 import { CheckmarkRegular, CopyRegular } from "@fluentui/react-icons";
-import { parameterFileGenerator } from "../utils/helpers/jsonHelper";
+import {
+  parameterFileGenerator,
+  getStorage,
+} from "../utils/helpers/jsonHelper";
 
 var useStyles = makeStyles({
   breadcrumb: {
@@ -28,6 +31,13 @@ var useStyles = makeStyles({
 
 const Deployment = () => {
   const [buttonState, setButtonState] = React.useState(false);
+  var [jsonData, setData] = React.useState<any>(getStorage());
+
+  var deployCodeBoxContent: string = JSON.stringify(
+    parameterFileGenerator(),
+    null,
+    2
+  );
 
   function copyIt() {
     navigator.clipboard.writeText(deployCodeBoxContent);
@@ -38,10 +48,12 @@ const Deployment = () => {
   const styles = useStyles();
 
   const [selectedValue, setSelectedValue] =
-    React.useState<TabValue>("conditions");
+    React.useState<TabValue>("ListView");
 
   const onTabSelect = (event: SelectTabEvent, data: SelectTabData) => {
     setSelectedValue(data.value);
+    setData(getStorage());
+    deployCodeBoxContent = JSON.stringify(parameterFileGenerator(), null, 2);
   };
 
   const ListView = React.memo(() => (
@@ -77,11 +89,15 @@ const Deployment = () => {
       <div>
         <Breadcrumb
           items={[
-            { text: "Start", key: "Start", onClick: HandleClickAsLink("/") },
+            {
+              text: "Start",
+              key: "Start",
+              onChange: HandleClickAsLink("/", false),
+            },
             {
               text: "Configuration",
               key: "Configuration",
-              onClick: HandleClickAsLink("/Configuration"),
+              onClick: HandleClickAsLink("/Configuration", false),
             },
             {
               text: "Deployment",
@@ -100,7 +116,7 @@ const Deployment = () => {
           <TabList
             selectedValue={selectedValue}
             onTabSelect={onTabSelect}
-            defaultSelectedValue="listView"
+            defaultSelectedValue="ListView"
           >
             <Tab id="ListView" value="listView">
               List View
@@ -118,7 +134,5 @@ const Deployment = () => {
     </FluentProvider>
   );
 };
-
-const deployCodeBoxContent = JSON.stringify(parameterFileGenerator(), null, 2);
 
 export default Deployment;

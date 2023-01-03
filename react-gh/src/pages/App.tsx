@@ -28,7 +28,10 @@ const App: React.FunctionComponent = () => {
             key: "Start",
             isCurrentItem: true,
             as: "h1",
-            style: { color: tokens.colorNeutralForeground2BrandHover },
+            style: {
+              color: tokens.colorNeutralForeground2BrandHover,
+              marginTop: "20px",
+            },
           },
         ]}
         ariaLabel="With last item rendered as heading"

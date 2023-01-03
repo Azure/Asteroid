@@ -32,6 +32,9 @@ const useStyles = makeStyles({
     marginRight: "20px",
     marginBottom: "20px",
     width: "320px",
+    ":hover": {
+      boxShadow: tokens.shadow64,
+    },
   },
   cardPreview: {
     height: "150px",
@@ -64,7 +67,7 @@ export const ReusableEndCard: FunctionComponent<ReusableEndCardInterface> = ({
     <Card className={styles.card}>
       <CardPreview
         className={styles.cardPreview}
-        onClick={HandleClickAsLink(linkTo)}
+        onClick={HandleClickAsLink(linkTo, false)}
       >
         <img
           alt="Presentation Preview"
