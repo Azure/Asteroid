@@ -22,6 +22,7 @@ import {
   parameterFileGenerator,
   getStorage,
 } from "../utils/helpers/jsonHelper";
+import { Alert } from "@fluentui/react-components/unstable";
 
 var useStyles = makeStyles({
   breadcrumb: {
@@ -58,12 +59,27 @@ const Deployment = () => {
 
   const ListView = React.memo(() => (
     <div role="tabpanel" aria-labelledby="List View">
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <br />
+        <Alert intent="info">
+          This view shows you all the parameters you can edit trough the
+          configuration questionnaire.
+        </Alert>
+      </div>
       <GroupedDeploymentList />
     </div>
   ));
 
   const CodeBox = React.memo(() => (
     <div role="tabpanel" aria-labelledby="Code Box">
+      <br />
+      <div>
+        <Alert intent="info">
+          This view shows you all the parameters from the List View and
+          additional parameters that are needed for a later ARM template
+          deployment.
+        </Alert>
+      </div>
       <br />
       <br />
       <Button
