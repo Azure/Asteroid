@@ -93,16 +93,34 @@ class TemplateSelection extends Component {
   };
 
   handleUndo = () => {
-    this.setState(
-      {
-        endPublic: false,
-        stepHybrid: false,
-        endHubAndSpoke: false,
-        endVWAN: false,
-        endGov: false,
-      },
-      () => (state = this.state)
-    );
+    if (
+      this.state.stepHybrid &&
+      !this.state.endHubAndSpoke &&
+      !this.state.endVWAN
+    ) {
+      this.setState(
+        {
+          endPublic: false,
+          stepHybrid: false,
+          endHubAndSpoke: false,
+          endVWAN: false,
+          endGov: false,
+        },
+        () => (state = this.state)
+      );
+      return;
+    } else if (this.state.endHubAndSpoke || this.state.endVWAN) {
+      this.setState(
+        {
+          endPublic: false,
+          stepHybrid: true,
+          endHubAndSpoke: false,
+          endVWAN: false,
+          endGov: false,
+        },
+        () => (state = this.state)
+      );
+    }
   };
 
   render() {
@@ -137,9 +155,11 @@ class TemplateSelection extends Component {
           !this.state.endVWAN &&
           !this.state.endGov && (
             <div>
+              <Button icon={<ArrowUndoRegular />} onClick={this.handleUndo}>
+                Undo
+              </Button>
               <br />
               <br />
-
               <ReusableCard
                 title="Hub-Spoke in Azure"
                 onClick={this.handleHubAndSpoke}
