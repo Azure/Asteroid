@@ -8,7 +8,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "Logging helps you keep track of what's happening in your Azure environment.",
+      "Explanation": "Logging helps you keep track of what's happening in your Azure environment. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -20,9 +20,9 @@
           "CategoryID": "Platform management, security, and governance",
           "Question": "What is your Azure account number?",
           "AnswerType": "stringInput",
-          "AnswerChoice": "",
+          "AnswerChoice": " ",
           "Answers": ["Insert here"],
-          "Explanation": "We need your Azure account number to set up logging.",
+          "Explanation": "We need your Azure account number to set up logging. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -37,7 +37,7 @@
           "AnswerType": "integerInput",
           "AnswerChoice": 30,
           "Answers": ["Insert number here in days"],
-          "Explanation": "You can choose how long you want to keep track of your activity in Azure.",
+          "Explanation": "You can choose how long you want to keep track of your activity in Azure. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -52,7 +52,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Keeping track of the health of your monitoring agents helps you know if they're working properly.",
+          "Explanation": "Keeping track of the health of your monitoring agents helps you know if they're working properly. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solution-agenthealth",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -67,7 +67,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Change tracking helps you keep track of what changes have been made in your Azure environment.",
+          "Explanation": "Change tracking helps you keep track of what changes have been made in your Azure environment. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -82,7 +82,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Keeping your monitoring tools up to date helps ensure that they're working properly.",
+          "Explanation": "Keeping your monitoring tools up to date helps ensure that they're working properly. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -97,7 +97,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "The activity log provides a detailed history of what's happening in your Azure environment.",
+          "Explanation": "The activity log provides a detailed history of what's happening in your Azure environment. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-insights",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -112,7 +112,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "VM insights help you understand how your virtual machines are performing.",
+          "Explanation": "VM insights help you understand how your virtual machines are performing. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -127,7 +127,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Service map shows you the relationships between different parts of your Azure environment.",
+          "Explanation": "Service map shows you the relationships between different parts of your Azure environment. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -142,7 +142,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "SQL assessments help you check the security of your databases.",
+          "Explanation": "SQL assessments help you check the security of your databases. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -157,7 +157,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "SQL advanced threat protection helps you protect your databases from advanced threats.",
+          "Explanation": "SQL advanced threat protection helps you protect your databases from advanced threats. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -172,7 +172,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "SQL vulnerability assessments help you identify vulnerabilities in your databases.",
+          "Explanation": "SQL vulnerability assessments help you identify vulnerabilities in your databases. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -187,7 +187,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Microsoft Defender helps secure your Azure environment.",
+          "Explanation": "Microsoft Defender helps secure your Azure environment. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -201,7 +201,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "mailContact@outlook.de",
               "Answers": ["Insert here"],
-              "Explanation": "We need a contact email address in case there is a security issue.",
+              "Explanation": "We need a contact email address in case there is a security issue. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -216,7 +216,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting your servers helps ensure their security in Azure.",
+              "Explanation": "Protecting your servers helps ensure their security in Azure. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -231,7 +231,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting your containers helps ensure their security in Azure.",
+              "Explanation": "Protecting your containers helps ensure their security in Azure. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -246,7 +246,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting your app services helps ensure the security of your web applications in Azure.",
+              "Explanation": "Protecting your app services helps ensure the security of your web applications in Azure. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -261,7 +261,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting your open-source relational databases helps ensure their security in Azure.",
+              "Explanation": "Protecting your open-source relational databases helps ensure their security in Azure. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -276,7 +276,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting your storage solutions helps ensure the security of your data in Azure.",
+              "Explanation": "Protecting your storage solutions helps ensure the security of your data in Azure. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -291,7 +291,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting Cosmos DB appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the Cosmos DB runtime and configuration.",
+              "Explanation": "Protecting Cosmos DB appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the Cosmos DB runtime and configuration. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -306,7 +306,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting SQL appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration.",
+              "Explanation": "Protecting SQL appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -321,7 +321,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Protecting SQL on VM appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration.",
+              "Explanation": "Protecting SQL on VM appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -336,7 +336,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Enabling security measures for your Azure Key Vaults will protect the sensitive information stored in them, such as keys and secrets, from unauthorized access or unauthorized use.",
+              "Explanation": "Enabling security measures for your Azure Key Vaults will protect the sensitive information stored in them, such as keys and secrets, from unauthorized access or unauthorized use. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -351,7 +351,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Enabling security measures for your Azure DNS servers will protect your domain name resolution infrastructure from malicious attacks and unauthorized changes.",
+              "Explanation": "Enabling security measures for your Azure DNS servers will protect your domain name resolution infrastructure from malicious attacks and unauthorized changes. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -366,7 +366,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Enabling security measures for your Azure Resource Manager (ARM) templates and deployments will help to ensure that your resources are deployed securely and in compliance with your security policies.",
+              "Explanation": "Enabling security measures for your Azure Resource Manager (ARM) templates and deployments will help to ensure that your resources are deployed securely and in compliance with your security policies. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -383,7 +383,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Enabling central log analysis, correlation, and threat detection with Microsoft Sentinel will provide improved security visibility by analyzing, combining and correlating log events across your Azure environment, making it easier to detect and respond to security threats.",
+          "Explanation": "Enabling central log analysis, correlation, and threat detection with Microsoft Sentinel will provide improved security visibility by analyzing, combining and correlating log events across your Azure environment, making it easier to detect and respond to security threats. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/sentinel/",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -400,7 +400,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "Choose if you want to limit access to your subnets to only those with network security groups.",
+      "Explanation": "Choose if you want to limit access to your subnets to only those with network security groups. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -415,7 +415,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "Choose if you want to restrict remote access to your desktops through Remote Desktop Protocol.",
+      "Explanation": "Choose if you want to restrict remote access to your desktops through Remote Desktop Protocol. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -430,7 +430,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "Choose if you want to avoid using a public IP address for security reasons.",
+      "Explanation": "Choose if you want to avoid using a public IP address for security reasons. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -445,7 +445,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "Choose if you want to create backups of your virtual machines.",
+      "Explanation": "Choose if you want to create backups of your virtual machines. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -460,7 +460,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "<identitySubscriptionIDPlaceholder>",
       "Answers": ["Insert here"],
-      "Explanation": "Enter your Subscription ID used for identity.",
+      "Explanation": "Enter your Subscription ID used for identity. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -473,9 +473,9 @@
       "CategoryID": "Identity",
       "Question": "Enter your address subnet for identity",
       "AnswerType": "stringInput",
-      "AnswerChoice": "",
+      "AnswerChoice": "  ",
       "Answers": ["Insert here"],
-      "Explanation": "Enter your identity address subnet.",
+      "Explanation": "Enter your identity address subnet. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -490,7 +490,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "<onlineSubscriptionIDPlaceholder>",
       "Answers": ["Insert here"],
-      "Explanation": "Enter your Subscription ID used for online LZ.",
+      "Explanation": "Enter your Subscription ID used for online LZ. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -505,7 +505,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "<corpConnectedSubscriptionIDPlaceholder>",
       "Answers": ["Insert here"],
-      "Explanation": "Enter your Subscription ID used for Corp Connected.",
+      "Explanation": "Enter your Subscription ID used for Corp Connected. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -520,7 +520,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "<corpLzSubscriptionIDPlaceholder>",
       "Answers": ["Insert here"],
-      "Explanation": "Enter your Subscription ID used for Corp LZ.",
+      "Explanation": "Enter your Subscription ID used for Corp LZ. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -535,7 +535,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "Choose if you want to restrict IP forwarding for security reasons.",
+      "Explanation": "Choose if you want to restrict IP forwarding for security reasons. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -550,7 +550,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "Choose if you want to avoid exposing your endpoints over a public IP for security reasons.",
+      "Explanation": "Choose if you want to avoid exposing your endpoints over a public IP for security reasons. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -565,7 +565,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "Choose if you want to encrypt your data as it is being transmitted.",
+      "Explanation": "Choose if you want to encrypt your data as it is being transmitted. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -580,7 +580,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "Choose if you want to monitor your virtual machines for performance and security reasons.",
+      "Explanation": "Choose if you want to monitor your virtual machines for performance and security reasons. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -595,7 +595,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will let you see how your VMs are doing and if they are running smoothly.",
+      "Explanation": "This will let you see how your VMs are doing and if they are running smoothly. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -610,7 +610,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help you control how your AKS is used and by whom.",
+      "Explanation": "This will help you control how your AKS is used and by whom. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -625,7 +625,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will make your AKS more secure and prevent unauthorized access.",
+      "Explanation": "This will make your AKS more secure and prevent unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -640,7 +640,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will ensure your AKS is only accessible by those who need it.",
+      "Explanation": "This will ensure your AKS is only accessible by those who need it. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -655,7 +655,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help secure your Databricks from unauthorized access.",
+      "Explanation": "This will help secure your Databricks from unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -670,7 +670,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help secure your Databricks and prevent unauthorized access.",
+      "Explanation": "This will help secure your Databricks and prevent unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -685,7 +685,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help control how Databricks is used and by whom.",
+      "Explanation": "This will help control how Databricks is used and by whom. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -700,7 +700,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help secure your AKS and prevent unauthorized access.",
+      "Explanation": "This will help secure your AKS and prevent unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -715,7 +715,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will let you restore your VMs in case of problems.",
+      "Explanation": "This will let you restore your VMs in case of problems. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -730,7 +730,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will prevent unauthorized access to your VMs through Remote Desktop.",
+      "Explanation": "This will prevent unauthorized access to your VMs through Remote Desktop. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -745,7 +745,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help secure your subnets from unauthorized access.",
+      "Explanation": "This will help secure your subnets from unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -760,7 +760,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will let you see what's happening in your databases and if there are any problems.",
+      "Explanation": "This will let you see what's happening in your databases and if there are any problems. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -775,7 +775,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will secure your SQL databases and prevent unauthorized access.",
+      "Explanation": "This will secure your SQL databases and prevent unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -790,7 +790,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will ensure your data is protected when stored.",
+      "Explanation": "This will ensure your data is protected when stored. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -805,7 +805,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help prevent unauthorized access and attacks.",
+      "Explanation": "This will help prevent unauthorized access and attacks. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -820,7 +820,7 @@
       "AnswerType": "stringSelection",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "Audit", "No"],
-      "Explanation": "This will help secure your Landing Zone and prevent unauthorized access.",
+      "Explanation": "This will help secure your Landing Zone and prevent unauthorized access. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -835,7 +835,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "This will let you use Azure DevOps for your projects.",
+      "Explanation": "This will let you use Azure DevOps for your projects. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -849,7 +849,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is needed to connect to your GitHub account.",
+          "Explanation": "This is needed to connect to your GitHub account. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -864,7 +864,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is needed to connect to your GitHub account.",
+          "Explanation": "This is needed to connect to your GitHub account. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -879,7 +879,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is asking for the name of the repository you have on GitHub where your code is stored.",
+          "Explanation": "This is asking for the name of the repository you have on GitHub where your code is stored. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -956,7 +956,7 @@
       "AnswerType": "boolean",
       "AnswerChoice": "Yes",
       "Answers": [" Yes", "No"],
-      "Explanation": "This is asking if you want to set up your network with a hub and spoke structure for organization.",
+      "Explanation": "This is asking if you want to set up your network with a hub and spoke structure for organization. ",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -970,7 +970,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is asking for the location of the place where your connectivity is based.",
+          "Explanation": "This is asking for the location of the place where your connectivity is based. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -985,7 +985,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is asking for the ID associated with the subscription for your connectivity.",
+          "Explanation": "This is asking for the ID associated with the subscription for your connectivity. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1000,7 +1000,7 @@
           "AnswerType": "stringInput",
           "AnswerChoice": "",
           "Answers": ["Insert here"],
-          "Explanation": "This is asking for the prefix for the addresses in your network set up with a hub and spoke structure.",
+          "Explanation": "This is asking for the prefix for the addresses in your network set up with a hub and spoke structure. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1015,7 +1015,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "This is asking if you want to set up private zones for your domain name system.",
+          "Explanation": "This is asking if you want to set up private zones for your domain name system. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1030,7 +1030,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "This is asking if you want to protect your network from high volume malicious attacks.",
+          "Explanation": "This is asking if you want to protect your network from high volume malicious attacks. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1045,7 +1045,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "This is asking if you want to set up a VPN Gateway for secure connections.",
+          "Explanation": "This is asking if you want to set up a VPN Gateway for secure connections. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1059,7 +1059,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "This is asking for the subnet mask for the VPN Gateway, which is a pattern used to identify network addresses.",
+              "Explanation": "This is asking for the subnet mask for the VPN Gateway, which is a pattern used to identify network addresses. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1074,7 +1074,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "This is asking for the type (Standard or Premium) of the VPN Gateway that you want, with redundancy across availability zones.",
+              "Explanation": "This is asking for the type (Standard or Premium) of the VPN Gateway that you want, with redundancy across availability zones. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1089,7 +1089,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "This is asking if you want a VPN Gateway that is either spread across availability zones for redundancy or available in a specific region.",
+              "Explanation": "This is asking if you want a VPN Gateway that is either spread across availability zones for redundancy or available in a specific region. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1104,7 +1104,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "This is asking for the type (Standard or Premium) of the VPN Gateway that you want, available in a specific region.",
+              "Explanation": "This is asking for the type (Standard or Premium) of the VPN Gateway that you want, available in a specific region. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1119,7 +1119,7 @@
               "AnswerType": "integerInput",
               "AnswerChoice": 1,
               "Answers": ["1"],
-              "Explanation": "",
+              "Explanation": "  ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1136,7 +1136,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "This is asking if you want to use an ExpressRoute Gateway, which is a type of connection to Azure.",
+          "Explanation": "This is asking if you want to use an ExpressRoute Gateway, which is a type of connection to Azure. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1150,7 +1150,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "This is asking for the type (Standard or Premium) of the ExpressRoute Gateway that you want, with redundancy across availability zones.",
+              "Explanation": "This is asking for the type (Standard or Premium) of the ExpressRoute Gateway that you want, with redundancy across availability zones. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1165,7 +1165,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "This is asking if you want an ExpressRoute Gateway that is either spread across availability zones for redundancy or available in a specific region.",
+              "Explanation": "This is asking if you want an ExpressRoute Gateway that is either spread across availability zones for redundancy or available in a specific region. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1180,7 +1180,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "This is asking for the type (Standard or Premium) of the ExpressRoute Gateway that you want, available in a specific region.",
+              "Explanation": "This is asking for the type (Standard or Premium) of the ExpressRoute Gateway that you want, available in a specific region. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1226,7 +1226,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Choose the level of security you want for your firewall.",
+              "Explanation": "Choose the level of security you want for your firewall. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1241,7 +1241,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Enter the subnet mask for your firewall.",
+              "Explanation": "Enter the subnet mask for your firewall. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1256,7 +1256,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Choose the location where you want your firewall to be deployed.",
+              "Explanation": "Choose the location where you want your firewall to be deployed. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1454,7 +1454,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Express Route provides a fast, private connection to Azure from your data center, office, or colocation facility.",
+          "Explanation": "Express Route provides a fast, private connection to Azure from your data center, office, or colocation facility. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1468,7 +1468,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Choose the security level for your redundant ExpressRoute gateway.",
+              "Explanation": "Choose the security level for your redundant ExpressRoute gateway. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1483,7 +1483,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "A zone redundant gateway provides high availability in the event of a failure in a single Azure zone, while a regional gateway provides resiliency in the event of a complete regional outage.",
+              "Explanation": "A zone redundant gateway provides high availability in the event of a failure in a single Azure zone, while a regional gateway provides resiliency in the event of a complete regional outage. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1498,7 +1498,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "ExpressRoute Gateway comes in different options, select one that suits your needs.",
+              "Explanation": "ExpressRoute Gateway comes in different options, select one that suits your needs. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1530,7 +1530,7 @@
           "AnswerType": "boolean",
           "AnswerChoice": "Yes",
           "Answers": [" Yes", "No"],
-          "Explanation": "Azure Firewall is a cloud-based network security solution that helps protect your network from malicious attacks.",
+          "Explanation": "Azure Firewall is a cloud-based network security solution that helps protect your network from malicious attacks. ",
           "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
           "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
         },
@@ -1544,7 +1544,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Azure Firewall comes in different levels, or Tiers, to provide varying levels of protection.",
+              "Explanation": "Azure Firewall comes in different levels, or Tiers, to provide varying levels of protection. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1559,7 +1559,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "The Subnet Mask defines the settings for how Azure Firewall will secure your network.",
+              "Explanation": "The Subnet Mask defines the settings for how Azure Firewall will secure your network. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1574,7 +1574,7 @@
               "AnswerType": "stringInput",
               "AnswerChoice": "",
               "Answers": ["Insert here"],
-              "Explanation": "Azure Firewall can be deployed in different Availability Zones for optimal performance and reliability.",
+              "Explanation": "Azure Firewall can be deployed in different Availability Zones for optimal performance and reliability. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1589,7 +1589,7 @@
               "AnswerType": "boolean",
               "AnswerChoice": "Yes",
               "Answers": [" Yes", "No"],
-              "Explanation": "Enabling Azure Firewall as a DNS Proxy helps protect your network from malicious DNS requests.",
+              "Explanation": "Enabling Azure Firewall as a DNS Proxy helps protect your network from malicious DNS requests. ",
               "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
               "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
             },
@@ -1608,7 +1608,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "",
       "Answers": ["Insert here"],
-      "Explanation": "The Management Group Names/IDs created via the ALZ Portal Accelerator deployment are all based on the Resource Prefix (Root ID) that you enter. Analogous to a file/folder hierarchy structure, the Resource Prefix (Root ID) will be the name of the root of the deployment. Here is an example:\n\t• <Resource Prefix (Root ID)> - Intermediate Root Management Group - e.g. Contoso\n\t\t○ <Resource Prefix (Root ID)>-platform\n\t\t\t§ <Resource Prefix (Root ID)>-management\n\t\t\t§ <Resource Prefix (Root ID)>-connectivity\n\t\t\t§ <Resource Prefix (Root ID)>-identity\n\t\t○ <Resource Prefix (Root ID)>-landingzones\n\t\t\t§ <Resource Prefix (Root ID)>-online\n\t\t\t§ <Resource Prefix (Root ID)>-corp\n\t\t○ <Resource Prefix (Root ID)>-decommissioned\n<Resource Prefix (Root ID)>-sandbox",
+      "Explanation": "The Management Group Names/IDs created via the ALZ Portal Accelerator deployment are all based on the Resource Prefix (Root ID) that you enter.  Analogous to a file/folder hierarchy structure, the Resource Prefix (Root ID) will be the name of the root of the deployment.  Here is an example:\n\t• <Resource Prefix (Root ID)> - Intermediate Root Management Group - e. g.  Contoso\n\t\t○ <Resource Prefix (Root ID)>-platform\n\t\t\t§ <Resource Prefix (Root ID)>-management\n\t\t\t§ <Resource Prefix (Root ID)>-connectivity\n\t\t\t§ <Resource Prefix (Root ID)>-identity\n\t\t○ <Resource Prefix (Root ID)>-landingzones\n\t\t\t§ <Resource Prefix (Root ID)>-online\n\t\t\t§ <Resource Prefix (Root ID)>-corp\n\t\t○ <Resource Prefix (Root ID)>-decommissioned\n<Resource Prefix (Root ID)>-sandbox",
       "ExplanationLearnLink": "https://github.com/Azure/Enterprise-Scale/wiki/FAQ#what-happens-if-i-have-existing-management-groups-that-have-the-same-nameids-as-ones-that-will-be-deployed-in-the-alz-portal-accelerator",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
@@ -1623,7 +1623,7 @@
       "AnswerType": "stringInput",
       "AnswerChoice": "",
       "Answers": ["Insert here"],
-      "Explanation": "A key consideration for resource organization design is to simplify management across the environment for increased workload numbers and scale. Dedicated subscriptions are recommended for the different platform resource categories to ensure scale, sustainability, and segregation of duties. A single subscription can be used for proof of concepts, or by smaller organizations.\n\nIt is recommended separate platform subscriptions for management (monitoring), connectivity, and identity when they're required.\n\nEstablish a dedicated management subscription in your platform management group to support global management capabilities like Azure Monitor Log Analytics workspaces and Azure Automation runbooks.\nEstablish a dedicated identity subscription in your platform management group to host Windows Server Active Directory domain controllers when needed.\nEstablish a dedicated connectivity subscription in your platform management group to host an Azure Virtual WAN hub, private Domain Name System (DNS), ExpressRoute circuit, and other networking resources. A dedicated subscription ensures that all your foundation network resources are billed together and isolated from other workloads.\nUse subscriptions as a democratized unit of management aligned with your business needs and priorities.",
+      "Explanation": "A key consideration for resource organization design is to simplify management across the environment for increased workload numbers and scale.  Dedicated subscriptions are recommended for the different platform resource categories to ensure scale, sustainability, and segregation of duties.  A single subscription can be used for proof of concepts, or by smaller organizations. \n\nIt is recommended separate platform subscriptions for management (monitoring), connectivity, and identity when they're required. \n\nEstablish a dedicated management subscription in your platform management group to support global management capabilities like Azure Monitor Log Analytics workspaces and Azure Automation runbooks. \nEstablish a dedicated identity subscription in your platform management group to host Windows Server Active Directory domain controllers when needed. \nEstablish a dedicated connectivity subscription in your platform management group to host an Azure Virtual WAN hub, private Domain Name System (DNS), ExpressRoute circuit, and other networking resources.  A dedicated subscription ensures that all your foundation network resources are billed together and isolated from other workloads. \nUse subscriptions as a democratized unit of management aligned with your business needs and priorities.",
       "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
       "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
     },
