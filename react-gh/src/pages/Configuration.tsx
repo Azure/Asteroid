@@ -176,7 +176,18 @@ const Configuration = () => {
                     </Text>
                   </div>
                   <br />
-                  <Subtitle2>Chat Question History</Subtitle2>
+                  <div>
+                    <Subtitle2>Chat Question History</Subtitle2>
+                  </div>
+                  <div>
+                    <Text>
+                      {new Date().toLocaleTimeString()}
+                      {" - "}
+                    </Text>
+                    <Text>
+                      This is an example of the most recent ChatGPT Question.{" "}
+                    </Text>
+                  </div>
                 </DialogContent>
                 <DialogActions>
                   <DialogTrigger disableButtonEnhancement>
