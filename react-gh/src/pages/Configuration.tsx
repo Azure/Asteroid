@@ -12,12 +12,26 @@ import {
   FluentProvider,
   Divider,
   tokens,
+  Avatar,
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogActions,
+  DialogSurface,
+  DialogTitle,
+  DialogBody,
+  Label,
+  Input,
+  useId,
+  Text,
+  Subtitle2,
 } from "@fluentui/react-components";
 
 // Local Imports
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
+import { PersonChatRegular, SendRegular } from "@fluentui/react-icons";
 
 // Import: Parameters Metadata
 
@@ -88,6 +102,8 @@ const Configuration = () => {
     </div>
   ));
 
+  const underlineId = useId("input-underline");
+
   return (
     <FluentProvider theme={currentTheme}>
       <Stack
@@ -116,6 +132,62 @@ const Configuration = () => {
             overflowAriaLabel="More links"
           />
         </Stack.Item>
+        <Stack.Item align="center">
+          <Dialog>
+            <DialogTrigger disableButtonEnhancement>
+              <Button appearance="transparent">
+                <Avatar
+                  icon={<PersonChatRegular />}
+                  badge={{
+                    status: "available",
+                  }}
+                  size={96}
+                />
+              </Button>
+            </DialogTrigger>
+            <DialogSurface>
+              <DialogBody>
+                <DialogTitle>Speak to CS·AI</DialogTitle>
+                <DialogContent>
+                  <div></div>
+                  <br />
+
+                  <div>
+                    <Input
+                      appearance="underline"
+                      contentAfter={
+                        <Button
+                          appearance="transparent"
+                          icon={<SendRegular />}
+                        />
+                      }
+                      id={underlineId}
+                    />
+                  </div>
+                  <br />
+                  <br />
+                  <div>
+                    <Subtitle2>Reply</Subtitle2>
+                  </div>
+                  <br />
+                  <div>
+                    <Text>
+                      This is an example of the most recent ChatGPT Reply.
+                    </Text>
+                  </div>
+                  <br />
+                  <Subtitle2>Chat Question History</Subtitle2>
+                </DialogContent>
+                <DialogActions>
+                  <DialogTrigger disableButtonEnhancement>
+                    <Button appearance="secondary">Close</Button>
+                  </DialogTrigger>
+                </DialogActions>
+              </DialogBody>
+            </DialogSurface>
+          </Dialog>
+        </Stack.Item>
+
         <Stack.Item align="center">
           <Button
             onClick={HandleClickAsLink("../Deployment", false)}
