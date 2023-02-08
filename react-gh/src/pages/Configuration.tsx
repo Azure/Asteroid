@@ -31,7 +31,8 @@ import {
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
-import { PersonChatRegular, SendRegular } from "@fluentui/react-icons";
+import { SendRegular } from "@fluentui/react-icons";
+import vopicegif from "../media/voice";
 
 // Import: Parameters Metadata
 
@@ -137,7 +138,9 @@ const Configuration = () => {
             <DialogTrigger disableButtonEnhancement>
               <Button appearance="transparent">
                 <Avatar
-                  icon={<PersonChatRegular />}
+                  image={{
+                    src: "https://i.pinimg.com/originals/42/78/76/42787621ed6d40f0c30f0ae423fc572c.gif",
+                  }}
                   badge={{
                     status: "available",
                   }}
@@ -149,10 +152,27 @@ const Configuration = () => {
               <DialogBody>
                 <DialogTitle>Speak to CS·AI</DialogTitle>
                 <DialogContent>
-                  <div></div>
-                  <br />
-
                   <div>
+                    <Subtitle2>Chat</Subtitle2>
+                  </div>
+                  <div style={{ textAlign: "center" }}>
+                    <Text align="center" size={200}>
+                      {new Date().toLocaleTimeString()}
+                    </Text>
+                  </div>
+                  <div style={{ textAlign: "right" }}>
+                    <Text>
+                      This is an example of the most recent ChatGPT Question.{" "}
+                    </Text>
+                  </div>
+                  <br />
+                  <div style={{ textAlign: "left" }}>
+                    <Text font="monospace">
+                      This is an example of the most recent ChatGPT Reply.
+                    </Text>
+                  </div>
+                  <br />
+                  <div style={{ width: "100%" }}>
                     <Input
                       appearance="underline"
                       contentAfter={
@@ -162,31 +182,8 @@ const Configuration = () => {
                         />
                       }
                       id={underlineId}
+                      style={{ width: "100%" }}
                     />
-                  </div>
-                  <br />
-                  <br />
-                  <div>
-                    <Subtitle2>Reply</Subtitle2>
-                  </div>
-                  <br />
-                  <div>
-                    <Text>
-                      This is an example of the most recent ChatGPT Reply.
-                    </Text>
-                  </div>
-                  <br />
-                  <div>
-                    <Subtitle2>Chat Question History</Subtitle2>
-                  </div>
-                  <div>
-                    <Text>
-                      {new Date().toLocaleTimeString()}
-                      {" - "}
-                    </Text>
-                    <Text>
-                      This is an example of the most recent ChatGPT Question.{" "}
-                    </Text>
                   </div>
                 </DialogContent>
                 <DialogActions>
