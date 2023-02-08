@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import { Stack, Breadcrumb } from "@fluentui/react";
 import {
   Button,
@@ -32,7 +33,6 @@ import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
 import { SendRegular } from "@fluentui/react-icons";
-import vopicegif from "../media/voice";
 
 // Import: Parameters Metadata
 
@@ -139,7 +139,7 @@ const Configuration = () => {
               <Button appearance="transparent">
                 <Avatar
                   image={{
-                    src: "https://i.pinimg.com/originals/42/78/76/42787621ed6d40f0c30f0ae423fc572c.gif",
+                    src: "https://i.pinimg.com/originals/9c/da/64/9cda6405c91f0a6060592638e58932c4.gif",
                   }}
                   badge={{
                     status: "available",
