@@ -1,22 +1,32 @@
 # ASTEROID Project
 
-[![Build Status](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_apis/build/status/Azure.Asteroid?branchName=main)](https://dev.azure.com/core-automotive/Landing-Zone-Generator/_build/latest?definitionId=18&branchName=main)
-
 ## Accelerate clients journey to the cloud!
 
 AzureStartToolEnablingRapidOnboardingInsteadofDevastation
 
-# Project
+## Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+# Getting Started with Create React App
 
-As the maintainer of this project, please make a few updates:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Available Scripts
+
+In the project directory "react-gh", you can run:
+
+### `npm run start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Contributing
 
