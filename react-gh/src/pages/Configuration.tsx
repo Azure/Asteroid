@@ -14,25 +14,13 @@ import {
   Divider,
   tokens,
   Avatar,
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogActions,
-  DialogSurface,
-  DialogTitle,
-  DialogBody,
-  Label,
-  Input,
-  useId,
-  Text,
-  Subtitle2,
 } from "@fluentui/react-components";
 
 // Local Imports
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
-import { SendRegular } from "@fluentui/react-icons";
+import { Chat } from "../components/Chat";
 
 // Import: Parameters Metadata
 
@@ -103,8 +91,6 @@ const Configuration = () => {
     </div>
   ));
 
-  const underlineId = useId("input-underline");
-
   return (
     <FluentProvider theme={currentTheme}>
       <Stack
@@ -134,68 +120,7 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <Dialog modalType="non-modal">
-            <DialogTrigger disableButtonEnhancement>
-              <Button appearance="transparent">
-                <Avatar
-                  image={{
-                    src: "https://i.pinimg.com/originals/9c/da/64/9cda6405c91f0a6060592638e58932c4.gif",
-                  }}
-                  badge={{
-                    status: "available",
-                  }}
-                  size={96}
-                />
-              </Button>
-            </DialogTrigger>
-            <DialogSurface
-              style={{ marginRight: "20px", marginBottom: "20px" }}
-            >
-              <DialogBody>
-                <DialogTitle>Speak to CS·AI</DialogTitle>
-                <DialogContent>
-                  <div>
-                    <Subtitle2>Chat</Subtitle2>
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    <Text align="center" size={200}>
-                      {new Date().toLocaleTimeString()}
-                    </Text>
-                  </div>
-                  <div style={{ textAlign: "right" }}>
-                    <Text>
-                      This is an example of the most recent ChatGPT Question.{" "}
-                    </Text>
-                  </div>
-                  <br />
-                  <div style={{ textAlign: "left" }}>
-                    <Text font="monospace">
-                      This is an example of the most recent ChatGPT Reply.
-                    </Text>
-                  </div>
-                  <br />
-                  <div style={{ width: "100%" }}>
-                    <Input
-                      appearance="underline"
-                      contentAfter={
-                        <Button
-                          appearance="transparent"
-                          icon={<SendRegular />}
-                        />
-                      }
-                      id={underlineId}
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </DialogContent>
-                <DialogActions>
-                  <DialogTrigger disableButtonEnhancement>
-                    <Button appearance="secondary">Close</Button>
-                  </DialogTrigger>
-                </DialogActions>
-              </DialogBody>
-            </DialogSurface>
-          </Dialog>
+          <Chat />
         </Stack.Item>
 
         <Stack.Item align="center">
