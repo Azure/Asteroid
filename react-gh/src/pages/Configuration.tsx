@@ -134,7 +134,7 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <Dialog>
+          <Dialog modalType="non-modal">
             <DialogTrigger disableButtonEnhancement>
               <Button appearance="transparent">
                 <Avatar
@@ -148,7 +148,9 @@ const Configuration = () => {
                 />
               </Button>
             </DialogTrigger>
-            <DialogSurface>
+            <DialogSurface
+              style={{ marginRight: "20px", marginBottom: "20px" }}
+            >
               <DialogBody>
                 <DialogTitle>Speak to CS·AI</DialogTitle>
                 <DialogContent>
