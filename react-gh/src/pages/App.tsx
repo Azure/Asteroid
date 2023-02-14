@@ -1,19 +1,20 @@
 // React Imports
 import React from "react";
+import { Stack, IStackTokens, Breadcrumb } from "@fluentui/react";
 import {
-  Stack,
-  IStackTokens,
-  initializeIcons,
-  Breadcrumb,
-} from "@fluentui/react";
-import { Divider, Text, tokens } from "@fluentui/react-components";
+  Divider,
+  Text,
+  tokens,
+  Link,
+  Button,
+} from "@fluentui/react-components";
 
 // Local Imports
 import "./App.css";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import TemplateSelection from "../components/TemplateSelection";
-
-initializeIcons();
+import { Chat } from "../components/Chat";
+import { BranchRegular } from "@fluentui/react-icons";
 
 // App
 const App: React.FunctionComponent = () => {
@@ -21,22 +22,34 @@ const App: React.FunctionComponent = () => {
 
   return (
     <main id="main" className="wrapper">
-      <Breadcrumb
-        items={[
-          {
-            text: "Start",
-            key: "Start",
-            isCurrentItem: true,
-            as: "h1",
-            style: {
-              color: tokens.colorNeutralForeground2BrandHover,
-              marginTop: "20px",
-            },
-          },
-        ]}
-        ariaLabel="With last item rendered as heading"
-        overflowAriaLabel="More links"
-      />
+      <Stack
+        horizontal
+        horizontalAlign="space-between"
+        verticalAlign="center"
+        styles={{ root: { width: "100%" } }}
+      >
+        <Stack.Item align="center">
+          <Breadcrumb
+            items={[
+              {
+                text: "Start",
+                key: "Start",
+                isCurrentItem: true,
+                as: "h1",
+                style: {
+                  color: tokens.colorNeutralForeground2BrandHover,
+                },
+              },
+            ]}
+            ariaLabel="With last item rendered as heading"
+            overflowAriaLabel="More links"
+          />
+        </Stack.Item>
+        <Stack.Item>
+          <Chat />
+        </Stack.Item>
+      </Stack>
+
       <div
         style={{
           alignSelf: "center",
