@@ -13,7 +13,6 @@ import {
   FluentProvider,
   Divider,
   tokens,
-  Avatar,
 } from "@fluentui/react-components";
 
 // Local Imports
@@ -97,7 +96,7 @@ const Configuration = () => {
         horizontal
         horizontalAlign="space-between"
         verticalAlign="center"
-        styles={{ root: { width: "100%", marginBottom: "20px" } }}
+        styles={{ root: { width: "100%" } }}
       >
         <Stack.Item align="center">
           <Breadcrumb
@@ -112,7 +111,7 @@ const Configuration = () => {
                 key: "Configuration",
                 isCurrentItem: true,
                 as: "h4",
-                style: { color: tokens.colorNeutralForeground2BrandHover },
+                style: { color: "white" },
               },
             ]}
             ariaLabel="With last item rendered as heading"
@@ -120,16 +119,12 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <Chat />
-        </Stack.Item>
-
-        <Stack.Item align="center">
-          <Button
-            onClick={HandleClickAsLink("../Deployment", false)}
-            style={{ marginTop: "20px" }}
-          >
+          <Button onClick={HandleClickAsLink("../Deployment", false)}>
             Deploy!
           </Button>
+        </Stack.Item>
+        <Stack.Item align="center">
+          <Chat />
         </Stack.Item>
       </Stack>
       <div>
