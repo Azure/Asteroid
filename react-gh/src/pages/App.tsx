@@ -1,24 +1,17 @@
 // React Imports
 import React from "react";
 import { Stack, IStackTokens, Breadcrumb } from "@fluentui/react";
-import {
-  Divider,
-  Text,
-  tokens,
-  Link,
-  Button,
-} from "@fluentui/react-components";
+import { Divider, Text, tokens } from "@fluentui/react-components";
 
 // Local Imports
 import "./App.css";
 import { ExplanationButton } from "../components/buttons/ExplanationButton";
 import TemplateSelection from "../components/TemplateSelection";
 import { Chat } from "../components/Chat";
-import { BranchRegular } from "@fluentui/react-icons";
 
 // App
 const App: React.FunctionComponent = () => {
-  const stackTokens: IStackTokens = { childrenGap: 40 };
+  const stackTokens: IStackTokens = { childrenGap: 50 };
 
   return (
     <main id="main" className="wrapper">
@@ -37,7 +30,7 @@ const App: React.FunctionComponent = () => {
                 isCurrentItem: true,
                 as: "h1",
                 style: {
-                  color: tokens.colorNeutralForeground2BrandHover,
+                  color: "white",
                 },
               },
             ]}
