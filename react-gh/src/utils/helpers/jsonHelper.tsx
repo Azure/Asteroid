@@ -25,13 +25,33 @@ var flatMap = flattenMap(data);
 export var KeyValueMap: any = getStorage();
 
 export function getStorage() {
-  if (localStorage.getItem("KeyValueMap") === null) {
+  if (!storageAvailable()) {
     localStorage.setItem("KeyValueMap", JSON.stringify(keyValueGenerator()));
     return keyValueGenerator();
   } else {
     const storageObject = localStorage.getItem("KeyValueMap");
     return JSON.parse(storageObject!);
   }
+}
+
+export function deleteStorage() {
+  localStorage.removeItem("KeyValueMap")
+}
+
+export const setStorage = (key: string, value: string) => {
+  KeyValueMap = getStorage();
+  KeyValueMap[key].value = value;
+  localStorage.setItem("KeyValueMap", JSON.stringify(KeyValueMap));
+};
+
+export function storageAvailable() {
+  return localStorage.getItem("KeyValueMap") !== null
+}
+
+export function getStorageElement(parameter: string) {
+  if(storageAvailable()) return KeyValueMap[parameter].value
+  else return ""
+  
 }
 
 function flattenMap(data: DataStructure[]) {
@@ -120,8 +140,3 @@ export function parameterFileGenerator() {
   return outputFile[0];
 }
 
-export const setStorage = (key: string, value: string) => {
-  KeyValueMap = getStorage();
-  KeyValueMap[key].value = value;
-  localStorage.setItem("KeyValueMap", JSON.stringify(KeyValueMap));
-};
