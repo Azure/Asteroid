@@ -6,11 +6,13 @@ import {
   RadioGroup,
   Radio,
   Link,
-  RadioOnChangeData,
   InputOnChangeData,
+  Switch,
+  SwitchOnChangeData,
+  RadioOnChangeData
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
-import { setStorage } from "./jsonHelper";
+import { getStorageElement, setStorage, storageAvailable } from "./jsonHelper";
 import * as React from "react";
 // Local imports
 import data from "../data.json";
@@ -21,7 +23,7 @@ const styles = makeStyles({
     flexDirection: "column",
     ...shorthands.gap("20px"),
     // Prevent the example from taking the full width of the page (optional)
-    maxWidth: "400px",
+    maxWidth: "450px",
     // Stack the label above the field (with 2px gap per the design system)
     "> div": {
       display: "flex",
@@ -34,7 +36,7 @@ const styles = makeStyles({
 // Styles
 const questionStyle = {
   paddingLeft: "100px",
-  width: "400px",
+  width: "450px",
   marginTop: "20px",
 };
 
@@ -121,57 +123,78 @@ function RenderAnswers(
   answerType: string,
   answers: string[]
 ) {
+
+
+
   const [value, setValue] = React.useState("");
 
-  const HandleRadioChange = React.useCallback(
-    (
-      ev: React.FormEvent<HTMLElement | HTMLInputElement>,
-      newValue: RadioOnChangeData
-    ) => {
-      setValue(newValue.value);
-      setStorage(parameter, newValue.value);
+  const [checked, setChecked] = React.useState(false);
+
+  const [radioValue, setRadio] = React.useState("No");
+
+  const onSwitchChange = React.useCallback(
+    (ev: React.ChangeEvent<HTMLInputElement>, data: SwitchOnChangeData) => {
+      setChecked(data.checked);
+      setStorage(parameter, !checked ? "Yes" : "No");
     },
-    [parameter]
+    [checked, parameter]
   );
 
   const HandleInputChange = React.useCallback(
     (
-      ev: React.FormEvent<HTMLElement | HTMLInputElement>,
-      newValue: InputOnChangeData
+      ev: React.ChangeEvent<HTMLInputElement>,
+      data: InputOnChangeData
     ) => {
-      setValue(newValue.value);
-      setStorage(parameter, newValue.value);
+      setValue(data.value);
+      setStorage(parameter, data.value);
     },
-    [parameter]
+    [value, parameter]
+  );
+
+  const HandleRadioChange = React.useCallback(
+    (
+      ev: React.ChangeEvent<HTMLInputElement>,
+      data: RadioOnChangeData
+    ) => {
+      setRadio(data.value);
+      setStorage(parameter, data.value);
+    },
+    [radioValue, parameter]
   );
 
   switch (answerType) {
     case "boolean":
       return (
-        <RadioGroup
-          aria-labelledby={parameter}
-          name={parameter}
-          onChange={HandleRadioChange}
-        >
-          <Radio name={parameter} label="Yes" value="Yes" />
-          <Radio name={parameter} label="No" value="No" />
-        </RadioGroup>
+        <div>
+          <Switch
+            style={{ maxWidth: "400px" }}
+            aria-labelledby={parameter}
+            name={parameter}
+            onChange={onSwitchChange}
+            label={checked ? "Yes" : "No"}
+            defaultChecked={getStorageElement(parameter) === "Yes"}
+          />
+        </div>
       );
     case "stringInput":
       return (
         <div>
           <Input
-            id="Input0"
+            id={parameter}
             placeholder={answers[0]}
             onChange={HandleInputChange}
+            defaultValue={getStorageElement(parameter)}
           />
         </div>
       );
     case "stringSelection":
       return (
-        <RadioGroup aria-labelledby="label935">
+        <RadioGroup 
+        aria-labelledby="label935"
+        defaultValue={getStorageElement(parameter)}
+        >
           {answers.map((answer) => {
-            return <Radio label={answer} value={answer} />;
+            return <Radio label={answer} value={answer} onChange={HandleRadioChange}/>;
           })}
         </RadioGroup>
       );
@@ -189,8 +212,7 @@ function renderInfoButton(ExplanationLearnLink: string, Explanation: string) {
     <InfoButton
       content={
         <>
-          {Explanation}
-          <Link href={ExplanationLearnLink}>Learn more</Link>
+          {Explanation} <Link href={ExplanationLearnLink}> Learn more</Link>
         </>
       }
     />
