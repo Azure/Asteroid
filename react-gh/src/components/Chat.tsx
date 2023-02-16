@@ -2,19 +2,18 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
-  DialogActions,
   DialogSurface,
   DialogTitle,
   DialogBody,
-  Label,
   Input,
   useId,
   Text,
   Subtitle2,
   Button,
+  FluentProvider,
+  Persona
 } from "@fluentui/react-components";
 
-import { Persona, PersonaProps } from "@fluentui/react-components/unstable";
 import * as React from "react";
 
 import { SendRegular } from "@fluentui/react-icons";
@@ -22,6 +21,7 @@ import { SendRegular } from "@fluentui/react-icons";
 export const Chat: React.FunctionComponent = ({}) => {
   const underlineId = useId("input-underline");
   return (
+    <FluentProvider>
     <Dialog modalType="non-modal">
       <DialogTrigger disableButtonEnhancement>
         <Button appearance="transparent">
@@ -73,13 +73,9 @@ export const Chat: React.FunctionComponent = ({}) => {
               />
             </div>
           </DialogContent>
-          <DialogActions>
-            <DialogTrigger disableButtonEnhancement>
-              <Button appearance="secondary">Close</Button>
-            </DialogTrigger>
-          </DialogActions>
         </DialogBody>
       </DialogSurface>
     </Dialog>
+    </FluentProvider>
   );
 };
