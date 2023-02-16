@@ -10,6 +10,7 @@ import configuration_icon from "../media/icon-browser.svg";
 import { ReusableCard, ReusableEndCard } from "../components/Card";
 import { ArrowUndoRegular } from "@fluentui/react-icons";
 import { Button } from "@fluentui/react-components";
+import { deleteStorage } from "../utils/helpers/jsonHelper";
 
 export var state = {
   endPublic: false,
@@ -180,13 +181,17 @@ class TemplateSelection extends Component {
             </Button>
             <br />
             <br />
+            
             <ReusableEndCard
-              title="Start Configuration"
+              title="Start New Configuration"
               linkTo="./Configuration"
               imageSrc={configuration_icon}
             />
           </div>
-        )}
+        
+      )
+      
+        }
       </div>
     );
   }
