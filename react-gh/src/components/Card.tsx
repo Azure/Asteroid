@@ -11,6 +11,7 @@ import {
   Text,
 } from "@fluentui/react-components";
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
+import { deleteStorage } from "../utils/helpers/jsonHelper";
 
 //  Interfaces
 interface ReusableEndCardInterface {
@@ -62,6 +63,8 @@ export const ReusableEndCard: FunctionComponent<ReusableEndCardInterface> = ({
   linkTo,
 }) => {
   const styles = useStyles();
+
+  deleteStorage()
 
   return (
     <Card className={styles.card}>
