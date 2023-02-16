@@ -115,8 +115,8 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <Button onClick={HandleClickAsLink("../Deployment", false)}>
-            Deploy!
+          <Button appearance="primary" size="large" onClick={HandleClickAsLink("../Deployment", false)}>
+            Deploy 
           </Button>
         </Stack.Item>
         <Stack.Item align="center">
