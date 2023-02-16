@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { createRoot } from "react-dom/client"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import { Footer } from "./components/Footer";
 import { TitleBar } from "./components/TitleBar";
 
@@ -16,11 +16,11 @@ import { webLightTheme, webDarkTheme } from "@fluentui/react-components";
 export const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 export const currentTheme = dark ? webDarkTheme : webLightTheme;
 
-// Selects the theme dependent on the preferred color scheme of user: Light or Dark
-
 document.body.style.margin = "0";
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root')!)
+
+root.render(
   <FluentProvider theme={currentTheme}>
     <React.StrictMode>
       <div
@@ -69,6 +69,5 @@ ReactDOM.render(
         </div>
       </div>
     </React.StrictMode>
-  </FluentProvider>,
-  document.getElementById("root")
+  </FluentProvider>
 );
