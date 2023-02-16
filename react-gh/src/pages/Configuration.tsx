@@ -11,8 +11,6 @@ import {
   webDarkTheme,
   webLightTheme,
   FluentProvider,
-  Divider,
-  tokens,
 } from "@fluentui/react-components";
 
 // Local Imports
@@ -21,15 +19,13 @@ import { CategoryQuestions } from "../utils/helpers/questionsBoard";
 import { state } from "../components/TemplateSelection";
 import { Chat } from "../components/Chat";
 
-// Import: Parameters Metadata
-
 const Configuration = () => {
   // Selects the theme dependent on the preferred color scheme of user: Light or Dark
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const currentTheme = dark ? webDarkTheme : webLightTheme;
 
   const [selectedValue, setSelectedValue] =
-    React.useState<TabValue>("conditions");
+    React.useState<TabValue>("AzureCoreSetup");
 
   const onTabSelect = (event: SelectTabEvent, data: SelectTabData) => {
     setSelectedValue(data.value);
@@ -131,7 +127,7 @@ const Configuration = () => {
         <TabList
           selectedValue={selectedValue}
           onTabSelect={onTabSelect}
-          defaultSelectedValue="AzureCoreSetup"
+          defaultSelectedValue={"AzureCoreSetup"}
         >
           <Tab id="AzureCoreSetup" value="AzureCoreSetup">
             {" "}
@@ -182,10 +178,6 @@ const Configuration = () => {
             <LandingZoneConfiguration />
           )}
         </div>
-      </div>
-
-      <div>
-        <Divider appearance="strong"></Divider>
       </div>
     </FluentProvider>
   );
