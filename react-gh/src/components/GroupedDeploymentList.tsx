@@ -2,17 +2,17 @@ import { FluentProvider } from "@fluentui/react-components";
 import * as React from "react";
 import { currentTheme } from "../index";
 import {
-  ColumnDefinition,
+  TableColumnDefinition,
   TableCellLayout,
-  createColumn,
+  createTableColumn,
   DataGrid,
   DataGridBody,
   DataGridRow,
   DataGridHeader,
   DataGridCell,
   DataGridHeaderCell,
-  RowState,
-} from "@fluentui/react-components/unstable";
+  TableRowData,
+} from "@fluentui/react-components";
 import { DataItem, flatMapSelecter } from "../utils/helpers/jsonHelper";
 import { state } from "../components/TemplateSelection";
 
@@ -27,9 +27,9 @@ export const GroupedDeploymentList: React.FunctionComponent = () => {
 };
 
 export const Sort = () => {
-  const columns: ColumnDefinition<DataItem>[] = React.useMemo(
+  const columns: TableColumnDefinition<DataItem>[] = React.useMemo(
     () => [
-      createColumn<DataItem>({
+      createTableColumn<DataItem>({
         columnId: "category",
         compare: (a, b) => {
           return a.CategoryID.localeCompare(b.CategoryID);
@@ -41,7 +41,7 @@ export const Sort = () => {
           return item.CategoryID;
         },
       }),
-      createColumn<DataItem>({
+      createTableColumn<DataItem>({
         columnId: "parameter",
         compare: (a, b) => {
           return a.Parameter.localeCompare(b.Parameter);
@@ -53,7 +53,7 @@ export const Sort = () => {
           return <TableCellLayout>{item.Parameter}</TableCellLayout>;
         },
       }),
-      createColumn<DataItem>({
+      createTableColumn<DataItem>({
         columnId: "value",
         compare: (a, b) => {
           return String(a.AnswerChoice).localeCompare(String(b.AnswerChoice));
@@ -77,15 +77,15 @@ export const Sort = () => {
     <DataGrid items={items} columns={columns} sortable>
       <DataGridHeader>
         <DataGridRow>
-          {({ renderHeaderCell }: ColumnDefinition<DataItem>) => (
+          {({ renderHeaderCell }: TableColumnDefinition<DataItem>) => (
             <DataGridHeaderCell>{renderHeaderCell()}</DataGridHeaderCell>
           )}
         </DataGridRow>
       </DataGridHeader>
       <DataGridBody>
-        {({ item, rowId }: RowState<DataItem>) => (
+        {({ item, rowId }: TableRowData<DataItem>) => (
           <DataGridRow key={rowId}>
-            {({ renderCell }: ColumnDefinition<DataItem>) => (
+            {({ renderCell }: TableColumnDefinition<DataItem>) => (
               <DataGridCell>{renderCell(item)}</DataGridCell>
             )}
           </DataGridRow>
