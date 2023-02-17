@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Asteroid/static/css/main.bc91e4b1.css",
-    "main.js": "/Asteroid/static/js/main.9bf61cf2.js",
+    "main.js": "/Asteroid/static/js/main.a3f0ec74.js",
     "react-syntax-highlighter/refractor-core-import.js": "/Asteroid/static/js/react-syntax-highlighter/refractor-core-import.ec36b171.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js",
@@ -162,7 +162,7 @@
     "static/media/icons-cloud.svg": "/Asteroid/static/media/icons-cloud.bd8953d8a0c094d51882ca4ff30eb3b1.svg",
     "index.html": "/Asteroid/index.html",
     "main.bc91e4b1.css.map": "/Asteroid/static/css/main.bc91e4b1.css.map",
-    "main.9bf61cf2.js.map": "/Asteroid/static/js/main.9bf61cf2.js.map",
+    "main.a3f0ec74.js.map": "/Asteroid/static/js/main.a3f0ec74.js.map",
     "refractor-core-import.ec36b171.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter/refractor-core-import.ec36b171.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_abap.424c29f4.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js.map": "/Asteroid/static/js/react-syntax-highlighter_languages_refractor_actionscript.4d6ea0fb.chunk.js.map",
@@ -318,6 +318,6 @@
   },
   "entrypoints": [
     "static/css/main.bc91e4b1.css",
-    "static/js/main.9bf61cf2.js"
+    "static/js/main.a3f0ec74.js"
   ]
 }
