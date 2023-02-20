@@ -111,7 +111,7 @@ export const Chat: React.FunctionComponent = () => {
                         setChatContent([
                           ...chatContent,
                           message,
-                          "This feature is not yet implemented",
+                          "This feature is coming soon! 🚀",
                         ]);
                       }}
                     />
