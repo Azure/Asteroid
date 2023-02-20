@@ -9,7 +9,7 @@ import {
   InputOnChangeData,
   Switch,
   SwitchOnChangeData,
-  RadioOnChangeData
+  RadioOnChangeData,
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
 import { getStorageElement, setStorage, storageAvailable } from "./jsonHelper";
@@ -49,7 +49,7 @@ export function CategoryQuestions(
   const renderQuestionsByCategory = data.map((parent) => {
     if (parent.Parent.CategoryID === parentCategory) {
       return (
-        <div className="Parent Question" style={questionStyle}>
+        <div className="parent" style={questionStyle}>
           <Label id="QuestionTitle">{parent.Parent.Question}</Label>
           {renderInfoButton(
             parent.Parent.ExplanationLearnLink,
@@ -60,45 +60,46 @@ export function CategoryQuestions(
             parent.Parent.AnswerType,
             parent.Parent.Answers
           )}
-          {parent.Childs.map((child) => {
-            if (child.Parent.CategoryID.startsWith(childCategory))
-              return (
-                <div className="Child Question" style={questionStyle}>
-                  <Label id="QuestionTitle">{child.Parent.Question}</Label>
-                  {renderInfoButton(
-                    child.Parent.ExplanationLearnLink,
-                    child.Parent.Explanation
-                  )}
-                  {RenderAnswers(
-                    child.Parent.Parameter,
-                    child.Parent.AnswerType,
-                    child.Parent.Answers
-                  )}
-                  {child.Childs.map((grandchild) => {
-                    if (grandchild.Parent.CategoryID === grandChildCategory)
-                      return (
-                        <div
-                          className="GrandChild Question"
-                          style={questionStyle}
-                        >
-                          <Label id="QuestionTitle">
-                            {grandchild.Parent.Question}
-                          </Label>
-                          {renderInfoButton(
-                            grandchild.Parent.ExplanationLearnLink,
-                            grandchild.Parent.Explanation
-                          )}
-                          {RenderAnswers(
-                            grandchild.Parent.Parameter,
-                            grandchild.Parent.AnswerType,
-                            grandchild.Parent.Answers
-                          )}
-                        </div>
-                      );
-                  })}
-                </div>
-              );
-          })}
+          <div className="childs">
+            {parent.Childs.map((child) => {
+              if (child.Parent.CategoryID.startsWith(childCategory))
+                return (
+                  <div className="child" style={questionStyle}>
+                    <Label id="QuestionTitle">{child.Parent.Question}</Label>
+                    {renderInfoButton(
+                      child.Parent.ExplanationLearnLink,
+                      child.Parent.Explanation
+                    )}
+                    {RenderAnswers(
+                      child.Parent.Parameter,
+                      child.Parent.AnswerType,
+                      child.Parent.Answers
+                    )}
+                    <div className="grandchilds">
+                      {child.Childs.map((grandchild) => {
+                        if (grandchild.Parent.CategoryID === grandChildCategory)
+                          return (
+                            <div className="grandchild" style={questionStyle}>
+                              <Label id="QuestionTitle">
+                                {grandchild.Parent.Question}
+                              </Label>
+                              {renderInfoButton(
+                                grandchild.Parent.ExplanationLearnLink,
+                                grandchild.Parent.Explanation
+                              )}
+                              {RenderAnswers(
+                                grandchild.Parent.Parameter,
+                                grandchild.Parent.AnswerType,
+                                grandchild.Parent.Answers
+                              )}
+                            </div>
+                          );
+                      })}{" "}
+                    </div>
+                  </div>
+                );
+            })}{" "}
+          </div>
         </div>
       );
     }
@@ -123,9 +124,6 @@ function RenderAnswers(
   answerType: string,
   answers: string[]
 ) {
-
-
-
   const [value, setValue] = React.useState("");
 
   const [checked, setChecked] = React.useState(false);
@@ -141,10 +139,7 @@ function RenderAnswers(
   );
 
   const HandleInputChange = React.useCallback(
-    (
-      ev: React.ChangeEvent<HTMLInputElement>,
-      data: InputOnChangeData
-    ) => {
+    (ev: React.ChangeEvent<HTMLInputElement>, data: InputOnChangeData) => {
       setValue(data.value);
       setStorage(parameter, data.value);
     },
@@ -152,10 +147,7 @@ function RenderAnswers(
   );
 
   const HandleRadioChange = React.useCallback(
-    (
-      ev: React.ChangeEvent<HTMLInputElement>,
-      data: RadioOnChangeData
-    ) => {
+    (ev: React.ChangeEvent<HTMLInputElement>, data: RadioOnChangeData) => {
       setRadio(data.value);
       setStorage(parameter, data.value);
     },
@@ -189,12 +181,18 @@ function RenderAnswers(
       );
     case "stringSelection":
       return (
-        <RadioGroup 
-        aria-labelledby="label935"
-        defaultValue={getStorageElement(parameter)}
+        <RadioGroup
+          aria-labelledby="label935"
+          defaultValue={getStorageElement(parameter)}
         >
           {answers.map((answer) => {
-            return <Radio label={answer} value={answer} onChange={HandleRadioChange}/>;
+            return (
+              <Radio
+                label={answer}
+                value={answer}
+                onChange={HandleRadioChange}
+              />
+            );
           })}
         </RadioGroup>
       );
