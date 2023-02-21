@@ -1,6 +1,6 @@
-# ASTEROID Project
+# ASTEROID Project 
 
-## Accelerate clients journey to the cloud!
+## :rocket: Accelerate clients journey to the cloud!
 
 **ASTEROID** - **A**zure**S**tart**T**ool**E**nabling**R**apid**O**nboarding**I**nsteadof**D**evastation
 
