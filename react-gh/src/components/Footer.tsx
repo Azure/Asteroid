@@ -1,14 +1,8 @@
-import { mergeStyleSets } from "@fluentui/merge-styles";
 import { Stack, IStackTokens } from "@fluentui/react";
 import { Text, Link, Divider } from "@fluentui/react-components";
 
 // Footer
 export function Footer() {
-  const titleClass = mergeStyleSets({
-    display: "inline-block",
-    marginLeft: "10px",
-    verticalAlign: "top",
-  });
 
   return (
     <footer>

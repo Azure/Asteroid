@@ -10,7 +10,7 @@ import configuration_icon from "../media/icon-browser.svg";
 import { ReusableCard, ReusableEndCard } from "../components/Card";
 import { ArrowUndoRegular } from "@fluentui/react-icons";
 import { Button } from "@fluentui/react-components";
-import { deleteStorage } from "../utils/helpers/jsonHelper";
+// import { deleteStorage } from "../utils/helpers/jsonHelper";
 
 export var state = {
   endPublic: false,
