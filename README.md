@@ -43,10 +43,10 @@ When you are all set and satisfied with the configuration of the landing zone, y
 
 Technology | Description & reference
 |----|-----|
-| [**npm**](https://github.com/facebook/create-react-app) | a package manager for JavaScript|
-| [**React**](https://reactjs.org/) | a JavaScript library for building user interfaces|
+| [**TypeScript**](https://www.typescriptlang.org/) | a strongly typed programming language that builds on JavaScript, used to build web applications|
 | [**Fluent UI**](https://developer.microsoft.com/en-us/fluentui) | a collection of reusable components for building web applications|
-| [**JavaScript**](https://www.javascript.com/) | a programming language used to build web applications|
+| [**React**](https://reactjs.org/) | a JavaScript library for building user interfaces|
+| [**npm**](https://github.com/facebook/create-react-app) | a package manager for JavaScript|
 | [**GitHub Pages**](https://pages.github.com/) | a platform for hosting web pages|
 | [**ChatGpt**](https://openai.com/blog/chatgpt) | a large language model trained by OpenAI|
 
