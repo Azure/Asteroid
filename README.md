@@ -2,15 +2,13 @@
 
 ## Accelerate clients journey to the cloud!
 
-**A**zure**S**tart**T**ool**E**nabling**R**apid**O**nboarding**I**nsteadof**D**evastation
+**ASTEROID** - **A**zure**S**tart**T**ool**E**nabling**R**apid**O**nboarding**I**nsteadof**D**evastation
 
 As the **cloud** has become a critical component of modern business operations, there is a growing need for guidance in setting up an **effective and efficient cloud architecture** design. However, getting started with the cloud and navigating the complex and constantly evolving world of cloud architecture can be a daunting task for many organizations, especially those new to the field.
 
-To help ease this process, **Asteroid** is a web-based tool that enables customers to easily configure an **Enterprise-Scale architecture** for their cloud deployment.
+To help ease this process, **Asteroid** is a web-based tool that enables customers to easily configure an **Enterprise-Scale architecture** ([Azure/Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)) for their cloud deployment.
 
-[Azure/Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
-
-This architecture provides prescriptive guidance and best practices for designing an Azure architecture, that aligns with organizational needs and is scalable for future growth.
+This architecture provides prescriptive guidance and best practices for designing an Azure architecture, that aligns with organizational needs and is scalable for future growth. 
 
 This modular architecture is designed to support organizations of any size, allowing them to start as small as they need and scale as their business grows.
 
@@ -22,14 +20,21 @@ With this tool, we aim to simplify the adoption of the cloud for organizations o
 
 To get started with the Asteroid tool, navigate to the website https://azure.github.io/Asteroid/. Answer a few questions about your organization, while the tool decides for you the suitable template in the background.
 
+![start](react-gh/src/media/startPage.png)
+
 2. **Configuration**
 
 After the template selection, fine-tune the parameters and settings for each of the critical design areas in the template. The user can adjust the parameters on-fly.
 
+![config](react-gh/src/media/configurationPage.png)
+
 3. **Deploy!**
 
 Review and deploy the configuration of the landing zone using either the List view or Code view. The List view displays the configuration in a user-friendly format, while the Code view displays the configuration in code format.
+
 When you are all set and satisfied with the configuration of the landing zone, you can copy the template and proceed to deployment!
+
+![deployment](react-gh/src/media/deploymentPage.png)
 
 ## Technology Stack
 **Asteroid** tool is built using the following technologies:
@@ -39,7 +44,7 @@ Technology | Description & reference
 | [**npm**](https://github.com/facebook/create-react-app) | a package manager for JavaScript|
 | [**React**](https://reactjs.org/) | a JavaScript library for building user interfaces|
 | [**Fluent UI**](https://developer.microsoft.com/en-us/fluentui) | a collection of reusable components for building web applications|
-| **JavaScript** | a programming language used to build web applications|
+| [**JavaScript**](https://www.javascript.com/) | a programming language used to build web applications|
 | [**GitHub Pages**](https://pages.github.com/) | a platform for hosting web pages|
 | [**ChatGpt**](https://openai.com/blog/chatgpt) | a large language model trained by OpenAI|
 
