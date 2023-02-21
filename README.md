@@ -8,9 +8,9 @@ As the **cloud** has become a critical component of modern business operations, 
 
 To help ease this process, **Asteroid** is a web-based tool that enables customers to easily configure an **Enterprise-Scale architecture** ([Azure/Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)) for their cloud deployment.
 
-This architecture provides prescriptive guidance and best practices for designing an Azure architecture, that aligns with organizational needs and is scalable for future growth. 
+This architecture provides **prescriptive guidance and best practices for designing an Azure architecture**, that aligns with **organizational needs** and is **scalable** for future growth. 
 
-This modular architecture is designed to support organizations of any size, allowing them to start as small as they need and scale as their business grows.
+This modular architecture is designed to support organizations of **any size**, allowing them to **start as small as they need and scale as their business grows**.
 
 With this tool, we aim to simplify the adoption of the cloud for organizations of all sizes, empowering them to achieve their goals with confidence. Thus, customers can confidently navigate the cloud environment and design a robust and effective architecture that supports their business objectives.
 
@@ -18,7 +18,9 @@ With this tool, we aim to simplify the adoption of the cloud for organizations o
 
 1. **Start**
 
-To get started with the Asteroid tool, navigate to the website https://azure.github.io/Asteroid/. Answer a few questions about your organization, while the tool decides for you the suitable template in the background.
+To get started with the Asteroid tool, navigate to the [Asteroid](https://azure.github.io/Asteroid/) website.
+
+Answer a few questions about your organization, while the tool decides for you the suitable template in the background.
 
 ![start](react-gh/src/media/startPage.png)
 
