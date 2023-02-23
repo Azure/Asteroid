@@ -1,1 +1,1677 @@
-[{"Parent":{"ID":"010000","Parameter":"enableLogAnalytics","CategoryID":"Platform management, security, and governance","Question":"Do you want to store logs enabling insights for troubleshooting and the monitoring of your solutions?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling logging allows for the collection and retention of data related to the activity and performance of your Azure resources,\nwhich can be used for troubleshooting, auditing, and compliance purposes. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"010100","Parameter":"managementSubscriptionId","CategoryID":"Platform management, security, and governance","Question":"Please enter your management subscription ID.","AnswerType":"stringInput","AnswerChoice":"   ","Answers":["Insert here"],"Explanation":"Your Azure subscription ID is a unique identifier assigned to your Azure account and is required for management, billing, and access to Azure resources. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010200","Parameter":"retentionInDays","CategoryID":"Platform management, security, and governance","Question":"How long do you want to save your logs?","AnswerType":"integerInput","AnswerChoice":"","Answers":["Insert number here in days"],"Explanation":"The retention period for logs determines the length of time log data will be kept before being automatically deleted.  This allows you to control the amount of data stored and the associated costs. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010300","Parameter":"enableAgentHealth","CategoryID":"Platform management, security, and governance","Question":"Do you want to keep track of the health of your monitoring agents?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Monitoring the health of Azure monitoring agents is important to ensure that they are functioning properly and collecting data effectively.  This can help to identify and resolve any issues with monitoring coverage or data collection. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solution-agenthealth","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010400","Parameter":"enableChangeTracking","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable change tracking to see which resources where changed over time?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Change tracking allows for the identification and review of changes made to your Azure resources.  This can help with auditing, compliance, and identifying the cause of issues. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010500","Parameter":"enableUpdateMgmt","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable update management of the monitor agent?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Update management for monitoring agents ensures that they are running the latest version for optimal performance, security and bug fixes. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010600","Parameter":"enableActivityLog","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable the activity log have greater insights in your Azure resources?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"The activity log provides a detailed record of all actions and events for your Azure resources, including information about who made the change, what resources were affected, and when it occurred. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-insights","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010700","Parameter":"enableVmInsights","CategoryID":"Platform management, security, and governance","Question":"Do you want to have greater insghts in your deployed virtual machines?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"VM insights provide real-time performance data and diagnostic information for your Azure virtual machines, including metrics, logs and traces. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010800","Parameter":"enableServiceMap","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable service map?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Service map visualizes the dependencies between services and resources in your Azure environment, providing a holistic view of your infrastructure and helping to identify potential issues. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"010900","Parameter":"enableSqlAssessment","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable SQL assessments for your databases?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"SQL assessments evaluate the security and compliance of your Azure SQL databases, including checks for vulnerabilities, misconfigurations, and potential data breaches. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011000","Parameter":"enableSqlAdvancedThreatProtection","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable SQL advanced threat protection?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"SQL advanced threat protection detects and alerts on potential malicious activities on your Azure SQL databases, including SQL injection attacks and suspicious database access. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011100","Parameter":"enableSqlVulnerabilityAssessment","CategoryID":"Platform management, security, and governance","Question":"Do you want to enable SQL vulnerability assessments?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"SQL vulnerability assessments identify potential vulnerabilities in your Azure SQL databases, including missing patches, insecure configurations, and potential data breaches. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011200","Parameter":"enableAsc","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect your infrastructure with Microsoft Defender?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Microsoft Defender provides security for your Azure resources, including servers, containers, app services, and more by using a combination of behavioral analytics, automatic remediation, and threat intelligence to detect and block known and unknown threats. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/defender-for-cloud/","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"011201","Parameter":"emailContactAsc","CategoryID":"Platform management, security, and governance","Question":"Name a mail contatct for Microsoft Defender","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"A contact email is needed for Microsoft Defender to send notifications about potential security issues, such as alerts, reports, and recommendations. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011202","Parameter":"enableAscForServers","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect servers?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting servers with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the operating system and applications running on the server. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011203","Parameter":"enableAscForContainers","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect containers?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting containers with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the container runtime and images. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011204","Parameter":"enableAscForAppServices","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect app services?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting app services with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the app service runtime and runtime configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011205","Parameter":"enableAscForOssDb","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect open-source relational databases?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting open-source relational databases with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the database runtime and configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011206","Parameter":"enableAscForStorage","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect storage solutions?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting storage solutions with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the storage access and configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011207","Parameter":"enableAscForCosmosDbs","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect Cosmo DB appliances?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting Cosmos DB appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the Cosmos DB runtime and configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011208","Parameter":"enableAscForSql","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect SQL appliances?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting SQL appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011209","Parameter":"enableAscForSqlOnVm","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect SQL on VM appliances?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Protecting SQL on VM appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011210","Parameter":"enableAscForKeyVault","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect key vaults?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling security measures for your Azure Key Vaults will protect the sensitive information stored in them, such as keys and secrets, from unauthorized access or unauthorized use. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011211","Parameter":"enableAscForDns","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect DNS servers?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling security measures for your Azure DNS servers will protect your domain name resolution infrastructure from malicious attacks and unauthorized changes. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"011212","Parameter":"enableAscForArm","CategoryID":"Platform management, security, and governance","Question":"Do you want to protect ARM?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling security measures for your Azure Resource Manager (ARM) templates and deployments will help to ensure that your resources are deployed securely and in compliance with your security policies. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"011300","Parameter":"enableSecuritySolution","CategoryID":"Platform management, security, and governance","Question":"Do you want to centrally analyse, combine and correlate log events for a greater visibility with Microsoft Sentinel?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling central log analysis, correlation, and threat detection with Microsoft Sentinel will provide improved security visibility by analyzing, combining and correlating log events across your Azure environment, making it easier to detect and respond to security threats. ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/sentinel/","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"020000","Parameter":"denySubnetWithoutNsgForIdentity","CategoryID":"Identity","Question":"Do you want to deny subnets without a network security group?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question relates to network security, allowing you to restrict access to subnets that do not have a network security group (NSG) assigned to them. By denying access, you can help prevent unauthorized access to your network resources.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"030000","Parameter":"denyRdpForIdentity","CategoryID":"Identity","Question":"Do you want to deny Remote Desktop Protocol connectivity?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"RDP is a common protocol used to remotely access and control computers, including VMs in Azure. By denying RDP connectivity, you can prevent unauthorized access to your VMs, enhancing security for your network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"040000","Parameter":"denyPipForIdentity","CategoryID":"Identity","Question":"Do you want to prevent the usage of public IP?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"By preventing the use of public IP addresses, you can reduce the exposure of your network resources to the internet. This can help prevent unauthorized access and minimize the risk of security breaches.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"050000","Parameter":"enableVmBackupForIdentity","CategoryID":"Identity","Question":"Do you want to enable backups for VMs?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling backups for VMs can help protect against data loss in the event of hardware failure or other incidents. By creating a backup, you can quickly restore your VMs to a previous state.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"060000","Parameter":"identitySubscriptionId","CategoryID":"Identity","Question":"Paste in your Subscription ID used for Identity","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Subscription ID is used to identify the Azure subscription that you want to use for Identity.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"070000","Parameter":"identityAddressPrefix","CategoryID":"Identity","Question":"Pase in your identity address subnet.","AnswerType":"stringInput","AnswerChoice":" ","Answers":["Insert here"],"Explanation":"The identity address subnet is the subnet that you want to use to host your identity resources, such as Azure Active Directory Domain Services.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"080000","Parameter":"onlineLzSubscriptionId","CategoryID":"Landing zones configuration","Question":"Paste in your Subscription ID used for Online LZ","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Subscription ID is used to identify the Azure subscription that you want to use for Online Landing Zone.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"090000","Parameter":"corpConnectedLzSubscriptionId","CategoryID":"Landing zones configuration","Question":"Paste in your Subscription ID used for Corp Connected","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Subscription ID is used to identify the Azure subscription that you want to use for Corp Connected.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"100000","Parameter":"corpLzSubscriptionId","CategoryID":"Landing zones configuration","Question":"Paste in your Subscription ID used for Corp Lz","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Subscription ID is used to identify the Azure subscription that you want to use for Corp Landing Zone.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"110000","Parameter":"denyIpForwarding","CategoryID":"Landing zones configuration","Question":"Do you want to deny IP forwarding?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"IP forwarding refers to the process of forwarding network traffic from one network interface to another. By denying IP forwarding, you can help prevent unauthorized access to your network resources.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"120000","Parameter":"denyPublicEndpoints","CategoryID":"Landing zones configuration","Question":"Do you want to have deny public endpoints, exposed over a public IP?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Public endpoints are network resources that are exposed over a public IP address, making them accessible from the internet. By denying public endpoints, you can reduce the exposure of your network resources to the internet, helping to prevent unauthorized access and minimize the risk of security breaches.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"130000","Parameter":"enableEncryptionInTransit","CategoryID":"Landing zones configuration","Question":"Do you want to enable encryption in transit?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Encryption in transit refers to encrypting data as it is transmitted over a network. By enabling encryption in transit, you can help protect sensitive data from being intercepted or viewed by unauthorized parties during transmission.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"140000","Parameter":"enableVmMonitoring","CategoryID":"Landing zones configuration","Question":"Do you want to enable monitoring of VMs?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Monitoring VMs can help you keep track of their performance and resource utilization, allowing you to identify and resolve issues before they become critical.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"150000","Parameter":"enableVmssMonitoring","CategoryID":"Landing zones configuration","Question":"Do you want to enable monitoring of VMs?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Monitoring VMs can help you keep track of their performance and resource utilization, allowing you to identify and resolve issues before they become critical.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"160000","Parameter":"enableAksPolicy","CategoryID":"Landing zones configuration","Question":"Do you want to have a policy over AKS?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"A policy over AKS refers to creating and enforcing a set of rules and guidelines for how AKS clusters are created and managed. This can help ensure that AKS clusters are deployed and managed in a secure and consistent manner.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"170000","Parameter":"denyAksPrivileged","CategoryID":"Landing zones configuration","Question":"Do you want to deny privileged AKS?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"By denying privileged AKS, you can restrict access to AKS clusters to only authorized users, helping to prevent unauthorized access and minimize the risk of security breaches.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"180000","Parameter":"denyAksPrivilegedEscalation","CategoryID":"Landing zones configuration","Question":"Do you want to deny privileged escaltedAKS?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying privileged escalated AKS means preventing users from having elevated privileges in the AKS cluster, which can increase security and reduce the risk of unauthorized access.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"190000","Parameter":"denyDatabricksPip","CategoryID":"Landing zones configuration","Question":"Do you want to deny Databricks public Ips?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying public IPs for Databricks can improve security by preventing the exposure of sensitive data to external sources, as only private networks can access the data.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"200000","Parameter":"denyDatabricksVnet","CategoryID":"Landing zones configuration","Question":"Do you want to deny Databricks Vnets?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying Vnets for Databricks can limit the scope of network access, improving security by reducing the potential attack surface.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"210000","Parameter":"denyDatabricksSku","CategoryID":"Landing zones configuration","Question":"Do you want to deny Databricks SKU?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying the SKU for Databricks can prevent users from selecting certain service tiers, potentially improving security by limiting the functionality available.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"220000","Parameter":"denyHttpIngressForAks","CategoryID":"Landing zones configuration","Question":"Do you want to deny HTTP ingress for AKS?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying HTTP ingress for AKS can improve security by preventing unauthorized access to the AKS cluster over HTTP.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"230000","Parameter":"enableVmBackup","CategoryID":"Landing zones configuration","Question":"Do you want to enable backups for VMs?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Enabling backups for VMs provides a secure and reliable way to store and recover important data, reducing the risk of data loss.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"240000","Parameter":"denyRdp","CategoryID":"Landing zones configuration","Question":"Do you want to deny access over Remote Desktop Protocol?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying access over Remote Desktop Protocol (RDP) can improve security by preventing unauthorized access to the virtual machine over RDP.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"250000","Parameter":"denySubnetWithoutNsg","CategoryID":"Landing zones configuration","Question":"Do you want to deny subnets without a network security group?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Denying subnets without a network security group can improve security by ensuring that subnets have the necessary security controls in place.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"260000","Parameter":"enableSqlAudit","CategoryID":"Landing zones configuration","Question":"Do you want to track database events and write them to an audit log?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Tracking database events and writing them to an audit log can help improve security and accountability by providing a record of database activity.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"270000","Parameter":"enableSqlEncryption","CategoryID":"Landing zones configuration","Question":"Do you want to protect against the threat of malicious offline activity by using transparent data encryption for your SQL Databases?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Using transparent data encryption for SQL databases can improve security by protecting data at rest from malicious offline activity.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"280000","Parameter":"enableStorageHttps","CategoryID":"Landing zones configuration","Question":"Do you want to ensure secure connections (HTTPS) to storage accounts?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Ensuring secure connections (HTTPS) to storage accounts can improve security by encrypting data in transit, protecting it from unauthorized access.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"290000","Parameter":"enableLzDdoS","CategoryID":"Landing zones configuration","Question":"Do you want to protect your Landing Zone with DDoS Protection?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Protecting the Landing Zone with DDoS protection can improve security by preventing Distributed Denial of Service (DDoS) attacks from disrupting network access.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"300000","Parameter":"enablePrivateDnsZonesForLzs","CategoryID":"Landing zones configuration","Question":"Do you want to enable private DNS zones for your Landing Zone?","AnswerType":"stringSelection","AnswerChoice":"No","Answers":[" Yes","Audit","No"],"Explanation":"Enabling private DNS zones for the Landing Zone can improve security by keeping DNS resolution within the private network, reducing the risk of external tampering.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310000","Parameter":"enableAzOps","CategoryID":"Platform DevOps and automation","Question":"Do you want to enable Azure DevOps?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling Azure DevOps can improve collaboration and increase efficiency in software development, allowing teams to work together seamlessly.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"310100","Parameter":"gitHubUserNameOrOrg","CategoryID":"Platform DevOps and automation","Question":"What is your GitHub username or organization name?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Your GitHub username or organization name is used to identify you or your organization on the GitHub platform.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310200","Parameter":"paToken","CategoryID":"Platform DevOps and automation","Question":"What is you GitHub personal access token? ","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Your GitHub personal access token is used to authenticate and authorize access to your GitHub account.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310300","Parameter":"repositoryName","CategoryID":"Platform DevOps and automation","Question":"What is your GitHub repository Name?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The name of your GitHub repository is used to identify the repository on the GitHub platform.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310400","Parameter":"principalSecret","CategoryID":"Platform DevOps and automation","Question":"Please paste in your service principal secret.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310500","Parameter":"principalId","CategoryID":"Platform DevOps and automation","Question":"Please paste in your service principal ID.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310600","Parameter":"azOpsSubscriptionId","CategoryID":"Platform DevOps and automation","Question":"Please paste in your subscription ID that will be used for DevOps. ","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"310700","Parameter":"appID","CategoryID":"Platform DevOps and automation","Question":"Please paste in your app ID.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"320000","Parameter":"enableHub","CategoryID":"Hub and Spoke","Question":"Do you want to have a Hub and Spoke architecture?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"A hub and spoke architecture is a network design that centralizes network traffic through a main hub to optimize connectivity and reduce complexity.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"320100","Parameter":"connectivityLocation","CategoryID":"Hub and Spoke","Question":"What is your connectivity location?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The location where the connectivity for your network is established and managed.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320200","Parameter":"connectivitySubscriptionId","CategoryID":"Hub and Spoke","Question":"Insert your connectivity subscription ID?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"A subscription ID is a unique identifier for an Azure subscription, used to manage and access resources within the subscription.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320300","Parameter":"addressPrefix","CategoryID":"Hub and Spoke","Question":"Insert the address prefix for your hub and spoke architecture.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The address prefix is a range of IP addresses that are used to identify and route network traffic within the hub and spoke architecture.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320400","Parameter":"enablePrivateDnsZones","CategoryID":"Hub and Spoke","Question":"Do you want ot enable private DNS zones?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Private DNS zones allow you to host your own DNS domains within your virtual network, rather than relying on public DNS servers.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320500","Parameter":"enableDdoS","CategoryID":"Hub and Spoke","Question":"Do you want to protect your network against mailcious high volume attacks?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This refers to the protection of your network against high volume, malicious traffic that can cause a denial of service attack.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320600","Parameter":"enableVpnGw","CategoryID":"Hub and Spoke","Question":"Do you want to enable VPN Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling VPN Gateway allows the creation of secure, encrypted connections between Azure VNets and on-premises networks.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"320601","Parameter":"subnetMaskForGw","CategoryID":"Hub and Spoke","Question":"Please define your Subnet Mask for VPN Gateway.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"A subnet mask is a configuration value used to determine the size and range of IP addresses within a subnet, and to identify the network and host portions of an IP address.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320602","Parameter":"gwAzSku","CategoryID":"Hub and Spoke","Question":"What is your SKU for zone redundant VPN Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"SKU refers to the pricing and resource model for a VPN gateway, with options such as basic, standard, and high performance. Zone redundant refers to the availability and resilience of the VPN gateway across multiple Azure zones.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320603","Parameter":"gwRegionalOrAz","CategoryID":"Hub and Spoke","Question":"Do you want zone redundant or regional VPN Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"A choice between a VPN gateway that is available across multiple Azure zones for increased resilience, or one that is only available within a single Azure region.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320604","Parameter":"gwRegionalSku","CategoryID":"Hub and Spoke","Question":"What is your SKU for regional VPN Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The pricing and resource model for a regional VPN gateway, with options such as basic, standard, and high performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320605","Parameter":"vpnGateWayScaleUnit","CategoryID":"Hub and Spoke","Question":"What is your VPN Gateway Sclae Unit?","AnswerType":"integerInput","AnswerChoice":"","Answers":[""],"Explanation":"1 S2S VPN scale unit implies a total capacity of 500-Mbps VPN gateway","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"320700","Parameter":"enableErGw","CategoryID":"Hub and Spoke","Question":"Do you want to leverage of Express Route Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to use Azure ExpressRoute, a dedicated private connection service between an organization's on-premises infrastructure and Azure datacenters.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"320701","Parameter":"erAzSku","CategoryID":"Hub and Spoke","Question":"What is your SKU for zone redundant ExpressRoute Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"SKU refers to the pricing and capacity options for the ExpressRoute Gateway service. Zone redundant means the ExpressRoute Gateway service is replicated across multiple Azure availability zones for improved resiliency.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320702","Parameter":"erRegionalOrAz","CategoryID":"Hub and Spoke","Question":"Do you want zone redundant or regional ExpressRoute Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question asks the customer to choose between zone redundant or regional ExpressRoute Gateway. Regional ExpressRoute Gateway is deployed in a single Azure region, while zone redundant ExpressRoute Gateway is deployed across multiple Azure availability zones for improved resiliency.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320703","Parameter":"erRegionalSku","CategoryID":"Hub and Spoke","Question":"What is your SKU for regional ExpressRoute Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"This question asks for the SKU for the regional ExpressRoute Gateway service. The SKU refers to the pricing and capacity options for the ExpressRoute Gateway service.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320704 ","Parameter":"expressRouteScaleUnit","CategoryID":"Hub and Spoke","Question":"What is your ExpressRoute Gateway Sclae Unit?","AnswerType":"integerInput","AnswerChoice":"","Answers":[""],"Explanation":"1 ER scale unit implies a total of 2-Gbps ER gateway in virtual hub","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"320800","Parameter":"enableAzFw","CategoryID":"Hub and Spoke","Question":"Do you want to enable Azure Firewall?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to implement Azure Firewall in their network infrastructure. Azure Firewall is a cloud-based network security service that provides centralized protection and control over traffic in and out of a customer's Azure virtual network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"320801","Parameter":"firewallSku","CategoryID":"Hub and Spoke","Question":"Please define your Azure Firewall Tier.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Azure Firewall Tier refers to the specifications and capabilities of the firewall, including throughput, connection rate, and number of rule groups. The available tiers are Basic, Standard, and High Performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320802","Parameter":"subnetMaskForAzFw","CategoryID":"Hub and Spoke","Question":"Please define your subnet mask for Azure Firewall.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The subnet mask for Azure Firewall specifies the range of IP addresses within a subnet that are available for use by devices. The subnet mask is used to determine which portion of the IP address is used to identify the network and which portion is used to identify the host.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320803","Parameter":"firewallZones","CategoryID":"Hub and Spoke","Question":"In which Availability Zones would you like to deploy your Azure Firewall?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Availability Zones are physically separated locations within an Azure region, providing redundancy and high availability for virtual machines and other resources. This question is asking where the customer would like to deploy their Azure Firewall for maximum resilience and availability.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"320804","Parameter":"enableAzFwDnsProxy","CategoryID":"Hub and Spoke","Question":"Do you want to Enable Azure Firewall as a DNS Proxy?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to use Azure Firewall as a proxy for their domain name system (DNS) traffic. By enabling Azure Firewall as a DNS proxy, customers can secure and monitor their DNS traffic in and out of their Azure virtual network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"320900","Parameter":"connectivityLocation","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Please define the location address for Connectivity (required for vWAN Hub).","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The location address for Connectivity is the physical address where the virtual WAN (vWAN) hub will be deployed. The vWAN hub is a central location in the customer's network where all of their Azure virtual network gateways and ExpressRoute connections converge.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321000","Parameter":"connectivitySubscriptionId","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Please define your selected Subscription for Connectivity.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The Subscription for Connectivity refers to the Azure subscription that the customer has chosen to use for their vWAN and other network resources.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321100","Parameter":"addressPrefix","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your address prefix for Virtual WAN","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The address prefix for Virtual WAN refers to the range of IP addresses that will be assigned to the customer's virtual WAN network. The address prefix is used to identify the network and allow for communication between devices within the network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321200","Parameter":"enablePrivateDnsZones","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want to deploy private DNS Zones?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to deploy private DNS zones, which are used to host custom domain names and resolve private IP addresses within their Azure virtual network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321300","Parameter":"enableDdoS","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want to protect your network against mailcious high volume attacks using DDoS Network Protection?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to implement Azure DDoS Protection, which helps protect their network against malicious high-volume distributed denial of service (DDoS) attacks.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321400","Parameter":"enableVpnGw","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want to Deploy a VPN Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"This question is asking if the customer wants to deploy a VPN gateway in their network infrastructure. A VPN gateway provides secure, encrypted communication between the customer's on-premises network and their Azure virtual network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"321401","Parameter":"subnetMaskForGw","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Please define your subnet mask for VPN Gateway.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The subnet mask for VPN Gateway specifies the range of IP addresses within a subnet that are available for use by devices. The subnet mask is used to determine which portion of the IP address is used to identify the network and which portion is used to identify the host.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321402","Parameter":"gwAzSku","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your SKU for zone redundant VPN Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The SKU (Service Level Agreement) refers to the level of performance and support that you can expect from a VPN gateway. For a zone redundant VPN gateway, there are various options available including Basic, Standard, and High Performance. Choosing the right SKU will depend on factors such as the expected traffic volume, network requirements, and level of resilience desired.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321403","Parameter":"gwRegionalOrAz","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want zone redundant or regional VPN Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"A regional VPN gateway provides a single point of connectivity for a specific region, while a zone redundant VPN gateway provides multiple points of connectivity across different zones within a region for increased resiliency. The choice between these two options will depend on the desired level of availability and the specific needs of the network.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321404","Parameter":"gwRegionalSku","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your SKU for regional VPN Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Like with a zone redundant VPN gateway, the SKU for a regional VPN gateway will also depend on the expected traffic volume, network requirements, and desired level of resilience. Options for regional VPN gateways include Basic, Standard, and High Performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321405","Parameter":"vpnGateWayScaleUnit","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your VPN Gateway Sclae Unit?","AnswerType":"integerInput","AnswerChoice":"","Answers":[""],"Explanation":"1 S2S VPN scale unit implies a total capacity of 500-Mbps VPN gateway","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"321500","Parameter":"enableErGw","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want an Express Route Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"An Express Route gateway provides a private connection between an on-premises network and Azure. It can offer increased security, performance, and reliability compared to a public internet connection. Whether or not an Express Route gateway is needed will depend on the specific requirements of the network and the desired level of security and performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"321501","Parameter":"erAzSku","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your SKU for zone redundant ExpressRoute Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Similar to the VPN gateway, the SKU for a zone redundant ExpressRoute gateway will also depend on the expected traffic volume, network requirements, and desired level of resilience. Options for this type of gateway include Basic, Standard, and High Performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321502","Parameter":"erRegionalOrAz","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want zone redundant or regional ExpressRoute Gateway?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"The choice between a zone redundant or regional ExpressRoute gateway will again depend on the desired level of availability and the specific needs of the network. A regional ExpressRoute gateway provides a single point of connectivity for a specific region, while a zone redundant gateway provides multiple points of connectivity across different zones within a region for increased resiliency.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321503","Parameter":"erRegionalSku","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your SKU for regional ExpressRoute Gateway?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The SKU for a regional ExpressRoute gateway will depend on the expected traffic volume, network requirements, and desired level of resilience. Options include Basic, Standard, and High Performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321504","Parameter":"expressRouteScaleUnit","CategoryID":"Virtual WAN (Microsoft managed)","Question":"What is your ExpressRoute Gateway Sclae Unit?","AnswerType":"integerInput","AnswerChoice":"","Answers":[""],"Explanation":"1 ER scale unit implies a total of 2-Gbps ER gateway in virtual hub","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]},{"Parent":{"ID":"321600","Parameter":"enableAzFw","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want to deploy Azure Firewall?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"A cloud-based, stateful firewall service that provides high-performance protection against a wide range of threats, including those targeted at internet-facing applications.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[{"Parent":{"ID":"321601","Parameter":"firewallSku","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Please select your Azure Firewall Tier.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Customers can choose between the Standard and Premium tiers for Azure Firewall, depending on their performance, features, and scaling needs.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321602","Parameter":"subnetMaskForAzFw","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Please define your Subnet Mask for Azure Firewall.","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The subnet mask is used to define the size of the subnet that Azure Firewall will be deployed in, and to determine which IP addresses will be included in the subnet.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321603","Parameter":"firewallZones","CategoryID":"Virtual WAN (Microsoft managed)","Question":"In which Availability Zones would you like to deploy your Azure Firewall?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"Customers can deploy Azure Firewall in multiple Availability Zones to ensure high availability and to improve performance and resilience.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"321604","Parameter":"enableAzFwDnsProxy","CategoryID":"Virtual WAN (Microsoft managed)","Question":"Do you want to Enable Azure Firewall as a DNS Proxy?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Enabling Azure Firewall as a DNS proxy provides customers with advanced security and protection against DNS-based threats, such as DNS tunneling and cache poisoning attacks.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]}]},{"Parent":{"ID":"340000","Parameter":"enterpriseScaleCompanyPrefix","CategoryID":"Azure Core Setup","Question":"What is the naming convention prefix for your resources?","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The naming convention for resources in Azure is used to ensure that the resources are easily identifiable and organized within the customer's Azure tenant.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"350000","Parameter":"singlePlatformSubscriptionId","CategoryID":"Azure Core Setup","Question":"Insert your single subscription ID","AnswerType":"stringInput","AnswerChoice":"","Answers":["Insert here"],"Explanation":"The subscription ID is a unique identifier that is assigned to each customer's Azure subscription, and is used to manage and track resource usage and billing.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"360000","Parameter":"telemetryOptOut","CategoryID":"Azure Core Setup","Question":"Do you want to send diagnostic data to Microsoft to enhance our services?","AnswerType":"boolean","AnswerChoice":"No","Answers":[" Yes","No"],"Explanation":"Customers can opt to send diagnostic data to Microsoft to help improve the Azure services and features, and to provide valuable insights into customer usage and performance.","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"370000","Parameter":"currentDateTimeUtcNow","CategoryID":"Metadata","Question":" ","AnswerType":" ","AnswerChoice":"null","Answers":[""],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]},{"Parent":{"ID":"380000","Parameter":"delayCount","CategoryID":"Metadata","Question":" ","AnswerType":" ","AnswerChoice":"null","Answers":[""],"Explanation":"Explanation Placeholder ","ExplanationLearnLink":"https://learn.microsoft.com/en-us/azure/?product=popular","ExplanationVideoLink":"https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"},"Childs":[]}]
+[
+  {
+    "Parent": {
+      "ID": "010000",
+      "Parameter": "enableLogAnalytics",
+      "CategoryID": "Platform management, security, and governance",
+      "Question": "Do you want to store logs enabling insights for troubleshooting and the monitoring of your solutions?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Enabling logging allows for the collection and retention of data related to the activity and performance of your Azure resources,\nwhich can be used for troubleshooting, auditing, and compliance purposes. ",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": [
+      {
+        "Parent": {
+          "ID": "010100",
+          "Parameter": "managementSubscriptionId",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Please enter your management subscription ID.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Your Azure subscription ID is a unique identifier assigned to your Azure account and is required for management, billing, and access to Azure resources. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010200",
+          "Parameter": "retentionInDays",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "How long do you want to save your logs?",
+          "AnswerType": "integerInput",
+          "AnswerChoice": "",
+          "Answers": ["Insert number here in days"],
+          "Explanation": "The retention period for logs determines the length of time log data will be kept before being automatically deleted.  This allows you to control the amount of data stored and the associated costs. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010300",
+          "Parameter": "enableAgentHealth",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to keep track of the health of your monitoring agents?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Monitoring the health of Azure monitoring agents is important to ensure that they are functioning properly and collecting data effectively.  This can help to identify and resolve any issues with monitoring coverage or data collection. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solution-agenthealth",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010400",
+          "Parameter": "enableChangeTracking",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable change tracking to see which resources where changed over time?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Change tracking allows for the identification and review of changes made to your Azure resources.  This can help with auditing, compliance, and identifying the cause of issues. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010500",
+          "Parameter": "enableUpdateMgmt",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable update management of the monitor agent?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Update management for monitoring agents ensures that they are running the latest version for optimal performance, security and bug fixes. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010600",
+          "Parameter": "enableActivityLog",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable the activity log have greater insights in your Azure resources?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "The activity log provides a detailed record of all actions and events for your Azure resources, including information about who made the change, what resources were affected, and when it occurred. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-insights",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010700",
+          "Parameter": "enableVmInsights",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to have greater insghts in your deployed virtual machines?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "VM insights provide real-time performance data and diagnostic information for your Azure virtual machines, including metrics, logs and traces. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010800",
+          "Parameter": "enableServiceMap",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable service map?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Service map visualizes the dependencies between services and resources in your Azure environment, providing a holistic view of your infrastructure and helping to identify potential issues. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "010900",
+          "Parameter": "enableSqlAssessment",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable SQL assessments for your databases?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "SQL assessments evaluate the security and compliance of your Azure SQL databases, including checks for vulnerabilities, misconfigurations, and potential data breaches. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "011000",
+          "Parameter": "enableSqlAdvancedThreatProtection",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable SQL advanced threat protection?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "SQL advanced threat protection detects and alerts on potential malicious activities on your Azure SQL databases, including SQL injection attacks and suspicious database access. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "011100",
+          "Parameter": "enableSqlVulnerabilityAssessment",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to enable SQL vulnerability assessments?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "SQL vulnerability assessments identify potential vulnerabilities in your Azure SQL databases, including missing patches, insecure configurations, and potential data breaches. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "011200",
+          "Parameter": "enableAsc",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to protect your infrastructure with Microsoft Defender?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Microsoft Defender provides security for your Azure resources, including servers, containers, app services, and more by using a combination of behavioral analytics, automatic remediation, and threat intelligence to detect and block known and unknown threats. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "011201",
+              "Parameter": "emailContactAsc",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Name a mail contatct for Microsoft Defender",
+              "AnswerType": "stringInput",
+              "AnswerChoice": null,
+              "Answers": ["Insert here"],
+              "Explanation": "A contact email is needed for Microsoft Defender to send notifications about potential security issues, such as alerts, reports, and recommendations. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011202",
+              "Parameter": "enableAscForServers",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect servers?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting servers with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the operating system and applications running on the server. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011203",
+              "Parameter": "enableAscForContainers",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect containers?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting containers with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the container runtime and images. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011204",
+              "Parameter": "enableAscForAppServices",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect app services?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting app services with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the app service runtime and runtime configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011205",
+              "Parameter": "enableAscForOssDb",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect open-source relational databases?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting open-source relational databases with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the database runtime and configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011206",
+              "Parameter": "enableAscForStorage",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect storage solutions?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting storage solutions with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the storage access and configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011207",
+              "Parameter": "enableAscForCosmosDbs",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect Cosmo DB appliances?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting Cosmos DB appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the Cosmos DB runtime and configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011208",
+              "Parameter": "enableAscForSql",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect SQL appliances?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting SQL appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011209",
+              "Parameter": "enableAscForSqlOnVm",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect SQL on VM appliances?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Protecting SQL on VM appliances with Microsoft Defender helps to detect and prevent security threats by using real-time monitoring and analysis of the SQL runtime and configuration. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011210",
+              "Parameter": "enableAscForKeyVault",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect key vaults?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Enabling security measures for your Azure Key Vaults will protect the sensitive information stored in them, such as keys and secrets, from unauthorized access or unauthorized use. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011211",
+              "Parameter": "enableAscForDns",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect DNS servers?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Enabling security measures for your Azure DNS servers will protect your domain name resolution infrastructure from malicious attacks and unauthorized changes. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "011212",
+              "Parameter": "enableAscForArm",
+              "CategoryID": "Platform management, security, and governance",
+              "Question": "Do you want to protect ARM?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "Disabled",
+              "Answers": ["DeployIfNotExists", "Disabled"],
+              "Explanation": "Enabling security measures for your Azure Resource Manager (ARM) templates and deployments will help to ensure that your resources are deployed securely and in compliance with your security policies. ",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "011300",
+          "Parameter": "enableSecuritySolution",
+          "CategoryID": "Platform management, security, and governance",
+          "Question": "Do you want to centrally analyse, combine and correlate log events for a greater visibility with Microsoft Sentinel?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Enabling central log analysis, correlation, and threat detection with Microsoft Sentinel will provide improved security visibility by analyzing, combining and correlating log events across your Azure environment, making it easier to detect and respond to security threats. ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/sentinel/",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      }
+    ]
+  },
+  {
+    "Parent": {
+      "ID": "020000",
+      "Parameter": "denySubnetWithoutNsgForIdentity",
+      "CategoryID": "Identity",
+      "Question": "Do you want to deny subnets without a network security group?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "This question relates to network security, allowing you to restrict access to subnets that do not have a network security group (NSG) assigned to them. By denying access, you can help prevent unauthorized access to your network resources.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "030000",
+      "Parameter": "denyRdpForIdentity",
+      "CategoryID": "Identity",
+      "Question": "Do you want to deny Remote Desktop Protocol connectivity?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "RDP is a common protocol used to remotely access and control computers, including VMs in Azure. By denying RDP connectivity, you can prevent unauthorized access to your VMs, enhancing security for your network.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "040000",
+      "Parameter": "denyPipForIdentity",
+      "CategoryID": "Identity",
+      "Question": "Do you want to prevent the usage of public IP?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "By preventing the use of public IP addresses, you can reduce the exposure of your network resources to the internet. This can help prevent unauthorized access and minimize the risk of security breaches.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "050000",
+      "Parameter": "enableVmBackupForIdentity",
+      "CategoryID": "Identity",
+      "Question": "Do you want to enable backups for VMs?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Enabling backups for VMs can help protect against data loss in the event of hardware failure or other incidents. By creating a backup, you can quickly restore your VMs to a previous state.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "060000",
+      "Parameter": "identitySubscriptionId",
+      "CategoryID": "Identity",
+      "Question": "Paste in your Subscription ID used for Identity",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "",
+      "Answers": ["Insert here"],
+      "Explanation": "The Subscription ID is used to identify the Azure subscription that you want to use for Identity.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "070000",
+      "Parameter": "identityAddressPrefix",
+      "CategoryID": "Identity",
+      "Question": "Pase in your identity address subnet.",
+      "AnswerType": "stringInput",
+      "AnswerChoice": " ",
+      "Answers": ["Insert here"],
+      "Explanation": "The identity address subnet is the subnet that you want to use to host your identity resources, such as Azure Active Directory Domain Services.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "080000",
+      "Parameter": "onlineLzSubscriptionId",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Paste in your Subscription ID used for Online LZ",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "",
+      "Answers": ["Insert here"],
+      "Explanation": "The Subscription ID is used to identify the Azure subscription that you want to use for Online Landing Zone.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "090000",
+      "Parameter": "corpConnectedLzSubscriptionId",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Paste in your Subscription ID used for Corp Connected",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "",
+      "Answers": ["Insert here"],
+      "Explanation": "The Subscription ID is used to identify the Azure subscription that you want to use for Corp Connected.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "100000",
+      "Parameter": "corpLzSubscriptionId",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Paste in your Subscription ID used for Corp Lz",
+      "AnswerType": "stringInput",
+      "AnswerChoice": "",
+      "Answers": ["Insert here"],
+      "Explanation": "The Subscription ID is used to identify the Azure subscription that you want to use for Corp Landing Zone.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "110000",
+      "Parameter": "denyIpForwarding",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny IP forwarding?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "IP forwarding refers to the process of forwarding network traffic from one network interface to another. By denying IP forwarding, you can help prevent unauthorized access to your network resources.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "120000",
+      "Parameter": "denyPublicEndpoints",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to have deny public endpoints, exposed over a public IP?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Public endpoints are network resources that are exposed over a public IP address, making them accessible from the internet. By denying public endpoints, you can reduce the exposure of your network resources to the internet, helping to prevent unauthorized access and minimize the risk of security breaches.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "130000",
+      "Parameter": "enableEncryptionInTransit",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable encryption in transit?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Encryption in transit refers to encrypting data as it is transmitted over a network. By enabling encryption in transit, you can help protect sensitive data from being intercepted or viewed by unauthorized parties during transmission.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "140000",
+      "Parameter": "enableVmMonitoring",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable monitoring of VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Monitoring VMs can help you keep track of their performance and resource utilization, allowing you to identify and resolve issues before they become critical.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "150000",
+      "Parameter": "enableVmssMonitoring",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable monitoring of VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Monitoring VMs can help you keep track of their performance and resource utilization, allowing you to identify and resolve issues before they become critical.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "160000",
+      "Parameter": "enableAksPolicy",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to have a policy over AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "A policy over AKS refers to creating and enforcing a set of rules and guidelines for how AKS clusters are created and managed. This can help ensure that AKS clusters are deployed and managed in a secure and consistent manner.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "170000",
+      "Parameter": "denyAksPrivileged",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny privileged AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "By denying privileged AKS, you can restrict access to AKS clusters to only authorized users, helping to prevent unauthorized access and minimize the risk of security breaches.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "180000",
+      "Parameter": "denyAksPrivilegedEscalation",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny privileged escaltedAKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying privileged escalated AKS means preventing users from having elevated privileges in the AKS cluster, which can increase security and reduce the risk of unauthorized access.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "190000",
+      "Parameter": "denyDatabricksPip",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny Databricks public Ips?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying public IPs for Databricks can improve security by preventing the exposure of sensitive data to external sources, as only private networks can access the data.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "200000",
+      "Parameter": "denyDatabricksVnet",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny Databricks Vnets?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying Vnets for Databricks can limit the scope of network access, improving security by reducing the potential attack surface.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "210000",
+      "Parameter": "denyDatabricksSku",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny Databricks SKU?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying the SKU for Databricks can prevent users from selecting certain service tiers, potentially improving security by limiting the functionality available.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "220000",
+      "Parameter": "denyHttpIngressForAks",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny HTTP ingress for AKS?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying HTTP ingress for AKS can improve security by preventing unauthorized access to the AKS cluster over HTTP.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "230000",
+      "Parameter": "enableVmBackup",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable backups for VMs?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Enabling backups for VMs provides a secure and reliable way to store and recover important data, reducing the risk of data loss.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "240000",
+      "Parameter": "denyRdp",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny access over Remote Desktop Protocol?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying access over Remote Desktop Protocol (RDP) can improve security by preventing unauthorized access to the virtual machine over RDP.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "250000",
+      "Parameter": "denySubnetWithoutNsg",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to deny subnets without a network security group?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Denying subnets without a network security group can improve security by ensuring that subnets have the necessary security controls in place.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "260000",
+      "Parameter": "enableSqlAudit",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to track database events and write them to an audit log?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Tracking database events and writing them to an audit log can help improve security and accountability by providing a record of database activity.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "270000",
+      "Parameter": "enableSqlEncryption",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to protect against the threat of malicious offline activity by using transparent data encryption for your SQL Databases?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Using transparent data encryption for SQL databases can improve security by protecting data at rest from malicious offline activity.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "280000",
+      "Parameter": "enableStorageHttps",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to ensure secure connections (HTTPS) to storage accounts?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Ensuring secure connections (HTTPS) to storage accounts can improve security by encrypting data in transit, protecting it from unauthorized access.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "290000",
+      "Parameter": "enableLzDdoS",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to protect your Landing Zone with DDoS Protection?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Protecting the Landing Zone with DDoS protection can improve security by preventing Distributed Denial of Service (DDoS) attacks from disrupting network access.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "300000",
+      "Parameter": "enablePrivateDnsZonesForLzs",
+      "CategoryID": "Landing zones configuration",
+      "Question": "Do you want to enable private DNS zones for your Landing Zone?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "Audit", "No"],
+      "Explanation": "Enabling private DNS zones for the Landing Zone can improve security by keeping DNS resolution within the private network, reducing the risk of external tampering.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "310000",
+      "Parameter": "enableAzOps",
+      "CategoryID": "Platform DevOps and automation",
+      "Question": "Do you want to enable Azure DevOps?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "No",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Enabling Azure DevOps can improve collaboration and increase efficiency in software development, allowing teams to work together seamlessly.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": [
+      {
+        "Parent": {
+          "ID": "310100",
+          "Parameter": "gitHubUserNameOrOrg",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "What is your GitHub username or organization name?",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Your GitHub username or organization name is used to identify you or your organization on the GitHub platform.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310200",
+          "Parameter": "paToken",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "What is you GitHub personal access token? ",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Your GitHub personal access token is used to authenticate and authorize access to your GitHub account.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310300",
+          "Parameter": "repositoryName",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "What is your GitHub repository Name?",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "The name of your GitHub repository is used to identify the repository on the GitHub platform.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310400",
+          "Parameter": "principalSecret",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "Please paste in your service principal secret.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Explanation Placeholder ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310500",
+          "Parameter": "principalId",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "Please paste in your service principal ID.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Explanation Placeholder ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310600",
+          "Parameter": "azOpsSubscriptionId",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "Please paste in your subscription ID that will be used for DevOps. ",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Explanation Placeholder ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "310700",
+          "Parameter": "appID",
+          "CategoryID": "Platform DevOps and automation",
+          "Question": "Please paste in your app ID.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "Explanation Placeholder ",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      }
+    ]
+  },
+  {
+    "Parent": {
+      "ID": "320000",
+      "Parameter": "enableHub",
+      "CategoryID": "Hub and Spoke",
+      "Question": "Do you want to have a Hub and Spoke architecture?",
+      "AnswerType": "stringSelection",
+      "AnswerChoice": "No",
+      "Answers": ["vhub", "nva", "vwan", "No"],
+      "Explanation": "A hub and spoke architecture is a network design that centralizes network traffic through a main hub to optimize connectivity and reduce complexity.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": [
+      {
+        "Parent": {
+          "ID": "320100",
+          "Parameter": "connectivityLocation",
+          "CategoryID": "Hub and Spoke",
+          "Question": "What is your connectivity location?",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "The location where the connectivity for your network is established and managed.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320200",
+          "Parameter": "connectivitySubscriptionId",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Insert your connectivity subscription ID?",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "A subscription ID is a unique identifier for an Azure subscription, used to manage and access resources within the subscription.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320300",
+          "Parameter": "addressPrefix",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Insert the address prefix for your hub and spoke architecture.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": null,
+          "Answers": ["Insert here"],
+          "Explanation": "The address prefix is a range of IP addresses that are used to identify and route network traffic within the hub and spoke architecture.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320400",
+          "Parameter": "enablePrivateDnsZones",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Do you want ot enable private DNS zones?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Private DNS zones allow you to host your own DNS domains within your virtual network, rather than relying on public DNS servers.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320500",
+          "Parameter": "enableDdoS",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Do you want to protect your network against mailcious high volume attacks?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This refers to the protection of your network against high volume, malicious traffic that can cause a denial of service attack.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "320600",
+          "Parameter": "enableVpnGw",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Do you want to enable VPN Gateway?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "Enabling VPN Gateway allows the creation of secure, encrypted connections between Azure VNets and on-premises networks.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "320601",
+              "Parameter": "subnetMaskForGw",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Please define your Subnet Mask for VPN Gateway.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": null,
+              "Answers": ["Insert here"],
+              "Explanation": "A subnet mask is a configuration value used to determine the size and range of IP addresses within a subnet, and to identify the network and host portions of an IP address.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320602",
+              "Parameter": "gwAzSku",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your SKU for zone redundant VPN Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "SKU refers to the pricing and resource model for a VPN gateway, with options such as basic, standard, and high performance. Zone redundant refers to the availability and resilience of the VPN gateway across multiple Azure zones.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320603",
+              "Parameter": "gwRegionalOrAz",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Do you want zone redundant or regional VPN Gateway?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "A choice between a VPN gateway that is available across multiple Azure zones for increased resilience, or one that is only available within a single Azure region.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320604",
+              "Parameter": "gwRegionalSku",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your SKU for regional VPN Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The pricing and resource model for a regional VPN gateway, with options such as basic, standard, and high performance.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320605",
+              "Parameter": "vpnGateWayScaleUnit",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your VPN Gateway Sclae Unit?",
+              "AnswerType": "integerInput",
+              "AnswerChoice": "",
+              "Answers": [""],
+              "Explanation": "1 S2S VPN scale unit implies a total capacity of 500-Mbps VPN gateway",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "320700",
+          "Parameter": "enableErGw",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Do you want to leverage of Express Route Gateway?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This question is asking if the customer wants to use Azure ExpressRoute, a dedicated private connection service between an organization's on-premises infrastructure and Azure datacenters.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "320701",
+              "Parameter": "erAzSku",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your SKU for zone redundant ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "SKU refers to the pricing and capacity options for the ExpressRoute Gateway service. Zone redundant means the ExpressRoute Gateway service is replicated across multiple Azure availability zones for improved resiliency.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320702",
+              "Parameter": "erRegionalOrAz",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Do you want zone redundant or regional ExpressRoute Gateway?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "This question asks the customer to choose between zone redundant or regional ExpressRoute Gateway. Regional ExpressRoute Gateway is deployed in a single Azure region, while zone redundant ExpressRoute Gateway is deployed across multiple Azure availability zones for improved resiliency.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320703",
+              "Parameter": "erRegionalSku",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your SKU for regional ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "This question asks for the SKU for the regional ExpressRoute Gateway service. The SKU refers to the pricing and capacity options for the ExpressRoute Gateway service.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320704 ",
+              "Parameter": "expressRouteScaleUnit",
+              "CategoryID": "Hub and Spoke",
+              "Question": "What is your ExpressRoute Gateway Sclae Unit?",
+              "AnswerType": "integerInput",
+              "AnswerChoice": "",
+              "Answers": [""],
+              "Explanation": "1 ER scale unit implies a total of 2-Gbps ER gateway in virtual hub",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "320800",
+          "Parameter": "enableAzFw",
+          "CategoryID": "Hub and Spoke",
+          "Question": "Do you want to enable Azure Firewall?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This question is asking if the customer wants to implement Azure Firewall in their network infrastructure. Azure Firewall is a cloud-based network security service that provides centralized protection and control over traffic in and out of a customer's Azure virtual network.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "320801",
+              "Parameter": "firewallSku",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Please define your Azure Firewall Tier.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The Azure Firewall Tier refers to the specifications and capabilities of the firewall, including throughput, connection rate, and number of rule groups. The available tiers are Basic, Standard, and High Performance.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320802",
+              "Parameter": "subnetMaskForAzFw",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Please define your subnet mask for Azure Firewall.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The subnet mask for Azure Firewall specifies the range of IP addresses within a subnet that are available for use by devices. The subnet mask is used to determine which portion of the IP address is used to identify the network and which portion is used to identify the host.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320803",
+              "Parameter": "firewallZones",
+              "CategoryID": "Hub and Spoke",
+              "Question": "In which Availability Zones would you like to deploy your Azure Firewall?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "Availability Zones are physically separated locations within an Azure region, providing redundancy and high availability for virtual machines and other resources. This question is asking where the customer would like to deploy their Azure Firewall for maximum resilience and availability.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "320804",
+              "Parameter": "enableAzFwDnsProxy",
+              "CategoryID": "Hub and Spoke",
+              "Question": "Do you want to Enable Azure Firewall as a DNS Proxy?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "This question is asking if the customer wants to use Azure Firewall as a proxy for their domain name system (DNS) traffic. By enabling Azure Firewall as a DNS proxy, customers can secure and monitor their DNS traffic in and out of their Azure virtual network.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "320900",
+          "Parameter": "connectivityLocation",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Please define the location address for Connectivity (required for vWAN Hub).",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "",
+          "Answers": ["Insert here"],
+          "Explanation": "The location address for Connectivity is the physical address where the virtual WAN (vWAN) hub will be deployed. The vWAN hub is a central location in the customer's network where all of their Azure virtual network gateways and ExpressRoute connections converge.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321000",
+          "Parameter": "connectivitySubscriptionId",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Please define your selected Subscription for Connectivity.",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "",
+          "Answers": ["Insert here"],
+          "Explanation": "The Subscription for Connectivity refers to the Azure subscription that the customer has chosen to use for their vWAN and other network resources.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321100",
+          "Parameter": "addressPrefix",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "What is your address prefix for Virtual WAN",
+          "AnswerType": "stringInput",
+          "AnswerChoice": "",
+          "Answers": ["Insert here"],
+          "Explanation": "The address prefix for Virtual WAN refers to the range of IP addresses that will be assigned to the customer's virtual WAN network. The address prefix is used to identify the network and allow for communication between devices within the network.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321200",
+          "Parameter": "enablePrivateDnsZones",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Do you want to deploy private DNS Zones?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This question is asking if the customer wants to deploy private DNS zones, which are used to host custom domain names and resolve private IP addresses within their Azure virtual network.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321300",
+          "Parameter": "enableDdoS",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Do you want to protect your network against mailcious high volume attacks using DDoS Network Protection?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This question is asking if the customer wants to implement Azure DDoS Protection, which helps protect their network against malicious high-volume distributed denial of service (DDoS) attacks.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": []
+      },
+      {
+        "Parent": {
+          "ID": "321400",
+          "Parameter": "enableVpnGw",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Do you want to Deploy a VPN Gateway?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "This question is asking if the customer wants to deploy a VPN gateway in their network infrastructure. A VPN gateway provides secure, encrypted communication between the customer's on-premises network and their Azure virtual network.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "321401",
+              "Parameter": "subnetMaskForGw",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Please define your subnet mask for VPN Gateway.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The subnet mask for VPN Gateway specifies the range of IP addresses within a subnet that are available for use by devices. The subnet mask is used to determine which portion of the IP address is used to identify the network and which portion is used to identify the host.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321402",
+              "Parameter": "gwAzSku",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your SKU for zone redundant VPN Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The SKU (Service Level Agreement) refers to the level of performance and support that you can expect from a VPN gateway. For a zone redundant VPN gateway, there are various options available including Basic, Standard, and High Performance. Choosing the right SKU will depend on factors such as the expected traffic volume, network requirements, and level of resilience desired.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321403",
+              "Parameter": "gwRegionalOrAz",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Do you want zone redundant or regional VPN Gateway?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "A regional VPN gateway provides a single point of connectivity for a specific region, while a zone redundant VPN gateway provides multiple points of connectivity across different zones within a region for increased resiliency. The choice between these two options will depend on the desired level of availability and the specific needs of the network.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321404",
+              "Parameter": "gwRegionalSku",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your SKU for regional VPN Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "Like with a zone redundant VPN gateway, the SKU for a regional VPN gateway will also depend on the expected traffic volume, network requirements, and desired level of resilience. Options for regional VPN gateways include Basic, Standard, and High Performance.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321405",
+              "Parameter": "vpnGateWayScaleUnit",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your VPN Gateway Sclae Unit?",
+              "AnswerType": "integerInput",
+              "AnswerChoice": "",
+              "Answers": [""],
+              "Explanation": "1 S2S VPN scale unit implies a total capacity of 500-Mbps VPN gateway",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "321500",
+          "Parameter": "enableErGw",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Do you want an Express Route Gateway?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "An Express Route gateway provides a private connection between an on-premises network and Azure. It can offer increased security, performance, and reliability compared to a public internet connection. Whether or not an Express Route gateway is needed will depend on the specific requirements of the network and the desired level of security and performance.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "321501",
+              "Parameter": "erAzSku",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your SKU for zone redundant ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "Similar to the VPN gateway, the SKU for a zone redundant ExpressRoute gateway will also depend on the expected traffic volume, network requirements, and desired level of resilience. Options for this type of gateway include Basic, Standard, and High Performance.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321502",
+              "Parameter": "erRegionalOrAz",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Do you want zone redundant or regional ExpressRoute Gateway?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "The choice between a zone redundant or regional ExpressRoute gateway will again depend on the desired level of availability and the specific needs of the network. A regional ExpressRoute gateway provides a single point of connectivity for a specific region, while a zone redundant gateway provides multiple points of connectivity across different zones within a region for increased resiliency.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321503",
+              "Parameter": "erRegionalSku",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your SKU for regional ExpressRoute Gateway?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The SKU for a regional ExpressRoute gateway will depend on the expected traffic volume, network requirements, and desired level of resilience. Options include Basic, Standard, and High Performance.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321504",
+              "Parameter": "expressRouteScaleUnit",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "What is your ExpressRoute Gateway Sclae Unit?",
+              "AnswerType": "integerInput",
+              "AnswerChoice": "",
+              "Answers": [""],
+              "Explanation": "1 ER scale unit implies a total of 2-Gbps ER gateway in virtual hub",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      },
+      {
+        "Parent": {
+          "ID": "321600",
+          "Parameter": "enableAzFw",
+          "CategoryID": "Virtual WAN (Microsoft managed)",
+          "Question": "Do you want to deploy Azure Firewall?",
+          "AnswerType": "boolean",
+          "AnswerChoice": "No",
+          "Answers": [" Yes", "No"],
+          "Explanation": "A cloud-based, stateful firewall service that provides high-performance protection against a wide range of threats, including those targeted at internet-facing applications.",
+          "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+          "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+        },
+        "Childs": [
+          {
+            "Parent": {
+              "ID": "321601",
+              "Parameter": "firewallSku",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Please select your Azure Firewall Tier.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "Customers can choose between the Standard and Premium tiers for Azure Firewall, depending on their performance, features, and scaling needs.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321602",
+              "Parameter": "subnetMaskForAzFw",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Please define your Subnet Mask for Azure Firewall.",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "The subnet mask is used to define the size of the subnet that Azure Firewall will be deployed in, and to determine which IP addresses will be included in the subnet.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321603",
+              "Parameter": "firewallZones",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "In which Availability Zones would you like to deploy your Azure Firewall?",
+              "AnswerType": "stringInput",
+              "AnswerChoice": "",
+              "Answers": ["Insert here"],
+              "Explanation": "Customers can deploy Azure Firewall in multiple Availability Zones to ensure high availability and to improve performance and resilience.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          },
+          {
+            "Parent": {
+              "ID": "321604",
+              "Parameter": "enableAzFwDnsProxy",
+              "CategoryID": "Virtual WAN (Microsoft managed)",
+              "Question": "Do you want to Enable Azure Firewall as a DNS Proxy?",
+              "AnswerType": "boolean",
+              "AnswerChoice": "No",
+              "Answers": [" Yes", "No"],
+              "Explanation": "Enabling Azure Firewall as a DNS proxy provides customers with advanced security and protection against DNS-based threats, such as DNS tunneling and cache poisoning attacks.",
+              "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+              "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+            },
+            "Childs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Parent": {
+      "ID": "340000",
+      "Parameter": "enterpriseScaleCompanyPrefix",
+      "CategoryID": "Azure Core Setup",
+      "Question": "What is the naming convention prefix for your resources?",
+      "AnswerType": "stringInput",
+      "AnswerChoice": null,
+      "Answers": ["Insert here"],
+      "Explanation": "The naming convention for resources in Azure is used to ensure that the resources are easily identifiable and organized within the customer's Azure tenant.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "350000",
+      "Parameter": "singlePlatformSubscriptionId",
+      "CategoryID": "Azure Core Setup",
+      "Question": "Insert your single subscription ID",
+      "AnswerType": "stringInput",
+      "AnswerChoice": null,
+      "Answers": ["Insert here"],
+      "Explanation": "The subscription ID is a unique identifier that is assigned to each customer's Azure subscription, and is used to manage and track resource usage and billing.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "360000",
+      "Parameter": "telemetryOptOut",
+      "CategoryID": "Azure Core Setup",
+      "Question": "Do you want to send diagnostic data to Microsoft to enhance our services?",
+      "AnswerType": "boolean",
+      "AnswerChoice": "Yes",
+      "Answers": [" Yes", "No"],
+      "Explanation": "Customers can opt to send diagnostic data to Microsoft to help improve the Azure services and features, and to provide valuable insights into customer usage and performance.",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "370000",
+      "Parameter": "currentDateTimeUtcNow",
+      "CategoryID": "Metadata",
+      "Question": " ",
+      "AnswerType": " ",
+      "AnswerChoice": null,
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder ",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  },
+  {
+    "Parent": {
+      "ID": "380000",
+      "Parameter": "delayCount",
+      "CategoryID": "Metadata",
+      "Question": " ",
+      "AnswerType": " ",
+      "AnswerChoice": null,
+      "Answers": [""],
+      "Explanation": "Explanation Placeholder ",
+      "ExplanationLearnLink": "https://learn.microsoft.com/en-us/azure/?product=popular",
+      "ExplanationVideoLink": "https://microsofteur-my.sharepoint.com/personal/t-orkanc_microsoft_com/Documents/Microsoft Teams Chat Files/Tutorial 2.mp4"
+    },
+    "Childs": []
+  }
+]
