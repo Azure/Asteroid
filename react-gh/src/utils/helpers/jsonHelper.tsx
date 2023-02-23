@@ -7,7 +7,7 @@ export type DataItem = {
   CategoryID: string;
   Question: string;
   AnswerType: string;
-  AnswerChoice: string | boolean | number;
+  AnswerChoice: string | boolean | number | null;
   Answers: string[];
   Explanation: string;
   ExplanationLearnLink: string;
@@ -35,7 +35,7 @@ export function getStorage() {
 }
 
 export function deleteStorage() {
-  localStorage.removeItem("KeyValueMap")
+  localStorage.removeItem("KeyValueMap");
 }
 
 export const setStorage = (key: string, value: string) => {
@@ -45,13 +45,12 @@ export const setStorage = (key: string, value: string) => {
 };
 
 export function storageAvailable() {
-  return localStorage.getItem("KeyValueMap") !== null
+  return localStorage.getItem("KeyValueMap") !== null;
 }
 
 export function getStorageElement(parameter: string) {
-  if(storageAvailable()) return KeyValueMap[parameter].value
-  else return ""
-  
+  if (storageAvailable()) return KeyValueMap[parameter].value;
+  else return "";
 }
 
 function flattenMap(data: DataStructure[]) {
@@ -139,4 +138,3 @@ export function parameterFileGenerator() {
 
   return outputFile[0];
 }
-
