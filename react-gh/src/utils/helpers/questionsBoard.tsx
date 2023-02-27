@@ -10,6 +10,8 @@ import {
   Switch,
   SwitchOnChangeData,
   RadioOnChangeData,
+  Textarea,
+  TextareaOnChangeData,
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
 import { getStorageElement, setStorage, storageAvailable } from "./jsonHelper";
@@ -154,6 +156,17 @@ function RenderAnswers(
     [radioValue, parameter]
   );
 
+  const HandleTextFieldChange = React.useCallback(
+    (
+      ev: React.ChangeEvent<HTMLTextAreaElement>,
+      data: TextareaOnChangeData
+    ) => {
+      setValue(data.value);
+      setStorage(parameter, data.value.split(","));
+    },
+    [value, parameter]
+  );
+
   switch (answerType) {
     case "boolean":
       return (
@@ -195,6 +208,17 @@ function RenderAnswers(
             );
           })}
         </RadioGroup>
+      );
+    case "stringArray":
+      return (
+        <div>
+          <Textarea
+            appearance="outline"
+            resize="both"
+            placeholder="Enter comma separated subscription IDs"
+            onChange={HandleTextFieldChange}
+          />
+        </div>
       );
     default:
       return (

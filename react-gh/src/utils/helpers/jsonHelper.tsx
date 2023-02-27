@@ -7,7 +7,7 @@ export type DataItem = {
   CategoryID: string;
   Question: string;
   AnswerType: string;
-  AnswerChoice: string | boolean | number | null;
+  AnswerChoice: string | boolean | number | null | string[];
   Answers: string[];
   Explanation: string;
   ExplanationLearnLink: string;
@@ -38,7 +38,7 @@ export function deleteStorage() {
   localStorage.removeItem("KeyValueMap");
 }
 
-export const setStorage = (key: string, value: string) => {
+export const setStorage = (key: string, value: string | string[]) => {
   KeyValueMap = getStorage();
   KeyValueMap[key].value = value;
   localStorage.setItem("KeyValueMap", JSON.stringify(KeyValueMap));
