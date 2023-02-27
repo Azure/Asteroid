@@ -1,9 +1,7 @@
 import { Stack, IStackTokens } from "@fluentui/react";
 import { Text, Link, Divider } from "@fluentui/react-components";
 
-// Footer
 export function Footer() {
-
   return (
     <footer>
       <br />

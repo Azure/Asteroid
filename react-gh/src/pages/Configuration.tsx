@@ -15,7 +15,7 @@ import {
 
 // Local Imports
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
-import { CategoryQuestions } from "../utils/helpers/questionsBoard";
+import { CategoryQuestions } from "../components/Questionnaire";
 import { state } from "../components/TemplateSelection";
 import { Chat } from "../components/Chat";
 
@@ -115,8 +115,12 @@ const Configuration = () => {
           />
         </Stack.Item>
         <Stack.Item align="center">
-          <Button appearance="primary" size="large" onClick={HandleClickAsLink("../Deployment", false)}>
-            Deploy 
+          <Button
+            appearance="primary"
+            size="large"
+            onClick={HandleClickAsLink("../Deployment", false)}
+          >
+            Deploy
           </Button>
         </Stack.Item>
         <Stack.Item align="center">

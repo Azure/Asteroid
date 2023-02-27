@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   makeStyles,
   shorthands,
@@ -14,10 +15,9 @@ import {
   TextareaOnChangeData,
 } from "@fluentui/react-components";
 import { InfoButton } from "@fluentui/react-components/unstable";
-import { getStorageElement, setStorage, storageAvailable } from "./jsonHelper";
-import * as React from "react";
-// Local imports
-import data from "../data.json";
+
+import { getStorageElement, setStorage } from "../utils/helpers/jsonHelper";
+import data from "../utils/data.json";
 
 const styles = makeStyles({
   root: {
@@ -35,7 +35,6 @@ const styles = makeStyles({
   },
 });
 
-// Styles
 const questionStyle = {
   paddingLeft: "100px",
   width: "450px",
@@ -96,11 +95,11 @@ export function CategoryQuestions(
                               )}
                             </div>
                           );
-                      })}{" "}
+                      })}
                     </div>
                   </div>
                 );
-            })}{" "}
+            })}
           </div>
         </div>
       );

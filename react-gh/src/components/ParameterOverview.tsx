@@ -1,4 +1,3 @@
-import { FluentProvider } from "@fluentui/react-components";
 import * as React from "react";
 import { currentTheme } from "../index";
 import {
@@ -12,11 +11,13 @@ import {
   DataGridCell,
   DataGridHeaderCell,
   TableRowData,
+  FluentProvider,
 } from "@fluentui/react-components";
-import { DataItem, flatMapSelecter } from "../utils/helpers/jsonHelper";
-import { state } from "../components/TemplateSelection";
 
-export const GroupedDeploymentList: React.FunctionComponent = () => {
+import { DataItem, flatMapSelecter } from "../utils/helpers/jsonHelper";
+import { state } from "./TemplateSelection";
+
+export const ParameterOverview: React.FunctionComponent = () => {
   return (
     <FluentProvider theme={currentTheme}>
       <br />

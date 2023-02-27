@@ -1,8 +1,6 @@
 import { FontSizes } from "@fluentui/react";
 
-// Title Bar
 export function TitleBar() {
-
   return (
     <nav role="menubar">
       <div style={{ width: "100%" }}>
