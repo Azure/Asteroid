@@ -7,20 +7,21 @@ import {
   DialogBody,
   DialogContent,
 } from "@fluentui/react-components";
-import { QuestionCircleRegular, Dismiss24Regular } from "@fluentui/react-icons";
+
+import { Dismiss24Regular } from "@fluentui/react-icons";
 
 //  Interface
-interface ExplenationInterface {
+interface ExplanationButtonInterface {
   headerText: string;
   explanationText: string;
-  videoTitle: string;
-  explanationVideo: string;
+  explanationVideoTitle: string;
+  explanationVideoLink: string;
 }
 
 //  Component
 export const ExplanationButton: React.FunctionComponent<
-  ExplenationInterface
-> = ({ explanationText, videoTitle, explanationVideo }) => {
+  ExplanationButtonInterface
+> = ({ explanationText, explanationVideoTitle, explanationVideoLink }) => {
   return (
     <div>
       <Dialog>
@@ -44,8 +45,8 @@ export const ExplanationButton: React.FunctionComponent<
             </DialogTitle>
             <DialogContent>
               <iframe
-                src={explanationVideo}
-                title={videoTitle}
+                src={explanationVideoLink}
+                title={explanationVideoTitle}
                 width="545"
                 height="315"
                 allow="autoplay; fullscreen; picture-in-picture"

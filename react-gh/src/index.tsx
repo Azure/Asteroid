@@ -1,6 +1,6 @@
 import React from "react";
-import { createRoot } from "react-dom/client"
-import { Routes, Route, HashRouter } from "react-router-dom"
+import { createRoot } from "react-dom/client";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { TitleBar } from "./components/TitleBar";
 
@@ -13,12 +13,14 @@ import { FluentProvider } from "@fluentui/react-components";
 
 import { webLightTheme, webDarkTheme } from "@fluentui/react-components";
 
-export const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-export const currentTheme = dark ? webDarkTheme : webLightTheme;
+export const darkThemeEnabled = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
+export const currentTheme = darkThemeEnabled ? webDarkTheme : webLightTheme;
 
 document.body.style.margin = "0";
 
-const root = createRoot(document.getElementById('root')!)
+const root = createRoot(document.getElementById("root")!);
 
 root.render(
   <FluentProvider theme={currentTheme}>

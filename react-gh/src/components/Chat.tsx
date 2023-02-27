@@ -1,3 +1,6 @@
+import * as React from "react";
+import { useState } from "react";
+
 import {
   Dialog,
   DialogContent,
@@ -16,10 +19,6 @@ import {
   makeStyles,
   shorthands,
 } from "@fluentui/react-components";
-
-import * as React from "react";
-import { useState } from "react";
-
 import { SendRegular } from "@fluentui/react-icons";
 
 const useStyles = makeStyles({
@@ -73,11 +72,12 @@ export const Chat: React.FunctionComponent = () => {
               </div>
               <div>
                 {chatContent.map((message, index) =>
+                  // If the index is even, it is the user's message and should be right aligned and vice versa
                   index % 2 === 0 ? (
                     <div>
-                      <div>
+                      <>
                         <br />
-                      </div>
+                      </>
                       <div
                         className={styling.generalChatBubble}
                         style={{ textAlign: "right" }}
@@ -86,9 +86,9 @@ export const Chat: React.FunctionComponent = () => {
                           {message}
                         </Body2>{" "}
                       </div>
-                      <div>
+                      <>
                         <br />
-                      </div>
+                      </>
                     </div>
                   ) : (
                     <div style={{ textAlign: "left" }}>

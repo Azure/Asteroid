@@ -2,7 +2,7 @@ import { Breadcrumb } from "@fluentui/react";
 
 import React from "react";
 import { Codebox } from "../components/Codebox";
-import { GroupedDeploymentList } from "../components/GroupedDeploymentList";
+import { ParameterOverview } from "../components/ParameterOverview";
 import { HandleClickAsLink } from "../utils/helpers/handleClick";
 
 import { FluentProvider } from "@fluentui/react-components";
@@ -66,7 +66,7 @@ const Deployment = () => {
           configuration questionnaire.
         </Alert>
       </div>
-      <GroupedDeploymentList />
+      <ParameterOverview />
     </div>
   ));
 
