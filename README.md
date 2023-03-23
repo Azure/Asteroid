@@ -1,4 +1,4 @@
-# ASTEROID Project 
+# ASTEROID Project (BETA)
 
 ## :rocket: Accelerate clients journey to the cloud!
 
