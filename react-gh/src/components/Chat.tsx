@@ -19,7 +19,7 @@ import {
   makeStyles,
   shorthands,
 } from "@fluentui/react-components";
-import { SendRegular } from "@fluentui/react-icons";
+import { SendRegular, ChatHelpFilled } from "@fluentui/react-icons";
 
 const useStyles = makeStyles({
   userChatBubble: {
@@ -55,11 +55,7 @@ export const Chat: React.FunctionComponent = () => {
               size="huge"
               secondaryText="Ask Azure Questions"
               presence={{ status: "available" }}
-              avatar={{
-                image: {
-                  src: "https://i.pinimg.com/originals/9c/da/64/9cda6405c91f0a6060592638e58932c4.gif",
-                },
-              }}
+              avatar={<ChatHelpFilled />}
             />
           </Button>
         </DialogTrigger>
