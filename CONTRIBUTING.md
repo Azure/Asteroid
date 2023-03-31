@@ -8,6 +8,8 @@ This document outlines the contribution process and provides guidelines for maki
 Before making a contribution, please ensure that you have the following installed on your machine:
 
 * Git
+* Node.js
+* VS Code
 
 ## Run Asteroid on your local machine
 
